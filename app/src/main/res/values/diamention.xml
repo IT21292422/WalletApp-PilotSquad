@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="submit_btn_width">103dp</dimen>
+    <dimen name="submit_btn_height">43dp</dimen>
+    <dimen name="btm_btn_height">57dp</dimen>
+    <dimen name="btm_btn_width">255dp</dimen>
+    <dimen name="suh_btn_width">339dp</dimen>
+    <dimen name="suh_btn_height">58dp</dimen>
+    <dimen name="submenu_btn_width">306dp</dimen>
+    <dimen name="submenu_btn_height">46dp</dimen>
+</resources>

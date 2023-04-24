@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">LoginPage</string>
+    <string name="userName">User Name</string>
+    <string name="password">Password</string>
+    <string name="Login">Login</string>
+    <string name="signUp">Sign up here</string>
+    <string name="email">E-mail</string>
+    <string name="name">Name</string>
+    <string name="age">Age</string>
+    <string name="re_password">Re-type Password</string>
+    <string name="submit">Submit</string>
+    <string name="addAdmin">Add admin access for your account </string>
+    <string name="title_activity_main_dash_board">MainDashBoard</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="logout">Logout</string>
+    <string name="updateUser">Update User</string>
+    <string name="viewUser">View User</string>
+    <string name="deleteAccount">Delete User</string>
+    <string name="manageAccess">Manage Access</string>
+    <string name="addAccess">Add Access</string>
+    <string name="user">User</string>
+    <string name="btu">Back To User Menu</string>
+    <string name="update">Update</string>
+    <string name="register">Register</string>
+    <string name="delete">Delete</string>
+    <string name="search">Search</string>
+    <string name="ees">Enter username to search user</string>
+    <string name="bth">Back to home</string>
+</resources>
