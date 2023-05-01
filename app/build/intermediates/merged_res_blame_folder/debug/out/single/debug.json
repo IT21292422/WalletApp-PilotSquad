@@ -1,0 +1,146 @@
+[
+    {
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\7.5\\com.example.madproject.app-merged_res-33:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\7.5\\com.example.madproject.app-main-35:\\mipmap-xhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\7.5\\com.example.madproject.app-merged_res-33:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\7.5\\com.example.madproject.app-main-35:\\mipmap-hdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\7.5\\com.example.madproject.app-merged_res-33:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\7.5\\com.example.madproject.app-main-35:\\mipmap-hdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\7.5\\com.example.madproject.app-merged_res-33:\\layout_activity_register_user.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\7.5\\com.example.madproject.app-main-35:\\layout\\activity_register_user.xml"
+    },
+    {
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\7.5\\com.example.madproject.app-merged_res-33:\\layout_activity_add_investment.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\7.5\\com.example.madproject.app-main-35:\\layout\\activity_add_investment.xml"
+    },
+    {
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\7.5\\com.example.madproject.app-merged_res-33:\\mipmap-anydpi-v33_ic_launcher.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\7.5\\com.example.madproject.app-main-35:\\mipmap-anydpi-v33\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\7.5\\com.example.madproject.app-merged_res-33:\\layout_activity_update_user.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\7.5\\com.example.madproject.app-main-35:\\layout\\activity_update_user.xml"
+    },
+    {
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\7.5\\com.example.madproject.app-merged_res-33:\\drawable_ic_edit.png.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\7.5\\com.example.madproject.app-main-35:\\drawable\\ic_edit.png"
+    },
+    {
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\7.5\\com.example.madproject.app-merged_res-33:\\drawable_loginpic.png.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\7.5\\com.example.madproject.app-main-35:\\drawable\\loginpic.png"
+    },
+    {
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\7.5\\com.example.madproject.app-merged_res-33:\\layout_activity_user.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\7.5\\com.example.madproject.app-main-35:\\layout\\activity_user.xml"
+    },
+    {
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\7.5\\com.example.madproject.app-merged_res-33:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\7.5\\com.example.madproject.app-main-35:\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\7.5\\com.example.madproject.app-merged_res-33:\\drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\7.5\\com.example.madproject.app-main-35:\\drawable-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\7.5\\com.example.madproject.app-merged_res-33:\\layout_activity_view_user.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\7.5\\com.example.madproject.app-main-35:\\layout\\activity_view_user.xml"
+    },
+    {
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\7.5\\com.example.madproject.app-merged_res-33:\\drawable_registerpic.png.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\7.5\\com.example.madproject.app-main-35:\\drawable\\registerpic.png"
+    },
+    {
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\7.5\\com.example.madproject.app-merged_res-33:\\layout_activity_investment_list.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\7.5\\com.example.madproject.app-main-35:\\layout\\activity_investment_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\7.5\\com.example.madproject.app-merged_res-33:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\7.5\\com.example.madproject.app-main-35:\\xml\\data_extraction_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\7.5\\com.example.madproject.app-merged_res-33:\\drawable_viewadminpic.png.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\7.5\\com.example.madproject.app-main-35:\\drawable\\viewadminpic.png"
+    },
+    {
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\7.5\\com.example.madproject.app-merged_res-33:\\layout_activity_investment_item.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\7.5\\com.example.madproject.app-main-35:\\layout\\activity_investment_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\7.5\\com.example.madproject.app-merged_res-33:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\7.5\\com.example.madproject.app-main-35:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\7.5\\com.example.madproject.app-merged_res-33:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\7.5\\com.example.madproject.app-main-35:\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\7.5\\com.example.madproject.app-merged_res-33:\\layout_activity_search_access_details.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\7.5\\com.example.madproject.app-main-35:\\layout\\activity_search_access_details.xml"
+    },
+    {
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\7.5\\com.example.madproject.app-merged_res-33:\\layout_activity_update_investment_.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\7.5\\com.example.madproject.app-main-35:\\layout\\activity_update_investment_.xml"
+    },
+    {
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\7.5\\com.example.madproject.app-merged_res-33:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\7.5\\com.example.madproject.app-main-35:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\7.5\\com.example.madproject.app-merged_res-33:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\7.5\\com.example.madproject.app-main-35:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\7.5\\com.example.madproject.app-merged_res-33:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\7.5\\com.example.madproject.app-main-35:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\7.5\\com.example.madproject.app-merged_res-33:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\7.5\\com.example.madproject.app-main-35:\\mipmap-xxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\7.5\\com.example.madproject.app-merged_res-33:\\drawable_manageaccesspic.png.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\7.5\\com.example.madproject.app-main-35:\\drawable\\manageaccesspic.png"
+    },
+    {
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\7.5\\com.example.madproject.app-merged_res-33:\\layout_activity_manage_access.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\7.5\\com.example.madproject.app-main-35:\\layout\\activity_manage_access.xml"
+    },
+    {
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\7.5\\com.example.madproject.app-merged_res-33:\\layout_activity_add_admin_access.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\7.5\\com.example.madproject.app-main-35:\\layout\\activity_add_admin_access.xml"
+    },
+    {
+        "merged": "com.example.madproject.app-merged_res-33:/layout_activity_investment_item.xml.flat",
+        "source": "com.example.madproject.app-main-35:/layout/activity_investment_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\7.5\\com.example.madproject.app-merged_res-33:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\7.5\\com.example.madproject.app-main-35:\\mipmap-mdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\7.5\\com.example.madproject.app-merged_res-33:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\7.5\\com.example.madproject.app-main-35:\\xml\\backup_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\7.5\\com.example.madproject.app-merged_res-33:\\drawable_addadminpic.png.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\7.5\\com.example.madproject.app-main-35:\\drawable\\addadminpic.png"
+    },
+    {
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\7.5\\com.example.madproject.app-merged_res-33:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\7.5\\com.example.madproject.app-main-35:\\mipmap-xxxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\7.5\\com.example.madproject.app-merged_res-33:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\7.5\\com.example.madproject.app-main-35:\\mipmap-xhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\7.5\\com.example.madproject.app-merged_res-33:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\7.5\\com.example.madproject.app-main-35:\\mipmap-mdpi\\ic_launcher.webp"
+    }
+]

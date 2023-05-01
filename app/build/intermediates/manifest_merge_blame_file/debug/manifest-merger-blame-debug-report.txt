@@ -1,0 +1,212 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.madproject"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="24"
+8-->C:\Users\DELL\Documents\GitHub\WalletApp-PilotSquad\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="33" />
+9-->C:\Users\DELL\Documents\GitHub\WalletApp-PilotSquad\app\src\main\AndroidManifest.xml
+10
+11    <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
+12    <!-- <uses-sdk android:minSdkVersion="14"/> -->
+13    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+13-->[com.google.firebase:firebase-database:20.1.0] C:\Users\DELL\.gradle\caches\transforms-3\7f0ec956e0d9ee52d4351fdf70900b3a\transformed\firebase-database-20.1.0\AndroidManifest.xml:24:5-79
+13-->[com.google.firebase:firebase-database:20.1.0] C:\Users\DELL\.gradle\caches\transforms-3\7f0ec956e0d9ee52d4351fdf70900b3a\transformed\firebase-database-20.1.0\AndroidManifest.xml:24:22-76
+14    <uses-permission android:name="android.permission.INTERNET" />
+14-->[com.google.firebase:firebase-database:20.1.0] C:\Users\DELL\.gradle\caches\transforms-3\7f0ec956e0d9ee52d4351fdf70900b3a\transformed\firebase-database-20.1.0\AndroidManifest.xml:25:5-67
+14-->[com.google.firebase:firebase-database:20.1.0] C:\Users\DELL\.gradle\caches\transforms-3\7f0ec956e0d9ee52d4351fdf70900b3a\transformed\firebase-database-20.1.0\AndroidManifest.xml:25:22-64
+15
+16    <permission
+16-->[androidx.core:core:1.9.0] C:\Users\DELL\.gradle\caches\transforms-3\263e6c55055d4c36f6263fedb88399fb\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
+17        android:name="com.example.madproject.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+17-->[androidx.core:core:1.9.0] C:\Users\DELL\.gradle\caches\transforms-3\263e6c55055d4c36f6263fedb88399fb\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
+18        android:protectionLevel="signature" />
+18-->[androidx.core:core:1.9.0] C:\Users\DELL\.gradle\caches\transforms-3\263e6c55055d4c36f6263fedb88399fb\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
+19
+20    <uses-permission android:name="com.example.madproject.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+20-->[androidx.core:core:1.9.0] C:\Users\DELL\.gradle\caches\transforms-3\263e6c55055d4c36f6263fedb88399fb\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
+20-->[androidx.core:core:1.9.0] C:\Users\DELL\.gradle\caches\transforms-3\263e6c55055d4c36f6263fedb88399fb\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
+21
+22    <application
+22-->C:\Users\DELL\Documents\GitHub\WalletApp-PilotSquad\app\src\main\AndroidManifest.xml:5:5-53:19
+23        android:allowBackup="true"
+23-->C:\Users\DELL\Documents\GitHub\WalletApp-PilotSquad\app\src\main\AndroidManifest.xml:6:9-35
+24        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+24-->[androidx.core:core:1.9.0] C:\Users\DELL\.gradle\caches\transforms-3\263e6c55055d4c36f6263fedb88399fb\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
+25        android:dataExtractionRules="@xml/data_extraction_rules"
+25-->C:\Users\DELL\Documents\GitHub\WalletApp-PilotSquad\app\src\main\AndroidManifest.xml:7:9-65
+26        android:debuggable="true"
+27        android:extractNativeLibs="false"
+28        android:fullBackupContent="@xml/backup_rules"
+28-->C:\Users\DELL\Documents\GitHub\WalletApp-PilotSquad\app\src\main\AndroidManifest.xml:8:9-54
+29        android:icon="@mipmap/ic_launcher"
+29-->C:\Users\DELL\Documents\GitHub\WalletApp-PilotSquad\app\src\main\AndroidManifest.xml:9:9-43
+30        android:label="@string/app_name"
+30-->C:\Users\DELL\Documents\GitHub\WalletApp-PilotSquad\app\src\main\AndroidManifest.xml:10:9-41
+31        android:supportsRtl="true"
+31-->C:\Users\DELL\Documents\GitHub\WalletApp-PilotSquad\app\src\main\AndroidManifest.xml:11:9-35
+32        android:testOnly="true"
+33        android:theme="@style/Theme.MADProject" >
+33-->C:\Users\DELL\Documents\GitHub\WalletApp-PilotSquad\app\src\main\AndroidManifest.xml:12:9-48
+34        <activity
+34-->C:\Users\DELL\Documents\GitHub\WalletApp-PilotSquad\app\src\main\AndroidManifest.xml:14:9-16:40
+35            android:name="com.example.madproject.SearchAccessDetails"
+35-->C:\Users\DELL\Documents\GitHub\WalletApp-PilotSquad\app\src\main\AndroidManifest.xml:15:13-48
+36            android:exported="false" />
+36-->C:\Users\DELL\Documents\GitHub\WalletApp-PilotSquad\app\src\main\AndroidManifest.xml:16:13-37
+37        <activity
+37-->C:\Users\DELL\Documents\GitHub\WalletApp-PilotSquad\app\src\main\AndroidManifest.xml:17:9-19:40
+38            android:name="com.example.madproject.ManageAccess"
+38-->C:\Users\DELL\Documents\GitHub\WalletApp-PilotSquad\app\src\main\AndroidManifest.xml:18:13-41
+39            android:exported="false" />
+39-->C:\Users\DELL\Documents\GitHub\WalletApp-PilotSquad\app\src\main\AndroidManifest.xml:19:13-37
+40        <activity
+40-->C:\Users\DELL\Documents\GitHub\WalletApp-PilotSquad\app\src\main\AndroidManifest.xml:20:9-22:40
+41            android:name="com.example.madproject.UpdateUser"
+41-->C:\Users\DELL\Documents\GitHub\WalletApp-PilotSquad\app\src\main\AndroidManifest.xml:21:13-39
+42            android:exported="false" />
+42-->C:\Users\DELL\Documents\GitHub\WalletApp-PilotSquad\app\src\main\AndroidManifest.xml:22:13-37
+43        <activity
+43-->C:\Users\DELL\Documents\GitHub\WalletApp-PilotSquad\app\src\main\AndroidManifest.xml:23:9-25:40
+44            android:name="com.example.madproject.ViewUser"
+44-->C:\Users\DELL\Documents\GitHub\WalletApp-PilotSquad\app\src\main\AndroidManifest.xml:24:13-37
+45            android:exported="false" />
+45-->C:\Users\DELL\Documents\GitHub\WalletApp-PilotSquad\app\src\main\AndroidManifest.xml:25:13-37
+46        <activity
+46-->C:\Users\DELL\Documents\GitHub\WalletApp-PilotSquad\app\src\main\AndroidManifest.xml:26:9-28:40
+47            android:name="com.example.madproject.User"
+47-->C:\Users\DELL\Documents\GitHub\WalletApp-PilotSquad\app\src\main\AndroidManifest.xml:27:13-33
+48            android:exported="false" />
+48-->C:\Users\DELL\Documents\GitHub\WalletApp-PilotSquad\app\src\main\AndroidManifest.xml:28:13-37
+49        <activity
+49-->C:\Users\DELL\Documents\GitHub\WalletApp-PilotSquad\app\src\main\AndroidManifest.xml:29:9-31:40
+50            android:name="com.example.madproject.RegisterUser"
+50-->C:\Users\DELL\Documents\GitHub\WalletApp-PilotSquad\app\src\main\AndroidManifest.xml:30:13-41
+51            android:exported="false" />
+51-->C:\Users\DELL\Documents\GitHub\WalletApp-PilotSquad\app\src\main\AndroidManifest.xml:31:13-37
+52        <activity
+52-->C:\Users\DELL\Documents\GitHub\WalletApp-PilotSquad\app\src\main\AndroidManifest.xml:32:9-34:40
+53            android:name="com.example.madproject.AddInvestment"
+53-->C:\Users\DELL\Documents\GitHub\WalletApp-PilotSquad\app\src\main\AndroidManifest.xml:33:13-42
+54            android:exported="false" />
+54-->C:\Users\DELL\Documents\GitHub\WalletApp-PilotSquad\app\src\main\AndroidManifest.xml:34:13-37
+55        <activity
+55-->C:\Users\DELL\Documents\GitHub\WalletApp-PilotSquad\app\src\main\AndroidManifest.xml:35:9-37:40
+56            android:name="com.example.madproject.InvestmentList"
+56-->C:\Users\DELL\Documents\GitHub\WalletApp-PilotSquad\app\src\main\AndroidManifest.xml:36:13-43
+57            android:exported="false" />
+57-->C:\Users\DELL\Documents\GitHub\WalletApp-PilotSquad\app\src\main\AndroidManifest.xml:37:13-37
+58        <activity
+58-->C:\Users\DELL\Documents\GitHub\WalletApp-PilotSquad\app\src\main\AndroidManifest.xml:38:9-40:40
+59            android:name="com.example.madproject.UpdateInvestment"
+59-->C:\Users\DELL\Documents\GitHub\WalletApp-PilotSquad\app\src\main\AndroidManifest.xml:39:13-45
+60            android:exported="false" />
+60-->C:\Users\DELL\Documents\GitHub\WalletApp-PilotSquad\app\src\main\AndroidManifest.xml:40:13-37
+61        <activity
+61-->C:\Users\DELL\Documents\GitHub\WalletApp-PilotSquad\app\src\main\AndroidManifest.xml:41:9-43:40
+62            android:name="com.example.madproject.AddAdminAccess"
+62-->C:\Users\DELL\Documents\GitHub\WalletApp-PilotSquad\app\src\main\AndroidManifest.xml:42:13-43
+63            android:exported="false" />
+63-->C:\Users\DELL\Documents\GitHub\WalletApp-PilotSquad\app\src\main\AndroidManifest.xml:43:13-37
+64        <activity
+64-->C:\Users\DELL\Documents\GitHub\WalletApp-PilotSquad\app\src\main\AndroidManifest.xml:44:9-52:20
+65            android:name="com.example.madproject.Login"
+65-->C:\Users\DELL\Documents\GitHub\WalletApp-PilotSquad\app\src\main\AndroidManifest.xml:45:13-34
+66            android:exported="true" >
+66-->C:\Users\DELL\Documents\GitHub\WalletApp-PilotSquad\app\src\main\AndroidManifest.xml:46:13-36
+67            <intent-filter>
+67-->C:\Users\DELL\Documents\GitHub\WalletApp-PilotSquad\app\src\main\AndroidManifest.xml:47:13-51:29
+68                <action android:name="android.intent.action.MAIN" />
+68-->C:\Users\DELL\Documents\GitHub\WalletApp-PilotSquad\app\src\main\AndroidManifest.xml:48:17-69
+68-->C:\Users\DELL\Documents\GitHub\WalletApp-PilotSquad\app\src\main\AndroidManifest.xml:48:25-66
+69
+70                <category android:name="android.intent.category.LAUNCHER" />
+70-->C:\Users\DELL\Documents\GitHub\WalletApp-PilotSquad\app\src\main\AndroidManifest.xml:50:17-77
+70-->C:\Users\DELL\Documents\GitHub\WalletApp-PilotSquad\app\src\main\AndroidManifest.xml:50:27-74
+71            </intent-filter>
+72        </activity>
+73
+74        <service
+74-->[com.google.firebase:firebase-database-ktx:20.1.0] C:\Users\DELL\.gradle\caches\transforms-3\48261af7a0eff533ef5a43a271f95196\transformed\firebase-database-ktx-20.1.0\AndroidManifest.xml:11:9-17:19
+75            android:name="com.google.firebase.components.ComponentDiscoveryService"
+75-->[com.google.firebase:firebase-database-ktx:20.1.0] C:\Users\DELL\.gradle\caches\transforms-3\48261af7a0eff533ef5a43a271f95196\transformed\firebase-database-ktx-20.1.0\AndroidManifest.xml:12:13-84
+76            android:directBootAware="true"
+76-->[com.google.firebase:firebase-common:20.2.0] C:\Users\DELL\.gradle\caches\transforms-3\8350e387124b0a736463b1a03a635a2b\transformed\firebase-common-20.2.0\AndroidManifest.xml:34:13-43
+77            android:exported="false" >
+77-->[com.google.firebase:firebase-database-ktx:20.1.0] C:\Users\DELL\.gradle\caches\transforms-3\48261af7a0eff533ef5a43a271f95196\transformed\firebase-database-ktx-20.1.0\AndroidManifest.xml:13:13-37
+78            <meta-data
+78-->[com.google.firebase:firebase-database-ktx:20.1.0] C:\Users\DELL\.gradle\caches\transforms-3\48261af7a0eff533ef5a43a271f95196\transformed\firebase-database-ktx-20.1.0\AndroidManifest.xml:14:13-16:85
+79                android:name="com.google.firebase.components:com.google.firebase.database.ktx.FirebaseDatabaseKtxRegistrar"
+79-->[com.google.firebase:firebase-database-ktx:20.1.0] C:\Users\DELL\.gradle\caches\transforms-3\48261af7a0eff533ef5a43a271f95196\transformed\firebase-database-ktx-20.1.0\AndroidManifest.xml:15:17-124
+80                android:value="com.google.firebase.components.ComponentRegistrar" />
+80-->[com.google.firebase:firebase-database-ktx:20.1.0] C:\Users\DELL\.gradle\caches\transforms-3\48261af7a0eff533ef5a43a271f95196\transformed\firebase-database-ktx-20.1.0\AndroidManifest.xml:16:17-82
+81            <meta-data
+81-->[com.google.firebase:firebase-common-ktx:20.2.0] C:\Users\DELL\.gradle\caches\transforms-3\b2b7a8e17e47dc0861eddaf8f6b60a07\transformed\firebase-common-ktx-20.2.0\AndroidManifest.xml:14:13-16:85
+82                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonKtxRegistrar"
+82-->[com.google.firebase:firebase-common-ktx:20.2.0] C:\Users\DELL\.gradle\caches\transforms-3\b2b7a8e17e47dc0861eddaf8f6b60a07\transformed\firebase-common-ktx-20.2.0\AndroidManifest.xml:15:17-113
+83                android:value="com.google.firebase.components.ComponentRegistrar" />
+83-->[com.google.firebase:firebase-common-ktx:20.2.0] C:\Users\DELL\.gradle\caches\transforms-3\b2b7a8e17e47dc0861eddaf8f6b60a07\transformed\firebase-common-ktx-20.2.0\AndroidManifest.xml:16:17-82
+84            <meta-data
+84-->[com.google.firebase:firebase-database:20.1.0] C:\Users\DELL\.gradle\caches\transforms-3\7f0ec956e0d9ee52d4351fdf70900b3a\transformed\firebase-database-20.1.0\AndroidManifest.xml:31:13-33:85
+85                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+85-->[com.google.firebase:firebase-database:20.1.0] C:\Users\DELL\.gradle\caches\transforms-3\7f0ec956e0d9ee52d4351fdf70900b3a\transformed\firebase-database-20.1.0\AndroidManifest.xml:32:17-109
+86                android:value="com.google.firebase.components.ComponentRegistrar" />
+86-->[com.google.firebase:firebase-database:20.1.0] C:\Users\DELL\.gradle\caches\transforms-3\7f0ec956e0d9ee52d4351fdf70900b3a\transformed\firebase-database-20.1.0\AndroidManifest.xml:33:17-82
+87        </service>
+88
+89        <provider
+89-->[com.google.firebase:firebase-common:20.2.0] C:\Users\DELL\.gradle\caches\transforms-3\8350e387124b0a736463b1a03a635a2b\transformed\firebase-common-20.2.0\AndroidManifest.xml:25:9-30:39
+90            android:name="com.google.firebase.provider.FirebaseInitProvider"
+90-->[com.google.firebase:firebase-common:20.2.0] C:\Users\DELL\.gradle\caches\transforms-3\8350e387124b0a736463b1a03a635a2b\transformed\firebase-common-20.2.0\AndroidManifest.xml:26:13-77
+91            android:authorities="com.example.madproject.firebaseinitprovider"
+91-->[com.google.firebase:firebase-common:20.2.0] C:\Users\DELL\.gradle\caches\transforms-3\8350e387124b0a736463b1a03a635a2b\transformed\firebase-common-20.2.0\AndroidManifest.xml:27:13-72
+92            android:directBootAware="true"
+92-->[com.google.firebase:firebase-common:20.2.0] C:\Users\DELL\.gradle\caches\transforms-3\8350e387124b0a736463b1a03a635a2b\transformed\firebase-common-20.2.0\AndroidManifest.xml:28:13-43
+93            android:exported="false"
+93-->[com.google.firebase:firebase-common:20.2.0] C:\Users\DELL\.gradle\caches\transforms-3\8350e387124b0a736463b1a03a635a2b\transformed\firebase-common-20.2.0\AndroidManifest.xml:29:13-37
+94            android:initOrder="100" />
+94-->[com.google.firebase:firebase-common:20.2.0] C:\Users\DELL\.gradle\caches\transforms-3\8350e387124b0a736463b1a03a635a2b\transformed\firebase-common-20.2.0\AndroidManifest.xml:30:13-36
+95
+96        <activity
+96-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\DELL\.gradle\caches\transforms-3\63d7bebf51e7bf998843c45ea3c4b039\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
+97            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+97-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\DELL\.gradle\caches\transforms-3\63d7bebf51e7bf998843c45ea3c4b039\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:19-85
+98            android:exported="false"
+98-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\DELL\.gradle\caches\transforms-3\63d7bebf51e7bf998843c45ea3c4b039\transformed\play-services-base-18.0.1\AndroidManifest.xml:22:19-43
+99            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+99-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\DELL\.gradle\caches\transforms-3\63d7bebf51e7bf998843c45ea3c4b039\transformed\play-services-base-18.0.1\AndroidManifest.xml:21:19-78
+100
+101        <meta-data
+101-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\DELL\.gradle\caches\transforms-3\86ed40eafbf6fad11dcdc7f6dd4b27fd\transformed\play-services-basement-18.1.0\AndroidManifest.xml:21:9-23:69
+102            android:name="com.google.android.gms.version"
+102-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\DELL\.gradle\caches\transforms-3\86ed40eafbf6fad11dcdc7f6dd4b27fd\transformed\play-services-basement-18.1.0\AndroidManifest.xml:22:13-58
+103            android:value="@integer/google_play_services_version" />
+103-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\DELL\.gradle\caches\transforms-3\86ed40eafbf6fad11dcdc7f6dd4b27fd\transformed\play-services-basement-18.1.0\AndroidManifest.xml:23:13-66
+104
+105        <provider
+105-->[androidx.emoji2:emoji2:1.2.0] C:\Users\DELL\.gradle\caches\transforms-3\647f5706b47268af9b64eb2b28f4c1ba\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+106            android:name="androidx.startup.InitializationProvider"
+106-->[androidx.emoji2:emoji2:1.2.0] C:\Users\DELL\.gradle\caches\transforms-3\647f5706b47268af9b64eb2b28f4c1ba\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+107            android:authorities="com.example.madproject.androidx-startup"
+107-->[androidx.emoji2:emoji2:1.2.0] C:\Users\DELL\.gradle\caches\transforms-3\647f5706b47268af9b64eb2b28f4c1ba\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+108            android:exported="false" >
+108-->[androidx.emoji2:emoji2:1.2.0] C:\Users\DELL\.gradle\caches\transforms-3\647f5706b47268af9b64eb2b28f4c1ba\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+109            <meta-data
+109-->[androidx.emoji2:emoji2:1.2.0] C:\Users\DELL\.gradle\caches\transforms-3\647f5706b47268af9b64eb2b28f4c1ba\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+110                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+110-->[androidx.emoji2:emoji2:1.2.0] C:\Users\DELL\.gradle\caches\transforms-3\647f5706b47268af9b64eb2b28f4c1ba\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+111                android:value="androidx.startup" />
+111-->[androidx.emoji2:emoji2:1.2.0] C:\Users\DELL\.gradle\caches\transforms-3\647f5706b47268af9b64eb2b28f4c1ba\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+112            <meta-data
+112-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\DELL\.gradle\caches\transforms-3\bc7c7b607b58d6bdeb7e0ce3ea0e5f31\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+113                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+113-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\DELL\.gradle\caches\transforms-3\bc7c7b607b58d6bdeb7e0ce3ea0e5f31\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+114                android:value="androidx.startup" />
+114-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\DELL\.gradle\caches\transforms-3\bc7c7b607b58d6bdeb7e0ce3ea0e5f31\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+115        </provider>
+116    </application>
+117
+118</manifest>
