@@ -35,7 +35,17 @@ class UserData {
         return if(userName.isEmpty())
             ValidationResult.Empty("User Name can not be empty")
         else
-            ValidationResult.Valid
+            if(userName.length != 10)
+                ValidationResult.Invalid("Number length should be 10")
+        else {
+                try {
+                    userName.toDouble()
+                    ValidationResult.Valid
+                }
+                catch (e: java.lang.Exception) {
+                    ValidationResult.Invalid("Number should be digit")
+                }
+        }
     }
 
     fun validatePassword():ValidationResult {

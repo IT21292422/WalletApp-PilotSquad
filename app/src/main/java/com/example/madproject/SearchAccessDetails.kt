@@ -69,7 +69,7 @@ class SearchAccessDetails : AppCompatActivity() {
     }
 
     fun backToHome(view: View) {
-        val intent = Intent(this, User::class.java)
+        val intent = Intent(this, MainHomePage::class.java)
         intent.putExtra("userName", userName)
         startActivity(intent)
         finish()

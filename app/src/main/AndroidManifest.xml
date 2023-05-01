@@ -12,6 +12,9 @@
         android:theme="@style/Theme.MADProject"
         tools:targetApi="31">
         <activity
+            android:name=".MainHomePage"
+            android:exported="false" />
+        <activity
             android:name=".SearchAccessDetails"
             android:exported="false" />
         <activity

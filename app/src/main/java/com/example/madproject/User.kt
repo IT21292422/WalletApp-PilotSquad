@@ -75,24 +75,26 @@ class User : AppCompatActivity() {
     }
 
     fun deleteUser() {
-        /*databaseRef = FirebaseDatabase.getInstance().getReference("Users")
+        databaseRef = FirebaseDatabase.getInstance().getReference("Users")
         databaseRef.child(userName).removeValue().addOnSuccessListener {
             var intent = Intent(this, Login::class.java)
             startActivity(intent)
             Toast.makeText(this, "Your account successfully deleted", Toast.LENGTH_SHORT).show()
             finish()
-        }*/
-
-        val intent = Intent(this, SearchAccessDetails::class.java)
-        intent.putExtra("userName", userName)
-        startActivity(intent)
-        finish()
+        }
     }
 
     fun logout(view: View) {
         val intent = Intent(this, Login::class.java)
         startActivity(intent)
         Toast.makeText(this, "Logout", Toast.LENGTH_SHORT).show()
+        finish()
+    }
+
+    fun backToHome(view: View) {
+        val intent = Intent(this, MainHomePage::class.java)
+        intent.putExtra("userName", userName)
+        startActivity(intent)
         finish()
     }
 }

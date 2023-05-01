@@ -36,7 +36,7 @@ class RegisterUser : AppCompatActivity() {
         startActivity(intent)
         finish()
     }
-    @SuppressLint("NotConstructor")
+
     fun RegisterUser(view: View) {
         var count = 0
 

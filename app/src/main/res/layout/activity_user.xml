@@ -23,6 +23,27 @@
         tools:ignore="MissingConstraints" />
 
     <Button
+        android:id="@+id/btnLogin2"
+        android:layout_width="@dimen/submenu_btn_width"
+        android:layout_height="@dimen/submenu_btn_height"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="70dp"
+        android:background="@color/blue"
+        android:onClick="backToHome"
+        android:text="@string/bth"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button3"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints" />
+
+    <Button
         android:id="@+id/button4"
         android:layout_width="@dimen/submenu_btn_width"
         android:layout_height="@dimen/submenu_btn_height"
@@ -97,13 +118,11 @@
         android:layout_marginStart="53dp"
         android:layout_marginTop="27dp"
         android:layout_marginEnd="53dp"
-        android:layout_marginBottom="144dp"
         android:background="@color/blue1"
+        android:onClick="logout"
         android:text="@string/logout"
         android:textColor="@color/white"
         android:textSize="20sp"
-        android:onClick="logout"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnAddAccess"

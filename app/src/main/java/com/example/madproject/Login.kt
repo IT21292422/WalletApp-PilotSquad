@@ -68,7 +68,7 @@ class Login : AppCompatActivity() {
             databaseRef = FirebaseDatabase.getInstance().getReference("Users")
             databaseRef.child(edtUserName.text.toString()).get().addOnSuccessListener {
                 if(it.exists()){
-                    val intent = Intent(this, User::class.java)
+                    val intent = Intent(this, MainHomePage::class.java)
                     intent.putExtra("userName", edtUserName.text.toString())
                     startActivity(intent)
                     finish()
