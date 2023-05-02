@@ -28,4 +28,18 @@
     <string name="search">Search</string>
     <string name="ees">Enter username to search user</string>
     <string name="bth">Back to home</string>
+    <string name="add_form">Add Investment Form</string>
+    <string name="stock_name">Stock Name</string>
+    <string name="value">Value</string>
+    <string name="currently_held">Currently Held</string>
+    <string name="buy">Buy</string>
+    <string name="sell">Sell</string>
+    <string name="quantity">Quantity</string>
+    <string name="total_value">Total Value</string>
+    <string name="clear_all">Clear All</string>
+    <string name="buyorsell">BUY/SELL</string>
+    <string name="investment">Go To Investment Page</string>
+    <string name="update_delete_form">update_investment_form</string>
+    <string name="editicon">editicon</string>
+    <string name="add">Add</string>
 </resources>

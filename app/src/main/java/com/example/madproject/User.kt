@@ -14,8 +14,8 @@ import com.google.firebase.database.FirebaseDatabase
 
 class User : AppCompatActivity() {
     lateinit var databaseRef: DatabaseReference
-    lateinit var txtViewUserName:TextView
-    lateinit var confirmationBox:AlertDialog.Builder
+    lateinit var txtViewUserName: TextView
+    lateinit var confirmationBox: AlertDialog.Builder
     var userName = ""
 
     @SuppressLint("MissingInflatedId")
@@ -65,9 +65,10 @@ class User : AppCompatActivity() {
 
     fun deleteCurrentUser(view: View) {
         confirmationBox = AlertDialog.Builder(this)
-        confirmationBox.setTitle("Delete").setMessage("Do you want to delete this account ? ").setPositiveButton("Yes") {
-                dialogInterface, it -> deleteUser()
-        }.setNegativeButton("No") { dialogInterface, it ->
+        confirmationBox.setTitle("Delete").setMessage("Do you want to delete this account ? ")
+            .setPositiveButton("Yes") { dialogInterface, it ->
+                deleteUser()
+            }.setNegativeButton("No") { dialogInterface, it ->
 
         }
         val dialog = confirmationBox.create()
@@ -91,10 +92,13 @@ class User : AppCompatActivity() {
         finish()
     }
 
+
     fun backToHome(view: View) {
         val intent = Intent(this, MainHomePage::class.java)
         intent.putExtra("userName", userName)
         startActivity(intent)
         finish()
+
     }
+
 }

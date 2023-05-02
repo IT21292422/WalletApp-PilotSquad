@@ -33,6 +33,15 @@
             android:name=".RegisterUser"
             android:exported="false" />
         <activity
+            android:name=".AddInvestment"
+            android:exported="false" />
+        <activity
+            android:name=".InvestmentList"
+            android:exported="false" />
+        <activity
+            android:name=".UpdateInvestment"
+            android:exported="false" />
+        <activity
             android:name=".AddAdminAccess"
             android:exported="false" />
         <activity

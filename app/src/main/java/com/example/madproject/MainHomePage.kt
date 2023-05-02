@@ -28,4 +28,11 @@ class MainHomePage : AppCompatActivity() {
         startActivity(intent)
         finish()
     }
+    fun investmentpage(view: View) {
+        val intent = Intent(this, InvestmentList::class.java)
+        intent.putExtra("userName", userName)
+        startActivity(intent)
+        finish()
+
+    }
 }
