@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="transaction_type">
+        <item>Credit</item>
+        <item>Debit</item>
+    </string-array>
+    <color name="black">#FF000000</color>
+    <color name="blue">#FF3D5AFE</color>
+    <color name="green">#FF00E676</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="red">#FFFF1744</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="yellow">#FFFFEA00</color>
+    <dimen name="btn_height">40dp</dimen>
+    <dimen name="btn_width">66dp</dimen>
+    <dimen name="fragment_horizontal_margin">16dp</dimen>
+    <dimen name="fragment_vertical_margin">16dp</dimen>
+    <dimen name="text_input_height">52dp</dimen>
+    <dimen name="text_input_width">376dp</dimen>
+    <string name="acc_no">Enter Account Number</string>
+    <string name="add_bank_account">Add Bank Account</string>
+    <string name="add_transaction">Add Transaction</string>
+    <string name="amount">Enter the Amount</string>
+    <string name="amount_1">+10,000/=</string>
+    <string name="amount_2">+1000/=</string>
+    <string name="amount_3">-1000/=</string>
+    <string name="amount_4">-1000/=</string>
+    <string name="app_name">project_bank</string>
+    <string name="available_bal">Available Balance: </string>
+    <string name="available_balance">Available Balance</string>
+    <string name="bal_tot">9000/=</string>
+    <string name="bank_bal_1">200,000/=</string>
+    <string name="bank_bal_2">150,000/=</string>
+    <string name="bank_name">Enter Bank Name</string>
+    <string name="cash_in_bank">Cash in Bank</string>
+    <string name="commercial_bank">Commercial Bank</string>
+    <string name="credits_tot">11,000/=</string>
+    <string name="debits_2">2000/=</string>
+    <string name="default_web_client_id" translatable="false">774235270010-ak9c8q874gdnr6cl1ibbgclop7f1g806.apps.googleusercontent.com</string>
+    <string name="delete">Delete</string>
+    <string name="descript_1">Cash Deposit</string>
+    <string name="descript_2">Cash Deposit</string>
+    <string name="descript_3">Withdrawal</string>
+    <string name="descript_4">Withdrawal</string>
+    <string name="description">Enter the Description</string>
+    <string name="enter_acc_no">Enter Account Number</string>
+    <string name="enter_available_bal">Enter Available Balance</string>
+    <string name="enter_bank_name">Enter Bank Name</string>
+    <string name="firebase_database_url" translatable="false">https://project-bank-balance-default-rtdb.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">774235270010</string>
+    <string name="google_api_key" translatable="false">AIzaSyARqqC5EUNZLJdrmvExBPHS3kFj7Qf6Wdc</string>
+    <string name="google_app_id" translatable="false">1:774235270010:android:30b7a46d6dc2fbded604c3</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyARqqC5EUNZLJdrmvExBPHS3kFj7Qf6Wdc</string>
+    <string name="google_storage_bucket" translatable="false">project-bank-balance.appspot.com</string>
+    <string name="hsbc">HSBC</string>
+    <string name="id_1">T001</string>
+    <string name="id_2">T002</string>
+    <string name="id_3">T003</string>
+    <string name="id_4">T004</string>
+    <string name="project_id" translatable="false">project-bank-balance</string>
+    <string name="tot_credits">Total Credits: </string>
+    <string name="tot_debits">Total Debits: </string>
+    <string name="transact_amount">Amount</string>
+    <string name="transact_descript">Description</string>
+    <string name="transact_id">ID</string>
+    <string name="transaction">Transaction</string>
+    <string name="update">Update</string>
+    <string name="update_transaction">Update Transaction</string>
+    <style name="Theme.Project_bank" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        
+    </style>
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">774235270010-ak9c8q874gdnr6cl1ibbgclop7f1g806.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://project-bank-balance-default-rtdb.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">774235270010</string>
+    <string name="google_api_key" translatable="false">AIzaSyARqqC5EUNZLJdrmvExBPHS3kFj7Qf6Wdc</string>
+    <string name="google_app_id" translatable="false">1:774235270010:android:30b7a46d6dc2fbded604c3</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyARqqC5EUNZLJdrmvExBPHS3kFj7Qf6Wdc</string>
+    <string name="google_storage_bucket" translatable="false">project-bank-balance.appspot.com</string>
+    <string name="project_id" translatable="false">project-bank-balance</string>
+</resources>
