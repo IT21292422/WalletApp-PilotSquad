@@ -31,6 +31,7 @@ class UserData {
         rePassword = rePass
     }
 
+    //validation for username
     fun validateUserName():ValidationResult {
         return if(userName.isEmpty())
             ValidationResult.Empty("User Name can not be empty")
@@ -48,6 +49,7 @@ class UserData {
         }
     }
 
+    //validation for password
     fun validatePassword():ValidationResult {
         return if(password.isEmpty())
             ValidationResult.Empty("Password can not be empty")
@@ -58,6 +60,7 @@ class UserData {
             ValidationResult.Valid
     }
 
+    //validation for name
     fun validateName():ValidationResult {
         return if(name.isEmpty())
             ValidationResult.Empty("Name can not be empty")
@@ -65,6 +68,7 @@ class UserData {
             ValidationResult.Valid
     }
 
+    //validation for password
     fun validateRePassword():ValidationResult {
         return if(rePassword.isEmpty())
             ValidationResult.Empty("Re password can not be empty")

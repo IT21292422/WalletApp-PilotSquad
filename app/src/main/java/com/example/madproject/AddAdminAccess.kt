@@ -27,12 +27,14 @@ class AddAdminAccess : AppCompatActivity() {
         userName = intent.getStringExtra("userName").toString()
     }
 
+    //onclick method for add access
     fun AddAccess(view: View) {
         var count = 0
 
         val addAccessData = UserData(edtAccUserName.text.toString())
         val userNameValidation = addAccessData.validateUserName()
 
+        //check username validation
         when(userNameValidation) {
             is ValidationResult.Valid -> {
                 count++
@@ -44,17 +46,22 @@ class AddAdminAccess : AppCompatActivity() {
                 edtAccUserName.error = userNameValidation.errorMessage
             }
         }
+
+        //add user to add access
         if(count == 1) {
             databaseRef1 = FirebaseDatabase.getInstance().getReference("Users")
             databaseRef1.child(edtAccUserName.text.toString()).get().addOnSuccessListener {
+                //check whether same account or not
                 if(edtAccUserName.text.toString() == userName) {
                     Toast.makeText(this, "Can't add same account to access", Toast.LENGTH_SHORT).show()
                 }
                 else {
+                    // if account exist
                     if (it.exists()) {
                         addAccess()
                     }
                     else {
+                        //not exist
                         var intent = Intent(this, User::class.java)
                         intent.putExtra("userName", userName)
                         startActivity(intent)
@@ -74,9 +81,11 @@ class AddAdminAccess : AppCompatActivity() {
         }
     }
 
+    //function for add access
     fun addAccess() {
         databaseRef = FirebaseDatabase.getInstance().getReference("UserAccess")
         databaseRef.child(userName).get().addOnSuccessListener {
+            //check whether already exist or not
             if (it.exists()) {
                 val acc1 = it.child("access1").value.toString()
                 val acc2 = it.child("access2").value.toString()
@@ -143,6 +152,7 @@ class AddAdminAccess : AppCompatActivity() {
         }
     }
 
+    //onclick method for back to user
     fun backToUser(view: View) {
         val intent = Intent(this, User::class.java)
         intent.putExtra("userName", userName)

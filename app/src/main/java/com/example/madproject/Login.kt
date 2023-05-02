@@ -25,12 +25,14 @@ class Login : AppCompatActivity() {
         edtPassword = findViewById(R.id.edtPassword)
     }
 
+    //onclick method for open register
     fun openRegisterPage(view: View) {
         val intent = Intent(this, RegisterUser::class.java)
         startActivity(intent)
         finish()
     }
 
+    //onclick method for login
     fun loginFunction(view:View) {
         /*val intent = Intent(this, User::class.java)
         startActivity(intent)
@@ -40,6 +42,7 @@ class Login : AppCompatActivity() {
         val userNameValidation = loginData.validateUserName()
         val passwordValidation = loginData.validatePassword()
 
+        //check username validation
         when(userNameValidation) {
             is ValidationResult.Valid -> {
                 count++
@@ -52,6 +55,7 @@ class Login : AppCompatActivity() {
             }
         }
 
+        //check password validation
         when(passwordValidation) {
             is ValidationResult.Valid ->{
                 count++
@@ -64,6 +68,7 @@ class Login : AppCompatActivity() {
             }
         }
 
+        //check user name and password for login
         if(count == 2) {
             databaseRef = FirebaseDatabase.getInstance().getReference("Users")
             databaseRef.child(edtUserName.text.toString()).get().addOnSuccessListener {
