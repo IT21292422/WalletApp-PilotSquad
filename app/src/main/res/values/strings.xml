@@ -42,4 +42,5 @@
     <string name="update_delete_form">update_investment_form</string>
     <string name="editicon">editicon</string>
     <string name="add">Add</string>
+    <string name="back_button_description">go_back</string>
 </resources>

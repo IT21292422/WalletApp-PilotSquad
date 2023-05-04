@@ -4,8 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#00BCD4"
+    android:backgroundTint="#E1ECEC"
+    android:backgroundTintMode="src_atop"
     android:onClick="addinvestment"
     tools:context=".InvestmentList">
+
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/materialCardView"
@@ -39,18 +43,48 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/materialCardView" />
 
-    <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="57dp"
-        android:layout_height="59dp"
-        android:onClick="addinvestment"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.954"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/materialCardView"
-        app:layout_constraintVertical_bias="0.956"
-        app:srcCompat="@android:drawable/ic_menu_add" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#CFCFCF"
+        app:layout_constraintBottom_toTopOf="@id/buttons_container" />
+
+    <LinearLayout
+        android:id="@+id/buttons_container"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#FFFFFF"
+        android:orientation="horizontal"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="201dp"
+            android:layout_height="68dp"
+            android:background="@color/blue"
+            android:backgroundTint="@color/blue"
+            android:onClick="goback"
+            app:srcCompat="@android:drawable/ic_menu_revert"
+            android:contentDescription="TODO" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="247dp"
+            android:layout_height="67dp"
+            android:background="@color/blue"
+            android:backgroundTint="@color/black"
+            android:backgroundTintMode="add"
+            android:contentDescription="@string/add"
+            android:hapticFeedbackEnabled="false"
+            android:onClick="addinvestment"
+            app:srcCompat="@android:drawable/ic_menu_add" />
+
+    </LinearLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

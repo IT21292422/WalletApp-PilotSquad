@@ -128,7 +128,12 @@ class AddInvestment : AppCompatActivity() {
         }
     }
 
-
+    fun goback(view: View){
+        val intent = Intent(this, InvestmentList::class.java)
+        intent.putExtra("userName", userName)
+        startActivity(intent)
+        finish()
+    }
     fun updateUIWithDataFromDatabase(userName: String) {
         // Retrieve the updated data from the database
         database.child("StockTransaction").child(userName).addListenerForSingleValueEvent(object : ValueEventListener {

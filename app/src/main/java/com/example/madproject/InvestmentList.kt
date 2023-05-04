@@ -43,6 +43,7 @@ class InvestmentList : AppCompatActivity(){
                 return false
             }
 
+
             override fun onQueryTextChange(newText: String?): Boolean {
                 filterList(newText)
                 return true
@@ -128,6 +129,12 @@ class InvestmentList : AppCompatActivity(){
         startActivity(intent)
         finish()
 
+    }
+    fun goback(view: View){
+        val intent = Intent(this, MainHomePage::class.java)
+        intent.putExtra("userName", userName)
+        startActivity(intent)
+        finish()
     }
     fun editinvestment(view: View) {
         val intent =Intent(this,UpdateInvestment::class.java)
