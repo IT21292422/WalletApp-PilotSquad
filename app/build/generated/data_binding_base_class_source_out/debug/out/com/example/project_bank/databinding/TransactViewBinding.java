@@ -4,8 +4,6 @@ package com.example.project_bank.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TableLayout;
 import android.widget.TableRow;
@@ -22,12 +20,6 @@ import java.lang.String;
 public final class TransactViewBinding implements ViewBinding {
   @NonNull
   private final LinearLayout rootView;
-
-  @NonNull
-  public final Button deleteBtn;
-
-  @NonNull
-  public final ImageView editBtn;
 
   @NonNull
   public final TextView tableAmount;
@@ -47,13 +39,10 @@ public final class TransactViewBinding implements ViewBinding {
   @NonNull
   public final TextView tableType;
 
-  private TransactViewBinding(@NonNull LinearLayout rootView, @NonNull Button deleteBtn,
-      @NonNull ImageView editBtn, @NonNull TextView tableAmount, @NonNull TextView tableDescription,
-      @NonNull TextView tableId, @NonNull TableLayout tableLayout, @NonNull TableRow tableRow,
-      @NonNull TextView tableType) {
+  private TransactViewBinding(@NonNull LinearLayout rootView, @NonNull TextView tableAmount,
+      @NonNull TextView tableDescription, @NonNull TextView tableId,
+      @NonNull TableLayout tableLayout, @NonNull TableRow tableRow, @NonNull TextView tableType) {
     this.rootView = rootView;
-    this.deleteBtn = deleteBtn;
-    this.editBtn = editBtn;
     this.tableAmount = tableAmount;
     this.tableDescription = tableDescription;
     this.tableId = tableId;
@@ -89,18 +78,6 @@ public final class TransactViewBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.deleteBtn;
-      Button deleteBtn = ViewBindings.findChildViewById(rootView, id);
-      if (deleteBtn == null) {
-        break missingId;
-      }
-
-      id = R.id.editBtn;
-      ImageView editBtn = ViewBindings.findChildViewById(rootView, id);
-      if (editBtn == null) {
-        break missingId;
-      }
-
       id = R.id.tableAmount;
       TextView tableAmount = ViewBindings.findChildViewById(rootView, id);
       if (tableAmount == null) {
@@ -137,8 +114,8 @@ public final class TransactViewBinding implements ViewBinding {
         break missingId;
       }
 
-      return new TransactViewBinding((LinearLayout) rootView, deleteBtn, editBtn, tableAmount,
-          tableDescription, tableId, tableLayout, tableRow, tableType);
+      return new TransactViewBinding((LinearLayout) rootView, tableAmount, tableDescription,
+          tableId, tableLayout, tableRow, tableType);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -1,15 +1,11 @@
 package com.example.project_bank
 
-import android.app.Activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Spinner
 import android.widget.Toast
 import com.example.project_bank.databinding.ActivityAddBankAccountBinding
-import com.example.project_bank.databinding.ActivityAddTransactionBinding
 import com.example.project_bank.models.bankData
-import com.example.project_bank.models.bankTransactionData
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 
@@ -17,12 +13,18 @@ class activity_add_bank_account : AppCompatActivity() {
 
     private lateinit var binding: ActivityAddBankAccountBinding
     private lateinit var databaseReference: DatabaseReference
-    val username: String = "Akmal"
+    var username: String = ""
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityAddBankAccountBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        var bundle = intent.extras
+        if(bundle != null){
+            username = bundle.getString("user").toString()
+        }
+
 //        val Type = intent.getStringExtra("Type").toString()
 //        var position: Int = 1
 //       if (Type=="Credit"){
@@ -32,6 +34,11 @@ class activity_add_bank_account : AppCompatActivity() {
 //        }
 //        val addType: Spinner = findViewById(R.id.addType)
 //        addType.setSelection(position)
+        binding.backBtnBnk.setOnClickListener{
+            var intent = Intent(this, MainBank::class.java)
+            startActivity(intent)
+            finish()
+        }
 
         binding.addBankBtn.setOnClickListener {
             //val id = "T001"
@@ -43,8 +50,9 @@ class activity_add_bank_account : AppCompatActivity() {
             //val type = binding.addType.getSelectedItem().toString()
 
             databaseReference = FirebaseDatabase.getInstance().getReference(username)
-            val bankTransaction = bankData(accNo, name, balance)
+            val bankTransaction = bankData(accNo, balance, name)
             //databaseReference.child(id).setValue(bankTransaction).addOnSuccessListener
+           // databaseReference.child(name).child("Bank Data").setValue(bankTransaction)
             databaseReference.child(name).setValue(bankTransaction).addOnSuccessListener {
                 binding.addBankName.text.clear()
                 binding.addAccNo.text.clear()
@@ -52,7 +60,7 @@ class activity_add_bank_account : AppCompatActivity() {
                 //binding.addType.selectedItem.clear()
                 Toast.makeText(this, "Saved", Toast.LENGTH_SHORT).show()
 
-                var intent = Intent(this, MainActivity::class.java)
+                var intent = Intent(this, MainBank::class.java)
                 startActivity(intent)
                 finish()
             }.addOnFailureListener{

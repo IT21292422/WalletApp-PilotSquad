@@ -40,8 +40,16 @@
         "source": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-main-39:\\mipmap-xhdpi\\edit.png"
     },
     {
-        "merged": "com.example.project_bank.app-merged_res-37:/layout_activity_main.xml.flat",
-        "source": "com.example.project_bank.app-main-39:/layout/activity_main.xml"
+        "merged": "com.example.project_bank.app-merged_res-37:/layout_bank_view.xml.flat",
+        "source": "com.example.project_bank.app-main-39:/layout/bank_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-merged_res-37:\\drawable_back.png.flat",
+        "source": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-main-39:\\drawable\\back.png"
+    },
+    {
+        "merged": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-merged_res-37:\\drawable_baseline_delete_24.xml.flat",
+        "source": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-main-39:\\drawable\\baseline_delete_24.xml"
     },
     {
         "merged": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-merged_res-37:\\drawable_edit.png.flat",
@@ -190,6 +198,10 @@
     {
         "merged": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-merged_res-37:\\mipmap-xxxhdpi_ic_launcher.png.flat",
         "source": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-main-39:\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-merged_res-37:\\layout_activity_update_bank_account.xml.flat",
+        "source": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-main-39:\\layout\\activity_update_bank_account.xml"
     },
     {
         "merged": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-merged_res-37:\\mipmap-anydpi-v26_edit.xml.flat",

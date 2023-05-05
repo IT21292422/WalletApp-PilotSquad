@@ -27,30 +27,32 @@
         android:ems="10"
         android:hint="@string/enter_bank_name"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/addAccNo"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.542"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.237" />
 
     <EditText
         android:id="@+id/addAccNo"
         android:layout_width="376dp"
         android:layout_height="52dp"
-        android:layout_marginBottom="44dp"
         android:ems="10"
         android:gravity="start|top"
         android:hint="@string/enter_acc_no"
         android:inputType="textMultiLine"
-        app:layout_constraintBottom_toTopOf="@+id/addBankBal"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.485"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.542"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView3"
+        app:layout_constraintVertical_bias="0.328" />
 
     <EditText
         android:id="@+id/addBankBal"
         android:layout_width="376dp"
         android:layout_height="52dp"
-        android:layout_marginBottom="368dp"
         android:ems="10"
         android:gravity="start|top"
         android:hint="@string/enter_available_bal"
@@ -58,7 +60,9 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.542"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView3"
+        app:layout_constraintVertical_bias="0.421" />
 
     <ImageView
         android:id="@+id/addBankBtn"
@@ -67,8 +71,22 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/addBankBal"
-        app:layout_constraintVertical_bias="0.132"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.545"
         app:srcCompat="@drawable/plus" />
+
+    <ImageView
+        android:id="@+id/backBtnBnk"
+        android:layout_width="47dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="348dp"
+        android:layout_marginBottom="36dp"
+        app:layout_constraintBottom_toTopOf="@+id/addBankName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:srcCompat="@drawable/back" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

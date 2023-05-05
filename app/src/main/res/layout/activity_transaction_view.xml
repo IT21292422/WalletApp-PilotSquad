@@ -21,30 +21,27 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <SearchView
+    <android.widget.SearchView
         android:id="@+id/searchTransaction"
         android:layout_width="285dp"
         android:layout_height="46dp"
-        android:layout_marginTop="76dp"
+        app:layout_constraintBottom_toTopOf="@+id/editBtn"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.206"
+        app:layout_constraintHorizontal_bias="0.126"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        app:layout_constraintTop_toBottomOf="@+id/tableSummary" />
 
     <TableLayout
         android:id="@+id/tableLayout"
         android:layout_width="393dp"
         android:layout_height="243dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginBottom="264dp"
+        android:layout_marginBottom="348dp"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/searchTransaction"
-        app:layout_constraintVertical_bias="0.0"
-        tools:context=".MainActivity">
+        tools:context=".MainBank">
 
         <TableRow
             android:background="#0079D6"
@@ -78,18 +75,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text=""
+                android:gravity="center"
+                android:text="Type"
                 android:textColor="#FFFFFF" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text=""
-                android:textColor="#FFFFFF" />
         </TableRow>
-        <TableRow>
-        </TableRow>
+
+        <TableRow></TableRow>
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerView"
@@ -108,11 +100,11 @@
         android:paddingRight="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.292"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tableLayout"
         app:layout_constraintVertical_bias="0.0"
-        tools:context=".MainActivity">
+        tools:context=".MainBank">
 
         <TableRow
             android:layout_width="match_parent"
@@ -187,26 +179,29 @@
     </TableLayout>
 
     <ImageView
-        android:id="@+id/creditBtn"
+        android:id="@+id/addTransactBtn"
         android:layout_width="69dp"
         android:layout_height="62dp"
-        android:layout_marginBottom="20dp"
         android:onClick="addTransact"
-        app:layout_constraintBottom_toTopOf="@+id/debitBtn"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.953"
+        app:layout_constraintHorizontal_bias="0.166"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableSummary"
+        app:layout_constraintVertical_bias="0.762"
         app:srcCompat="@drawable/plus" />
 
     <ImageView
-        android:id="@+id/debitBtn"
-        android:layout_width="69dp"
-        android:layout_height="62dp"
-        android:layout_marginBottom="24dp"
+        android:id="@+id/deleteBtn"
+        android:layout_width="55dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="28dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.953"
+        app:layout_constraintHorizontal_bias="0.853"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableSummary"
+        app:layout_constraintVertical_bias="0.929"
         app:srcCompat="@drawable/minus" />
 
     <TextView
@@ -215,7 +210,7 @@
         android:layout_height="wrap_content"
         android:text="@string/commercial_bank"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/searchTransaction"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
@@ -225,16 +220,40 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="1dp"
-        android:layout_marginTop="75dp"
-        android:layout_marginBottom="22dp"
+        android:layout_marginBottom="36dp"
         android:backgroundTint="#00E676"
         android:text="Search"
-        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+        app:layout_constraintBottom_toTopOf="@+id/deleteBtn"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.437"
         app:layout_constraintStart_toEndOf="@+id/searchTransaction"
+        app:layout_constraintTop_toBottomOf="@+id/tableSummary"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/editBtn"
+        android:layout_width="69dp"
+        android:layout_height="62dp"
+        android:layout_marginBottom="36dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/deleteBtn"
+        app:layout_constraintHorizontal_bias="0.522"
+        app:layout_constraintStart_toEndOf="@+id/addTransactBtn"
+        app:srcCompat="@drawable/edit" />
+
+    <ImageView
+        android:id="@+id/backBtnTrans"
+        android:layout_width="47dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="63dp"
+        android:layout_marginBottom="22dp"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+        app:layout_constraintEnd_toStartOf="@+id/bankTransactName"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4"
-        app:layout_constraintVertical_bias="0.0" />
+        app:srcCompat="@drawable/back" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

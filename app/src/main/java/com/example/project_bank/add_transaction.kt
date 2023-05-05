@@ -21,14 +21,15 @@ class add_transaction : AppCompatActivity() {
         setContentView(binding.root)
         val Type = intent.getStringExtra("Type").toString()
         val bankName = intent.getStringExtra("bank").toString()
-        var position: Int = 1
-        if (Type=="Credit"){
-            position = 1
-        }else if (Type=="Debit"){
-            position = 2
-        }
-        val addType: Spinner = findViewById(R.id.addType)
-        addType.setSelection(position)
+
+//        var position: Int = 1
+//        if (Type=="Credit"){
+//            position = 1
+//        }else if (Type=="Debit"){
+//            position = 2
+//        }
+//        val addType: Spinner = findViewById(R.id.addType)
+//        addType.setSelection(position)
 
         binding.addBtn.setOnClickListener {
             val id = binding.addTransId.text.toString()
@@ -37,16 +38,17 @@ class add_transaction : AppCompatActivity() {
             val description = binding.addDescription.text.toString()
             val type = binding.addType.getSelectedItem().toString()
 
-            databaseReference = FirebaseDatabase.getInstance().getReference("Akmal")
+            databaseReference = FirebaseDatabase.getInstance().getReference("Akmal").child(bankName).child("Transactions")
             val bankTransaction = bankTransactionData(id, amount, description,type)
             //databaseReference.child(id).setValue(bankTransaction).addOnSuccessListener
-            databaseReference.child(bankName).child(id).setValue(bankTransaction).addOnSuccessListener {
+            databaseReference.child(id).setValue(bankTransaction).addOnSuccessListener {
                 binding.addAmount.text.clear()
                 binding.addDescription.text.clear()
                 //binding.addType.selectedItem.clear()
                 Toast.makeText(this, "Saved", Toast.LENGTH_SHORT).show()
 
                 var intent = Intent(this, transaction_view::class.java)
+                intent.putExtra("name",bankName)
                 startActivity(intent)
                 finish()
             }.addOnFailureListener{

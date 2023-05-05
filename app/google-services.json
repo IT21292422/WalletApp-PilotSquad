@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "774235270010",
+    "firebase_url": "https://project-bank-balance-default-rtdb.firebaseio.com",
+    "project_id": "project-bank-balance",
+    "storage_bucket": "project-bank-balance.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:774235270010:android:30b7a46d6dc2fbded604c3",
+        "android_client_info": {
+          "package_name": "com.example.project_bank"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "774235270010-ak9c8q874gdnr6cl1ibbgclop7f1g806.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyARqqC5EUNZLJdrmvExBPHS3kFj7Qf6Wdc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "774235270010-ak9c8q874gdnr6cl1ibbgclop7f1g806.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

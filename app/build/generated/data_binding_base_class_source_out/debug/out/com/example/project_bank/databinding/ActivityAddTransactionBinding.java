@@ -38,17 +38,22 @@ public final class ActivityAddTransactionBinding implements ViewBinding {
   public final Spinner addType;
 
   @NonNull
+  public final ImageView backBtnAddTrans;
+
+  @NonNull
   public final TextView textView3;
 
   private ActivityAddTransactionBinding(@NonNull ConstraintLayout rootView,
       @NonNull EditText addAmount, @NonNull ImageView addBtn, @NonNull EditText addDescription,
-      @NonNull EditText addTransId, @NonNull Spinner addType, @NonNull TextView textView3) {
+      @NonNull EditText addTransId, @NonNull Spinner addType, @NonNull ImageView backBtnAddTrans,
+      @NonNull TextView textView3) {
     this.rootView = rootView;
     this.addAmount = addAmount;
     this.addBtn = addBtn;
     this.addDescription = addDescription;
     this.addTransId = addTransId;
     this.addType = addType;
+    this.backBtnAddTrans = backBtnAddTrans;
     this.textView3 = textView3;
   }
 
@@ -109,6 +114,12 @@ public final class ActivityAddTransactionBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.backBtnAddTrans;
+      ImageView backBtnAddTrans = ViewBindings.findChildViewById(rootView, id);
+      if (backBtnAddTrans == null) {
+        break missingId;
+      }
+
       id = R.id.textView3;
       TextView textView3 = ViewBindings.findChildViewById(rootView, id);
       if (textView3 == null) {
@@ -116,7 +127,7 @@ public final class ActivityAddTransactionBinding implements ViewBinding {
       }
 
       return new ActivityAddTransactionBinding((ConstraintLayout) rootView, addAmount, addBtn,
-          addDescription, addTransId, addType, textView3);
+          addDescription, addTransId, addType, backBtnAddTrans, textView3);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -34,16 +34,20 @@ public final class ActivityAddBankAccountBinding implements ViewBinding {
   public final EditText addBankName;
 
   @NonNull
+  public final ImageView backBtnBnk;
+
+  @NonNull
   public final TextView textView3;
 
   private ActivityAddBankAccountBinding(@NonNull ConstraintLayout rootView,
       @NonNull EditText addAccNo, @NonNull EditText addBankBal, @NonNull ImageView addBankBtn,
-      @NonNull EditText addBankName, @NonNull TextView textView3) {
+      @NonNull EditText addBankName, @NonNull ImageView backBtnBnk, @NonNull TextView textView3) {
     this.rootView = rootView;
     this.addAccNo = addAccNo;
     this.addBankBal = addBankBal;
     this.addBankBtn = addBankBtn;
     this.addBankName = addBankName;
+    this.backBtnBnk = backBtnBnk;
     this.textView3 = textView3;
   }
 
@@ -98,6 +102,12 @@ public final class ActivityAddBankAccountBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.backBtnBnk;
+      ImageView backBtnBnk = ViewBindings.findChildViewById(rootView, id);
+      if (backBtnBnk == null) {
+        break missingId;
+      }
+
       id = R.id.textView3;
       TextView textView3 = ViewBindings.findChildViewById(rootView, id);
       if (textView3 == null) {
@@ -105,7 +115,7 @@ public final class ActivityAddBankAccountBinding implements ViewBinding {
       }
 
       return new ActivityAddBankAccountBinding((ConstraintLayout) rootView, addAccNo, addBankBal,
-          addBankBtn, addBankName, textView3);
+          addBankBtn, addBankName, backBtnBnk, textView3);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

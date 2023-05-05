@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\makma\AndroidStudioProjects\project_bank\app\src\main\AndroidManifest.xml:2:1-39:12
-INJECTED from C:\Users\makma\AndroidStudioProjects\project_bank\app\src\main\AndroidManifest.xml:2:1-39:12
-INJECTED from C:\Users\makma\AndroidStudioProjects\project_bank\app\src\main\AndroidManifest.xml:2:1-39:12
-INJECTED from C:\Users\makma\AndroidStudioProjects\project_bank\app\src\main\AndroidManifest.xml:2:1-39:12
+ADDED from C:\Users\makma\AndroidStudioProjects\project_bank\app\src\main\AndroidManifest.xml:2:1-42:12
+INJECTED from C:\Users\makma\AndroidStudioProjects\project_bank\app\src\main\AndroidManifest.xml:2:1-42:12
+INJECTED from C:\Users\makma\AndroidStudioProjects\project_bank\app\src\main\AndroidManifest.xml:2:1-42:12
+INJECTED from C:\Users\makma\AndroidStudioProjects\project_bank\app\src\main\AndroidManifest.xml:2:1-42:12
 MERGED from [androidx.databinding:viewbinding:7.4.1] C:\Users\makma\.gradle\caches\transforms-3\1493fd6a64b2cf25d210a993e5cd09ba\transformed\viewbinding-7.4.1\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-ktx:2.4.1] C:\Users\makma\.gradle\caches\transforms-3\8476b5fc90800cc56413b5d5872c9a29\transformed\lifecycle-livedata-ktx-2.4.1\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.firebase:firebase-database-ktx:20.2.0] C:\Users\makma\.gradle\caches\transforms-3\d7e4a887525222cf43adb2ab7248b265\transformed\firebase-database-ktx-20.2.0\AndroidManifest.xml:2:1-20:12
@@ -59,33 +59,33 @@ MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\User
 MERGED from [androidx.print:print:1.0.0] C:\Users\makma\.gradle\caches\transforms-3\ed70c085e41f1c2f1b1fbcfff8881865\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\makma\.gradle\caches\transforms-3\3d8c4f7d4d2645ccfe33e65523c9e912\transformed\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\makma\.gradle\caches\transforms-3\2462ced67acc21779d07ecbc7ef0fe4b\transformed\annotation-experimental-1.1.0\AndroidManifest.xml:17:1-24:12
-INJECTED from C:\Users\makma\AndroidStudioProjects\project_bank\app\src\main\AndroidManifest.xml:2:1-39:12
-INJECTED from C:\Users\makma\AndroidStudioProjects\project_bank\app\src\main\AndroidManifest.xml:2:1-39:12
-INJECTED from C:\Users\makma\AndroidStudioProjects\project_bank\app\src\main\AndroidManifest.xml:2:1-39:12
+INJECTED from C:\Users\makma\AndroidStudioProjects\project_bank\app\src\main\AndroidManifest.xml:2:1-42:12
+INJECTED from C:\Users\makma\AndroidStudioProjects\project_bank\app\src\main\AndroidManifest.xml:2:1-42:12
+INJECTED from C:\Users\makma\AndroidStudioProjects\project_bank\app\src\main\AndroidManifest.xml:2:1-42:12
 	package
 		INJECTED from C:\Users\makma\AndroidStudioProjects\project_bank\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\makma\AndroidStudioProjects\project_bank\app\src\main\AndroidManifest.xml:2:1-39:12
+		ADDED from C:\Users\makma\AndroidStudioProjects\project_bank\app\src\main\AndroidManifest.xml:2:1-42:12
 		INJECTED from C:\Users\makma\AndroidStudioProjects\project_bank\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\makma\AndroidStudioProjects\project_bank\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\makma\AndroidStudioProjects\project_bank\app\src\main\AndroidManifest.xml:2:1-39:12
+		ADDED from C:\Users\makma\AndroidStudioProjects\project_bank\app\src\main\AndroidManifest.xml:2:1-42:12
 		INJECTED from C:\Users\makma\AndroidStudioProjects\project_bank\app\src\main\AndroidManifest.xml
 	xmlns:tools
 		ADDED from C:\Users\makma\AndroidStudioProjects\project_bank\app\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from C:\Users\makma\AndroidStudioProjects\project_bank\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\makma\AndroidStudioProjects\project_bank\app\src\main\AndroidManifest.xml:2:1-39:12
+		ADDED from C:\Users\makma\AndroidStudioProjects\project_bank\app\src\main\AndroidManifest.xml:2:1-42:12
 		INJECTED from C:\Users\makma\AndroidStudioProjects\project_bank\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\makma\AndroidStudioProjects\project_bank\app\src\main\AndroidManifest.xml:2:11-69
 uses-permission#android.permission.INTERNET
-ADDED from C:\Users\makma\AndroidStudioProjects\project_bank\app\src\main\AndroidManifest.xml:5:5-66
+ADDED from C:\Users\makma\AndroidStudioProjects\project_bank\app\src\main\AndroidManifest.xml:5:5-67
 MERGED from [com.google.firebase:firebase-database:20.2.0] C:\Users\makma\.gradle\caches\transforms-3\b6f2820e1d01103d897cf2062808914b\transformed\firebase-database-20.2.0\AndroidManifest.xml:25:5-67
 MERGED from [com.google.firebase:firebase-database:20.2.0] C:\Users\makma\.gradle\caches\transforms-3\b6f2820e1d01103d897cf2062808914b\transformed\firebase-database-20.2.0\AndroidManifest.xml:25:5-67
 	android:name
 		ADDED from C:\Users\makma\AndroidStudioProjects\project_bank\app\src\main\AndroidManifest.xml:5:22-64
 application
-ADDED from C:\Users\makma\AndroidStudioProjects\project_bank\app\src\main\AndroidManifest.xml:7:5-37:19
+ADDED from C:\Users\makma\AndroidStudioProjects\project_bank\app\src\main\AndroidManifest.xml:7:5-40:19
 MERGED from [com.google.firebase:firebase-database-ktx:20.2.0] C:\Users\makma\.gradle\caches\transforms-3\d7e4a887525222cf43adb2ab7248b265\transformed\firebase-database-ktx-20.2.0\AndroidManifest.xml:10:5-18:19
 MERGED from [com.google.firebase:firebase-database-ktx:20.2.0] C:\Users\makma\.gradle\caches\transforms-3\d7e4a887525222cf43adb2ab7248b265\transformed\firebase-database-ktx-20.2.0\AndroidManifest.xml:10:5-18:19
 MERGED from [com.google.firebase:firebase-common-ktx:20.3.2] C:\Users\makma\.gradle\caches\transforms-3\158df5b5000b2ea404acd85d148264cc\transformed\firebase-common-ktx-20.3.2\AndroidManifest.xml:10:5-18:19
@@ -136,46 +136,52 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\makma\.gradle\cach
 		ADDED from C:\Users\makma\AndroidStudioProjects\project_bank\app\src\main\AndroidManifest.xml:14:9-50
 	android:dataExtractionRules
 		ADDED from C:\Users\makma\AndroidStudioProjects\project_bank\app\src\main\AndroidManifest.xml:9:9-65
-activity#com.example.project_bank.update_transaction
+activity#com.example.project_bank.update_bank_account
 ADDED from C:\Users\makma\AndroidStudioProjects\project_bank\app\src\main\AndroidManifest.xml:16:9-18:40
 	android:exported
 		ADDED from C:\Users\makma\AndroidStudioProjects\project_bank\app\src\main\AndroidManifest.xml:18:13-37
 	android:name
-		ADDED from C:\Users\makma\AndroidStudioProjects\project_bank\app\src\main\AndroidManifest.xml:17:13-47
-activity#com.example.project_bank.activity_add_bank_account
+		ADDED from C:\Users\makma\AndroidStudioProjects\project_bank\app\src\main\AndroidManifest.xml:17:13-48
+activity#com.example.project_bank.update_transaction
 ADDED from C:\Users\makma\AndroidStudioProjects\project_bank\app\src\main\AndroidManifest.xml:19:9-21:40
 	android:exported
 		ADDED from C:\Users\makma\AndroidStudioProjects\project_bank\app\src\main\AndroidManifest.xml:21:13-37
 	android:name
-		ADDED from C:\Users\makma\AndroidStudioProjects\project_bank\app\src\main\AndroidManifest.xml:20:13-54
-activity#com.example.project_bank.add_transaction
+		ADDED from C:\Users\makma\AndroidStudioProjects\project_bank\app\src\main\AndroidManifest.xml:20:13-47
+activity#com.example.project_bank.activity_add_bank_account
 ADDED from C:\Users\makma\AndroidStudioProjects\project_bank\app\src\main\AndroidManifest.xml:22:9-24:40
 	android:exported
 		ADDED from C:\Users\makma\AndroidStudioProjects\project_bank\app\src\main\AndroidManifest.xml:24:13-37
 	android:name
-		ADDED from C:\Users\makma\AndroidStudioProjects\project_bank\app\src\main\AndroidManifest.xml:23:13-44
-activity#com.example.project_bank.transaction_view
+		ADDED from C:\Users\makma\AndroidStudioProjects\project_bank\app\src\main\AndroidManifest.xml:23:13-54
+activity#com.example.project_bank.add_transaction
 ADDED from C:\Users\makma\AndroidStudioProjects\project_bank\app\src\main\AndroidManifest.xml:25:9-27:40
 	android:exported
 		ADDED from C:\Users\makma\AndroidStudioProjects\project_bank\app\src\main\AndroidManifest.xml:27:13-37
 	android:name
-		ADDED from C:\Users\makma\AndroidStudioProjects\project_bank\app\src\main\AndroidManifest.xml:26:13-45
-activity#com.example.project_bank.MainActivity
-ADDED from C:\Users\makma\AndroidStudioProjects\project_bank\app\src\main\AndroidManifest.xml:28:9-36:20
+		ADDED from C:\Users\makma\AndroidStudioProjects\project_bank\app\src\main\AndroidManifest.xml:26:13-44
+activity#com.example.project_bank.transaction_view
+ADDED from C:\Users\makma\AndroidStudioProjects\project_bank\app\src\main\AndroidManifest.xml:28:9-30:40
 	android:exported
-		ADDED from C:\Users\makma\AndroidStudioProjects\project_bank\app\src\main\AndroidManifest.xml:30:13-36
+		ADDED from C:\Users\makma\AndroidStudioProjects\project_bank\app\src\main\AndroidManifest.xml:30:13-37
 	android:name
-		ADDED from C:\Users\makma\AndroidStudioProjects\project_bank\app\src\main\AndroidManifest.xml:29:13-41
+		ADDED from C:\Users\makma\AndroidStudioProjects\project_bank\app\src\main\AndroidManifest.xml:29:13-45
+activity#com.example.project_bank.MainBank
+ADDED from C:\Users\makma\AndroidStudioProjects\project_bank\app\src\main\AndroidManifest.xml:31:9-39:20
+	android:exported
+		ADDED from C:\Users\makma\AndroidStudioProjects\project_bank\app\src\main\AndroidManifest.xml:33:13-36
+	android:name
+		ADDED from C:\Users\makma\AndroidStudioProjects\project_bank\app\src\main\AndroidManifest.xml:32:13-37
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\makma\AndroidStudioProjects\project_bank\app\src\main\AndroidManifest.xml:31:13-35:29
+ADDED from C:\Users\makma\AndroidStudioProjects\project_bank\app\src\main\AndroidManifest.xml:34:13-38:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\makma\AndroidStudioProjects\project_bank\app\src\main\AndroidManifest.xml:32:17-69
+ADDED from C:\Users\makma\AndroidStudioProjects\project_bank\app\src\main\AndroidManifest.xml:35:17-69
 	android:name
-		ADDED from C:\Users\makma\AndroidStudioProjects\project_bank\app\src\main\AndroidManifest.xml:32:25-66
+		ADDED from C:\Users\makma\AndroidStudioProjects\project_bank\app\src\main\AndroidManifest.xml:35:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\makma\AndroidStudioProjects\project_bank\app\src\main\AndroidManifest.xml:34:17-77
+ADDED from C:\Users\makma\AndroidStudioProjects\project_bank\app\src\main\AndroidManifest.xml:37:17-77
 	android:name
-		ADDED from C:\Users\makma\AndroidStudioProjects\project_bank\app\src\main\AndroidManifest.xml:34:27-74
+		ADDED from C:\Users\makma\AndroidStudioProjects\project_bank\app\src\main\AndroidManifest.xml:37:27-74
 uses-sdk
 INJECTED from C:\Users\makma\AndroidStudioProjects\project_bank\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\makma\AndroidStudioProjects\project_bank\app\src\main\AndroidManifest.xml

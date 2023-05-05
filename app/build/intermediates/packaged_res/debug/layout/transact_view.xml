@@ -7,62 +7,46 @@
     <TableLayout
         android:id="@+id/tableLayout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingLeft="10dp"
-        android:paddingRight="10dp">
+        android:layout_height="wrap_content">
 
         <TableRow
             android:id="@+id/tableRow"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:background="#DAE8FC"
             android:padding="5dp">
 
             <TextView
                 android:id="@+id/tableId"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:gravity="center"
                 android:text="@string/id_1" />
 
             <TextView
                 android:id="@+id/tableAmount"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:gravity="center"
                 android:text="@string/amount_1" />
 
             <TextView
                 android:id="@+id/tableDescription"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:gravity="center"
                 android:text="@string/descript_1" />
 
             <TextView
                 android:id="@+id/tableType"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:gravity="center"
                 android:text="Credit" />
-
-            <ImageView
-                android:id="@+id/editBtn"
-                android:layout_width="48dp"
-                android:layout_height="48dp"
-                android:layout_marginRight="10dp"
-                android:onClick="updateTransact"
-                tools:srcCompat="@drawable/edit" />
-
-            <Button
-                android:id="@+id/deleteBtn"
-                android:layout_width="66dp"
-                android:layout_height="48dp"
-                android:backgroundTint="#FF1744"
-                android:text="@string/delete"
-                android:textSize="8sp"
-                tools:layout_editor_absoluteX="161dp"
-                tools:layout_editor_absoluteY="412dp" />
         </TableRow>
     </TableLayout>
 

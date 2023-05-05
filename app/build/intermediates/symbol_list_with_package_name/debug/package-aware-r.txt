@@ -2730,6 +2730,8 @@ drawable abc_textfield_search_material
 drawable abc_vector_test
 drawable avd_hide_password
 drawable avd_show_password
+drawable back
+drawable baseline_delete_24
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
 drawable btn_checkbox_unchecked_mtrl
@@ -2935,6 +2937,7 @@ id addBankName
 id addBtn
 id addDescription
 id addTransId
+id addTransactBtn
 id addType
 id add_bank
 id adjust_height
@@ -2955,6 +2958,10 @@ id auto
 id autoComplete
 id autoCompleteToEnd
 id autoCompleteToStart
+id backBtnAddTrans
+id backBtnBnk
+id backBtnTrans
+id backBtnUpdt
 id balRow
 id bankBal
 id bankLayout
@@ -3008,18 +3015,17 @@ id coordinator
 id cos
 id counterclockwise
 id cradle
-id creditBtn
 id currentState
 id custom
 id customPanel
 id cut
 id dark
 id date_picker_actions
-id debitBtn
 id decelerate
 id decelerateAndComplete
 id decor_content_parent
 id default_activity_button
+id deleteBankBtn
 id deleteBtn
 id deltaRelative
 id dependency_ordering
@@ -3049,7 +3055,9 @@ id easeIn
 id easeInOut
 id easeOut
 id east
+id editBankBtn
 id editBtn
+id editRow
 id edit_query
 id elastic
 id embed
@@ -3360,6 +3368,7 @@ id totBalance
 id totCredits
 id totDebits
 id touch_outside
+id transID
 id transitionToEnd
 id transitionToStart
 id transition_current_scene
@@ -3372,6 +3381,10 @@ id unchecked
 id uniform
 id unlabeled
 id up
+id updateAccNo
+id updateBankBal
+id updateBankBtn
+id updateBankName
 id updateBtn
 id useLogo
 id vertical_only
@@ -3504,6 +3517,7 @@ layout activity_add_bank_account
 layout activity_add_transaction
 layout activity_main
 layout activity_transaction_view
+layout activity_update_bank_account
 layout activity_update_transaction
 layout bank_view
 layout custom_dialog

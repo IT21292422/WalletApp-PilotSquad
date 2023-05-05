@@ -4,20 +4,24 @@
         "source": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-main-39:\\layout\\bank_view.xml"
     },
     {
-        "merged": "com.example.project_bank.app-mergeDebugResources-36:/layout/activity_main.xml",
-        "source": "com.example.project_bank.app-main-39:/layout/activity_main.xml"
+        "merged": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-mergeDebugResources-36:\\layout\\activity_update_bank_account.xml",
+        "source": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-main-39:\\layout\\activity_update_bank_account.xml"
+    },
+    {
+        "merged": "com.example.project_bank.app-mergeDebugResources-36:/layout/bank_view.xml",
+        "source": "com.example.project_bank.app-main-39:/layout/bank_view.xml"
     },
     {
         "merged": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-mergeDebugResources-36:\\layout\\activity_update_transaction.xml",
         "source": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-main-39:\\layout\\activity_update_transaction.xml"
     },
     {
-        "merged": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-mergeDebugResources-36:\\layout\\activity_add_transaction.xml",
-        "source": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-main-39:\\layout\\activity_add_transaction.xml"
-    },
-    {
         "merged": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-mergeDebugResources-36:\\layout\\activity_main.xml",
         "source": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-main-39:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-mergeDebugResources-36:\\layout\\activity_add_transaction.xml",
+        "source": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-main-39:\\layout\\activity_add_transaction.xml"
     },
     {
         "merged": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-mergeDebugResources-36:\\layout\\activity_transaction_view.xml",

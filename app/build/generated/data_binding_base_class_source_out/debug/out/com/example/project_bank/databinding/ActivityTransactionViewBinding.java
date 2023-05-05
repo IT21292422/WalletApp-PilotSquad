@@ -25,13 +25,19 @@ public final class ActivityTransactionViewBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
+  public final ImageView addTransactBtn;
+
+  @NonNull
+  public final ImageView backBtnTrans;
+
+  @NonNull
   public final TextView bankTransactName;
 
   @NonNull
-  public final ImageView creditBtn;
+  public final ImageView deleteBtn;
 
   @NonNull
-  public final ImageView debitBtn;
+  public final ImageView editBtn;
 
   @NonNull
   public final RecyclerView recyclerView;
@@ -61,15 +67,18 @@ public final class ActivityTransactionViewBinding implements ViewBinding {
   public final TextView totDebits;
 
   private ActivityTransactionViewBinding(@NonNull ConstraintLayout rootView,
-      @NonNull TextView bankTransactName, @NonNull ImageView creditBtn, @NonNull ImageView debitBtn,
+      @NonNull ImageView addTransactBtn, @NonNull ImageView backBtnTrans,
+      @NonNull TextView bankTransactName, @NonNull ImageView deleteBtn, @NonNull ImageView editBtn,
       @NonNull RecyclerView recyclerView, @NonNull Button searchBtn,
       @NonNull SearchView searchTransaction, @NonNull TableLayout tableLayout,
       @NonNull TableLayout tableSummary, @NonNull TextView textView4, @NonNull TextView totBalance,
       @NonNull TextView totCredits, @NonNull TextView totDebits) {
     this.rootView = rootView;
+    this.addTransactBtn = addTransactBtn;
+    this.backBtnTrans = backBtnTrans;
     this.bankTransactName = bankTransactName;
-    this.creditBtn = creditBtn;
-    this.debitBtn = debitBtn;
+    this.deleteBtn = deleteBtn;
+    this.editBtn = editBtn;
     this.recyclerView = recyclerView;
     this.searchBtn = searchBtn;
     this.searchTransaction = searchTransaction;
@@ -108,21 +117,33 @@ public final class ActivityTransactionViewBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.addTransactBtn;
+      ImageView addTransactBtn = ViewBindings.findChildViewById(rootView, id);
+      if (addTransactBtn == null) {
+        break missingId;
+      }
+
+      id = R.id.backBtnTrans;
+      ImageView backBtnTrans = ViewBindings.findChildViewById(rootView, id);
+      if (backBtnTrans == null) {
+        break missingId;
+      }
+
       id = R.id.bankTransactName;
       TextView bankTransactName = ViewBindings.findChildViewById(rootView, id);
       if (bankTransactName == null) {
         break missingId;
       }
 
-      id = R.id.creditBtn;
-      ImageView creditBtn = ViewBindings.findChildViewById(rootView, id);
-      if (creditBtn == null) {
+      id = R.id.deleteBtn;
+      ImageView deleteBtn = ViewBindings.findChildViewById(rootView, id);
+      if (deleteBtn == null) {
         break missingId;
       }
 
-      id = R.id.debitBtn;
-      ImageView debitBtn = ViewBindings.findChildViewById(rootView, id);
-      if (debitBtn == null) {
+      id = R.id.editBtn;
+      ImageView editBtn = ViewBindings.findChildViewById(rootView, id);
+      if (editBtn == null) {
         break missingId;
       }
 
@@ -180,9 +201,10 @@ public final class ActivityTransactionViewBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityTransactionViewBinding((ConstraintLayout) rootView, bankTransactName,
-          creditBtn, debitBtn, recyclerView, searchBtn, searchTransaction, tableLayout,
-          tableSummary, textView4, totBalance, totCredits, totDebits);
+      return new ActivityTransactionViewBinding((ConstraintLayout) rootView, addTransactBtn,
+          backBtnTrans, bankTransactName, deleteBtn, editBtn, recyclerView, searchBtn,
+          searchTransaction, tableLayout, tableSummary, textView4, totBalance, totCredits,
+          totDebits);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

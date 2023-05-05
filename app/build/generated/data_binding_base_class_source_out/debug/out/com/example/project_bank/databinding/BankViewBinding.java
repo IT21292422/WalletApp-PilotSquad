@@ -4,6 +4,7 @@ package com.example.project_bank.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TableLayout;
 import android.widget.TableRow;
@@ -43,9 +44,19 @@ public final class BankViewBinding implements ViewBinding {
   @NonNull
   public final CardView cardview;
 
+  @NonNull
+  public final ImageView deleteBankBtn;
+
+  @NonNull
+  public final ImageView editBankBtn;
+
+  @NonNull
+  public final TableRow editRow;
+
   private BankViewBinding(@NonNull LinearLayout rootView, @NonNull TextView accNo,
       @NonNull TableRow balRow, @NonNull TextView bankBal, @NonNull TableLayout bankLayout,
-      @NonNull TextView bankName, @NonNull TableRow bankRow, @NonNull CardView cardview) {
+      @NonNull TextView bankName, @NonNull TableRow bankRow, @NonNull CardView cardview,
+      @NonNull ImageView deleteBankBtn, @NonNull ImageView editBankBtn, @NonNull TableRow editRow) {
     this.rootView = rootView;
     this.accNo = accNo;
     this.balRow = balRow;
@@ -54,6 +65,9 @@ public final class BankViewBinding implements ViewBinding {
     this.bankName = bankName;
     this.bankRow = bankRow;
     this.cardview = cardview;
+    this.deleteBankBtn = deleteBankBtn;
+    this.editBankBtn = editBankBtn;
+    this.editRow = editRow;
   }
 
   @Override
@@ -125,8 +139,26 @@ public final class BankViewBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.deleteBankBtn;
+      ImageView deleteBankBtn = ViewBindings.findChildViewById(rootView, id);
+      if (deleteBankBtn == null) {
+        break missingId;
+      }
+
+      id = R.id.editBankBtn;
+      ImageView editBankBtn = ViewBindings.findChildViewById(rootView, id);
+      if (editBankBtn == null) {
+        break missingId;
+      }
+
+      id = R.id.editRow;
+      TableRow editRow = ViewBindings.findChildViewById(rootView, id);
+      if (editRow == null) {
+        break missingId;
+      }
+
       return new BankViewBinding((LinearLayout) rootView, accNo, balRow, bankBal, bankLayout,
-          bankName, bankRow, cardview);
+          bankName, bankRow, cardview, deleteBankBtn, editBankBtn, editRow);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

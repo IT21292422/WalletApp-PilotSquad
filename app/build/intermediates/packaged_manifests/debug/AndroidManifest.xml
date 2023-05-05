@@ -27,6 +27,9 @@
         android:testOnly="true"
         android:theme="@style/Theme.Project_bank" >
         <activity
+            android:name="com.example.project_bank.update_bank_account"
+            android:exported="false" />
+        <activity
             android:name="com.example.project_bank.update_transaction"
             android:exported="false" />
         <activity
@@ -39,7 +42,7 @@
             android:name="com.example.project_bank.transaction_view"
             android:exported="false" />
         <activity
-            android:name="com.example.project_bank.MainActivity"
+            android:name="com.example.project_bank.MainBank"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

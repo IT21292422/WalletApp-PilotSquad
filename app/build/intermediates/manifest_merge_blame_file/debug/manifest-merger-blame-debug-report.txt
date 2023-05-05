@@ -11,7 +11,7 @@
 9-->C:\Users\makma\AndroidStudioProjects\project_bank\app\src\main\AndroidManifest.xml
 10
 11    <uses-permission android:name="android.permission.INTERNET" />
-11-->C:\Users\makma\AndroidStudioProjects\project_bank\app\src\main\AndroidManifest.xml:5:5-66
+11-->C:\Users\makma\AndroidStudioProjects\project_bank\app\src\main\AndroidManifest.xml:5:5-67
 11-->C:\Users\makma\AndroidStudioProjects\project_bank\app\src\main\AndroidManifest.xml:5:22-64
 12
 13    <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
@@ -21,7 +21,7 @@
 15-->[com.google.firebase:firebase-database:20.2.0] C:\Users\makma\.gradle\caches\transforms-3\b6f2820e1d01103d897cf2062808914b\transformed\firebase-database-20.2.0\AndroidManifest.xml:24:22-76
 16
 17    <application
-17-->C:\Users\makma\AndroidStudioProjects\project_bank\app\src\main\AndroidManifest.xml:7:5-37:19
+17-->C:\Users\makma\AndroidStudioProjects\project_bank\app\src\main\AndroidManifest.xml:7:5-40:19
 18        android:allowBackup="true"
 18-->C:\Users\makma\AndroidStudioProjects\project_bank\app\src\main\AndroidManifest.xml:8:9-35
 19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -43,124 +43,130 @@
 28-->C:\Users\makma\AndroidStudioProjects\project_bank\app\src\main\AndroidManifest.xml:14:9-50
 29        <activity
 29-->C:\Users\makma\AndroidStudioProjects\project_bank\app\src\main\AndroidManifest.xml:16:9-18:40
-30            android:name="com.example.project_bank.update_transaction"
-30-->C:\Users\makma\AndroidStudioProjects\project_bank\app\src\main\AndroidManifest.xml:17:13-47
+30            android:name="com.example.project_bank.update_bank_account"
+30-->C:\Users\makma\AndroidStudioProjects\project_bank\app\src\main\AndroidManifest.xml:17:13-48
 31            android:exported="false" />
 31-->C:\Users\makma\AndroidStudioProjects\project_bank\app\src\main\AndroidManifest.xml:18:13-37
 32        <activity
 32-->C:\Users\makma\AndroidStudioProjects\project_bank\app\src\main\AndroidManifest.xml:19:9-21:40
-33            android:name="com.example.project_bank.activity_add_bank_account"
-33-->C:\Users\makma\AndroidStudioProjects\project_bank\app\src\main\AndroidManifest.xml:20:13-54
+33            android:name="com.example.project_bank.update_transaction"
+33-->C:\Users\makma\AndroidStudioProjects\project_bank\app\src\main\AndroidManifest.xml:20:13-47
 34            android:exported="false" />
 34-->C:\Users\makma\AndroidStudioProjects\project_bank\app\src\main\AndroidManifest.xml:21:13-37
 35        <activity
 35-->C:\Users\makma\AndroidStudioProjects\project_bank\app\src\main\AndroidManifest.xml:22:9-24:40
-36            android:name="com.example.project_bank.add_transaction"
-36-->C:\Users\makma\AndroidStudioProjects\project_bank\app\src\main\AndroidManifest.xml:23:13-44
+36            android:name="com.example.project_bank.activity_add_bank_account"
+36-->C:\Users\makma\AndroidStudioProjects\project_bank\app\src\main\AndroidManifest.xml:23:13-54
 37            android:exported="false" />
 37-->C:\Users\makma\AndroidStudioProjects\project_bank\app\src\main\AndroidManifest.xml:24:13-37
 38        <activity
 38-->C:\Users\makma\AndroidStudioProjects\project_bank\app\src\main\AndroidManifest.xml:25:9-27:40
-39            android:name="com.example.project_bank.transaction_view"
-39-->C:\Users\makma\AndroidStudioProjects\project_bank\app\src\main\AndroidManifest.xml:26:13-45
+39            android:name="com.example.project_bank.add_transaction"
+39-->C:\Users\makma\AndroidStudioProjects\project_bank\app\src\main\AndroidManifest.xml:26:13-44
 40            android:exported="false" />
 40-->C:\Users\makma\AndroidStudioProjects\project_bank\app\src\main\AndroidManifest.xml:27:13-37
 41        <activity
-41-->C:\Users\makma\AndroidStudioProjects\project_bank\app\src\main\AndroidManifest.xml:28:9-36:20
-42            android:name="com.example.project_bank.MainActivity"
-42-->C:\Users\makma\AndroidStudioProjects\project_bank\app\src\main\AndroidManifest.xml:29:13-41
-43            android:exported="true" >
-43-->C:\Users\makma\AndroidStudioProjects\project_bank\app\src\main\AndroidManifest.xml:30:13-36
-44            <intent-filter>
-44-->C:\Users\makma\AndroidStudioProjects\project_bank\app\src\main\AndroidManifest.xml:31:13-35:29
-45                <action android:name="android.intent.action.MAIN" />
-45-->C:\Users\makma\AndroidStudioProjects\project_bank\app\src\main\AndroidManifest.xml:32:17-69
-45-->C:\Users\makma\AndroidStudioProjects\project_bank\app\src\main\AndroidManifest.xml:32:25-66
-46
-47                <category android:name="android.intent.category.LAUNCHER" />
-47-->C:\Users\makma\AndroidStudioProjects\project_bank\app\src\main\AndroidManifest.xml:34:17-77
-47-->C:\Users\makma\AndroidStudioProjects\project_bank\app\src\main\AndroidManifest.xml:34:27-74
-48            </intent-filter>
-49        </activity>
-50
-51        <service
-51-->[com.google.firebase:firebase-database-ktx:20.2.0] C:\Users\makma\.gradle\caches\transforms-3\d7e4a887525222cf43adb2ab7248b265\transformed\firebase-database-ktx-20.2.0\AndroidManifest.xml:11:9-17:19
-52            android:name="com.google.firebase.components.ComponentDiscoveryService"
-52-->[com.google.firebase:firebase-database-ktx:20.2.0] C:\Users\makma\.gradle\caches\transforms-3\d7e4a887525222cf43adb2ab7248b265\transformed\firebase-database-ktx-20.2.0\AndroidManifest.xml:12:13-84
-53            android:directBootAware="true"
-53-->[com.google.firebase:firebase-common:20.3.2] C:\Users\makma\.gradle\caches\transforms-3\86c0b5ddde98e12797b99bcf1dc87c5b\transformed\firebase-common-20.3.2\AndroidManifest.xml:34:13-43
-54            android:exported="false" >
-54-->[com.google.firebase:firebase-database-ktx:20.2.0] C:\Users\makma\.gradle\caches\transforms-3\d7e4a887525222cf43adb2ab7248b265\transformed\firebase-database-ktx-20.2.0\AndroidManifest.xml:13:13-37
-55            <meta-data
-55-->[com.google.firebase:firebase-database-ktx:20.2.0] C:\Users\makma\.gradle\caches\transforms-3\d7e4a887525222cf43adb2ab7248b265\transformed\firebase-database-ktx-20.2.0\AndroidManifest.xml:14:13-16:85
-56                android:name="com.google.firebase.components:com.google.firebase.database.ktx.FirebaseDatabaseKtxRegistrar"
-56-->[com.google.firebase:firebase-database-ktx:20.2.0] C:\Users\makma\.gradle\caches\transforms-3\d7e4a887525222cf43adb2ab7248b265\transformed\firebase-database-ktx-20.2.0\AndroidManifest.xml:15:17-124
-57                android:value="com.google.firebase.components.ComponentRegistrar" />
-57-->[com.google.firebase:firebase-database-ktx:20.2.0] C:\Users\makma\.gradle\caches\transforms-3\d7e4a887525222cf43adb2ab7248b265\transformed\firebase-database-ktx-20.2.0\AndroidManifest.xml:16:17-82
+41-->C:\Users\makma\AndroidStudioProjects\project_bank\app\src\main\AndroidManifest.xml:28:9-30:40
+42            android:name="com.example.project_bank.transaction_view"
+42-->C:\Users\makma\AndroidStudioProjects\project_bank\app\src\main\AndroidManifest.xml:29:13-45
+43            android:exported="false" />
+43-->C:\Users\makma\AndroidStudioProjects\project_bank\app\src\main\AndroidManifest.xml:30:13-37
+44        <activity
+44-->C:\Users\makma\AndroidStudioProjects\project_bank\app\src\main\AndroidManifest.xml:31:9-39:20
+45            android:name="com.example.project_bank.MainBank"
+45-->C:\Users\makma\AndroidStudioProjects\project_bank\app\src\main\AndroidManifest.xml:32:13-37
+46            android:exported="true" >
+46-->C:\Users\makma\AndroidStudioProjects\project_bank\app\src\main\AndroidManifest.xml:33:13-36
+47            <intent-filter>
+47-->C:\Users\makma\AndroidStudioProjects\project_bank\app\src\main\AndroidManifest.xml:34:13-38:29
+48                <action android:name="android.intent.action.MAIN" />
+48-->C:\Users\makma\AndroidStudioProjects\project_bank\app\src\main\AndroidManifest.xml:35:17-69
+48-->C:\Users\makma\AndroidStudioProjects\project_bank\app\src\main\AndroidManifest.xml:35:25-66
+49
+50                <category android:name="android.intent.category.LAUNCHER" />
+50-->C:\Users\makma\AndroidStudioProjects\project_bank\app\src\main\AndroidManifest.xml:37:17-77
+50-->C:\Users\makma\AndroidStudioProjects\project_bank\app\src\main\AndroidManifest.xml:37:27-74
+51            </intent-filter>
+52        </activity>
+53
+54        <service
+54-->[com.google.firebase:firebase-database-ktx:20.2.0] C:\Users\makma\.gradle\caches\transforms-3\d7e4a887525222cf43adb2ab7248b265\transformed\firebase-database-ktx-20.2.0\AndroidManifest.xml:11:9-17:19
+55            android:name="com.google.firebase.components.ComponentDiscoveryService"
+55-->[com.google.firebase:firebase-database-ktx:20.2.0] C:\Users\makma\.gradle\caches\transforms-3\d7e4a887525222cf43adb2ab7248b265\transformed\firebase-database-ktx-20.2.0\AndroidManifest.xml:12:13-84
+56            android:directBootAware="true"
+56-->[com.google.firebase:firebase-common:20.3.2] C:\Users\makma\.gradle\caches\transforms-3\86c0b5ddde98e12797b99bcf1dc87c5b\transformed\firebase-common-20.3.2\AndroidManifest.xml:34:13-43
+57            android:exported="false" >
+57-->[com.google.firebase:firebase-database-ktx:20.2.0] C:\Users\makma\.gradle\caches\transforms-3\d7e4a887525222cf43adb2ab7248b265\transformed\firebase-database-ktx-20.2.0\AndroidManifest.xml:13:13-37
 58            <meta-data
-58-->[com.google.firebase:firebase-common-ktx:20.3.2] C:\Users\makma\.gradle\caches\transforms-3\158df5b5000b2ea404acd85d148264cc\transformed\firebase-common-ktx-20.3.2\AndroidManifest.xml:14:13-16:85
-59                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonKtxRegistrar"
-59-->[com.google.firebase:firebase-common-ktx:20.3.2] C:\Users\makma\.gradle\caches\transforms-3\158df5b5000b2ea404acd85d148264cc\transformed\firebase-common-ktx-20.3.2\AndroidManifest.xml:15:17-113
+58-->[com.google.firebase:firebase-database-ktx:20.2.0] C:\Users\makma\.gradle\caches\transforms-3\d7e4a887525222cf43adb2ab7248b265\transformed\firebase-database-ktx-20.2.0\AndroidManifest.xml:14:13-16:85
+59                android:name="com.google.firebase.components:com.google.firebase.database.ktx.FirebaseDatabaseKtxRegistrar"
+59-->[com.google.firebase:firebase-database-ktx:20.2.0] C:\Users\makma\.gradle\caches\transforms-3\d7e4a887525222cf43adb2ab7248b265\transformed\firebase-database-ktx-20.2.0\AndroidManifest.xml:15:17-124
 60                android:value="com.google.firebase.components.ComponentRegistrar" />
-60-->[com.google.firebase:firebase-common-ktx:20.3.2] C:\Users\makma\.gradle\caches\transforms-3\158df5b5000b2ea404acd85d148264cc\transformed\firebase-common-ktx-20.3.2\AndroidManifest.xml:16:17-82
+60-->[com.google.firebase:firebase-database-ktx:20.2.0] C:\Users\makma\.gradle\caches\transforms-3\d7e4a887525222cf43adb2ab7248b265\transformed\firebase-database-ktx-20.2.0\AndroidManifest.xml:16:17-82
 61            <meta-data
-61-->[com.google.firebase:firebase-database:20.2.0] C:\Users\makma\.gradle\caches\transforms-3\b6f2820e1d01103d897cf2062808914b\transformed\firebase-database-20.2.0\AndroidManifest.xml:31:13-33:85
-62                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
-62-->[com.google.firebase:firebase-database:20.2.0] C:\Users\makma\.gradle\caches\transforms-3\b6f2820e1d01103d897cf2062808914b\transformed\firebase-database-20.2.0\AndroidManifest.xml:32:17-109
+61-->[com.google.firebase:firebase-common-ktx:20.3.2] C:\Users\makma\.gradle\caches\transforms-3\158df5b5000b2ea404acd85d148264cc\transformed\firebase-common-ktx-20.3.2\AndroidManifest.xml:14:13-16:85
+62                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonKtxRegistrar"
+62-->[com.google.firebase:firebase-common-ktx:20.3.2] C:\Users\makma\.gradle\caches\transforms-3\158df5b5000b2ea404acd85d148264cc\transformed\firebase-common-ktx-20.3.2\AndroidManifest.xml:15:17-113
 63                android:value="com.google.firebase.components.ComponentRegistrar" />
-63-->[com.google.firebase:firebase-database:20.2.0] C:\Users\makma\.gradle\caches\transforms-3\b6f2820e1d01103d897cf2062808914b\transformed\firebase-database-20.2.0\AndroidManifest.xml:33:17-82
-64        </service>
-65
-66        <activity
-66-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\makma\.gradle\caches\transforms-3\8753a6c6e3b6274079b746a8363608c8\transformed\play-services-base-18.1.0\AndroidManifest.xml:20:9-22:45
-67            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-67-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\makma\.gradle\caches\transforms-3\8753a6c6e3b6274079b746a8363608c8\transformed\play-services-base-18.1.0\AndroidManifest.xml:20:19-85
-68            android:exported="false"
-68-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\makma\.gradle\caches\transforms-3\8753a6c6e3b6274079b746a8363608c8\transformed\play-services-base-18.1.0\AndroidManifest.xml:22:19-43
-69            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-69-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\makma\.gradle\caches\transforms-3\8753a6c6e3b6274079b746a8363608c8\transformed\play-services-base-18.1.0\AndroidManifest.xml:21:19-78
-70
-71        <provider
-71-->[com.google.firebase:firebase-common:20.3.2] C:\Users\makma\.gradle\caches\transforms-3\86c0b5ddde98e12797b99bcf1dc87c5b\transformed\firebase-common-20.3.2\AndroidManifest.xml:25:9-30:39
-72            android:name="com.google.firebase.provider.FirebaseInitProvider"
-72-->[com.google.firebase:firebase-common:20.3.2] C:\Users\makma\.gradle\caches\transforms-3\86c0b5ddde98e12797b99bcf1dc87c5b\transformed\firebase-common-20.3.2\AndroidManifest.xml:26:13-77
-73            android:authorities="com.example.project_bank.firebaseinitprovider"
-73-->[com.google.firebase:firebase-common:20.3.2] C:\Users\makma\.gradle\caches\transforms-3\86c0b5ddde98e12797b99bcf1dc87c5b\transformed\firebase-common-20.3.2\AndroidManifest.xml:27:13-72
-74            android:directBootAware="true"
-74-->[com.google.firebase:firebase-common:20.3.2] C:\Users\makma\.gradle\caches\transforms-3\86c0b5ddde98e12797b99bcf1dc87c5b\transformed\firebase-common-20.3.2\AndroidManifest.xml:28:13-43
-75            android:exported="false"
-75-->[com.google.firebase:firebase-common:20.3.2] C:\Users\makma\.gradle\caches\transforms-3\86c0b5ddde98e12797b99bcf1dc87c5b\transformed\firebase-common-20.3.2\AndroidManifest.xml:29:13-37
-76            android:initOrder="100" />
-76-->[com.google.firebase:firebase-common:20.3.2] C:\Users\makma\.gradle\caches\transforms-3\86c0b5ddde98e12797b99bcf1dc87c5b\transformed\firebase-common-20.3.2\AndroidManifest.xml:30:13-36
-77
-78        <meta-data
-78-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\makma\.gradle\caches\transforms-3\7ccd49d86efb70c9fcf160a1e8959fa9\transformed\play-services-basement-18.1.0\AndroidManifest.xml:21:9-23:69
-79            android:name="com.google.android.gms.version"
-79-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\makma\.gradle\caches\transforms-3\7ccd49d86efb70c9fcf160a1e8959fa9\transformed\play-services-basement-18.1.0\AndroidManifest.xml:22:13-58
-80            android:value="@integer/google_play_services_version" />
-80-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\makma\.gradle\caches\transforms-3\7ccd49d86efb70c9fcf160a1e8959fa9\transformed\play-services-basement-18.1.0\AndroidManifest.xml:23:13-66
-81
-82        <provider
-82-->[androidx.emoji2:emoji2:1.2.0] C:\Users\makma\.gradle\caches\transforms-3\22e41496550764fa5016ed7d8a7acb66\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
-83            android:name="androidx.startup.InitializationProvider"
-83-->[androidx.emoji2:emoji2:1.2.0] C:\Users\makma\.gradle\caches\transforms-3\22e41496550764fa5016ed7d8a7acb66\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
-84            android:authorities="com.example.project_bank.androidx-startup"
-84-->[androidx.emoji2:emoji2:1.2.0] C:\Users\makma\.gradle\caches\transforms-3\22e41496550764fa5016ed7d8a7acb66\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
-85            android:exported="false" >
-85-->[androidx.emoji2:emoji2:1.2.0] C:\Users\makma\.gradle\caches\transforms-3\22e41496550764fa5016ed7d8a7acb66\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
-86            <meta-data
-86-->[androidx.emoji2:emoji2:1.2.0] C:\Users\makma\.gradle\caches\transforms-3\22e41496550764fa5016ed7d8a7acb66\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
-87                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-87-->[androidx.emoji2:emoji2:1.2.0] C:\Users\makma\.gradle\caches\transforms-3\22e41496550764fa5016ed7d8a7acb66\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
-88                android:value="androidx.startup" />
-88-->[androidx.emoji2:emoji2:1.2.0] C:\Users\makma\.gradle\caches\transforms-3\22e41496550764fa5016ed7d8a7acb66\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+63-->[com.google.firebase:firebase-common-ktx:20.3.2] C:\Users\makma\.gradle\caches\transforms-3\158df5b5000b2ea404acd85d148264cc\transformed\firebase-common-ktx-20.3.2\AndroidManifest.xml:16:17-82
+64            <meta-data
+64-->[com.google.firebase:firebase-database:20.2.0] C:\Users\makma\.gradle\caches\transforms-3\b6f2820e1d01103d897cf2062808914b\transformed\firebase-database-20.2.0\AndroidManifest.xml:31:13-33:85
+65                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+65-->[com.google.firebase:firebase-database:20.2.0] C:\Users\makma\.gradle\caches\transforms-3\b6f2820e1d01103d897cf2062808914b\transformed\firebase-database-20.2.0\AndroidManifest.xml:32:17-109
+66                android:value="com.google.firebase.components.ComponentRegistrar" />
+66-->[com.google.firebase:firebase-database:20.2.0] C:\Users\makma\.gradle\caches\transforms-3\b6f2820e1d01103d897cf2062808914b\transformed\firebase-database-20.2.0\AndroidManifest.xml:33:17-82
+67        </service>
+68
+69        <activity
+69-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\makma\.gradle\caches\transforms-3\8753a6c6e3b6274079b746a8363608c8\transformed\play-services-base-18.1.0\AndroidManifest.xml:20:9-22:45
+70            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+70-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\makma\.gradle\caches\transforms-3\8753a6c6e3b6274079b746a8363608c8\transformed\play-services-base-18.1.0\AndroidManifest.xml:20:19-85
+71            android:exported="false"
+71-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\makma\.gradle\caches\transforms-3\8753a6c6e3b6274079b746a8363608c8\transformed\play-services-base-18.1.0\AndroidManifest.xml:22:19-43
+72            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+72-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\makma\.gradle\caches\transforms-3\8753a6c6e3b6274079b746a8363608c8\transformed\play-services-base-18.1.0\AndroidManifest.xml:21:19-78
+73
+74        <provider
+74-->[com.google.firebase:firebase-common:20.3.2] C:\Users\makma\.gradle\caches\transforms-3\86c0b5ddde98e12797b99bcf1dc87c5b\transformed\firebase-common-20.3.2\AndroidManifest.xml:25:9-30:39
+75            android:name="com.google.firebase.provider.FirebaseInitProvider"
+75-->[com.google.firebase:firebase-common:20.3.2] C:\Users\makma\.gradle\caches\transforms-3\86c0b5ddde98e12797b99bcf1dc87c5b\transformed\firebase-common-20.3.2\AndroidManifest.xml:26:13-77
+76            android:authorities="com.example.project_bank.firebaseinitprovider"
+76-->[com.google.firebase:firebase-common:20.3.2] C:\Users\makma\.gradle\caches\transforms-3\86c0b5ddde98e12797b99bcf1dc87c5b\transformed\firebase-common-20.3.2\AndroidManifest.xml:27:13-72
+77            android:directBootAware="true"
+77-->[com.google.firebase:firebase-common:20.3.2] C:\Users\makma\.gradle\caches\transforms-3\86c0b5ddde98e12797b99bcf1dc87c5b\transformed\firebase-common-20.3.2\AndroidManifest.xml:28:13-43
+78            android:exported="false"
+78-->[com.google.firebase:firebase-common:20.3.2] C:\Users\makma\.gradle\caches\transforms-3\86c0b5ddde98e12797b99bcf1dc87c5b\transformed\firebase-common-20.3.2\AndroidManifest.xml:29:13-37
+79            android:initOrder="100" />
+79-->[com.google.firebase:firebase-common:20.3.2] C:\Users\makma\.gradle\caches\transforms-3\86c0b5ddde98e12797b99bcf1dc87c5b\transformed\firebase-common-20.3.2\AndroidManifest.xml:30:13-36
+80
+81        <meta-data
+81-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\makma\.gradle\caches\transforms-3\7ccd49d86efb70c9fcf160a1e8959fa9\transformed\play-services-basement-18.1.0\AndroidManifest.xml:21:9-23:69
+82            android:name="com.google.android.gms.version"
+82-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\makma\.gradle\caches\transforms-3\7ccd49d86efb70c9fcf160a1e8959fa9\transformed\play-services-basement-18.1.0\AndroidManifest.xml:22:13-58
+83            android:value="@integer/google_play_services_version" />
+83-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\makma\.gradle\caches\transforms-3\7ccd49d86efb70c9fcf160a1e8959fa9\transformed\play-services-basement-18.1.0\AndroidManifest.xml:23:13-66
+84
+85        <provider
+85-->[androidx.emoji2:emoji2:1.2.0] C:\Users\makma\.gradle\caches\transforms-3\22e41496550764fa5016ed7d8a7acb66\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+86            android:name="androidx.startup.InitializationProvider"
+86-->[androidx.emoji2:emoji2:1.2.0] C:\Users\makma\.gradle\caches\transforms-3\22e41496550764fa5016ed7d8a7acb66\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+87            android:authorities="com.example.project_bank.androidx-startup"
+87-->[androidx.emoji2:emoji2:1.2.0] C:\Users\makma\.gradle\caches\transforms-3\22e41496550764fa5016ed7d8a7acb66\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+88            android:exported="false" >
+88-->[androidx.emoji2:emoji2:1.2.0] C:\Users\makma\.gradle\caches\transforms-3\22e41496550764fa5016ed7d8a7acb66\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
 89            <meta-data
-89-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\makma\.gradle\caches\transforms-3\776e8c1876fd29368079663d003dc7b2\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
-90                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-90-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\makma\.gradle\caches\transforms-3\776e8c1876fd29368079663d003dc7b2\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+89-->[androidx.emoji2:emoji2:1.2.0] C:\Users\makma\.gradle\caches\transforms-3\22e41496550764fa5016ed7d8a7acb66\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+90                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+90-->[androidx.emoji2:emoji2:1.2.0] C:\Users\makma\.gradle\caches\transforms-3\22e41496550764fa5016ed7d8a7acb66\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
 91                android:value="androidx.startup" />
-91-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\makma\.gradle\caches\transforms-3\776e8c1876fd29368079663d003dc7b2\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
-92        </provider>
-93    </application>
-94
-95</manifest>
+91-->[androidx.emoji2:emoji2:1.2.0] C:\Users\makma\.gradle\caches\transforms-3\22e41496550764fa5016ed7d8a7acb66\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+92            <meta-data
+92-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\makma\.gradle\caches\transforms-3\776e8c1876fd29368079663d003dc7b2\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+93                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+93-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\makma\.gradle\caches\transforms-3\776e8c1876fd29368079663d003dc7b2\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+94                android:value="androidx.startup" />
+94-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\makma\.gradle\caches\transforms-3\776e8c1876fd29368079663d003dc7b2\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+95        </provider>
+96    </application>
+97
+98</manifest>

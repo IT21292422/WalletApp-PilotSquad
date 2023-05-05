@@ -11,14 +11,21 @@ class update_transaction : AppCompatActivity() {
 
     private lateinit var binding: ActivityUpdateTransactionBinding
     private lateinit var databaseReference: DatabaseReference
+    var transactId:String = ""
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityUpdateTransactionBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        var bundle = intent.extras
+        if(bundle != null){
+            transactId = bundle.getString("tid").toString()
+            binding.transID.text = bundle.getString("tid").toString()
+        }
+
         binding.updateBtn.setOnClickListener{
-            val id = "T001"
+            val id = transactId
             val amountStr = binding.addAmount.text.toString()
             val amount = amountStr.toInt()
             val description = binding.addDescription.text.toString()
@@ -28,7 +35,7 @@ class update_transaction : AppCompatActivity() {
     }
 
     private fun updateData(id: String, amount: Int, description: String, type: String){
-        databaseReference = FirebaseDatabase.getInstance().getReference("Bank Transaction")
+        databaseReference = FirebaseDatabase.getInstance().getReference("Akmal").child("Commercial Bank").child("Transactions")
         val bankTransaction = mapOf("id" to id, "amount" to amount, "description" to description, "type" to type)
         databaseReference.child(id).updateChildren(bankTransaction).addOnSuccessListener {
             binding.addAmount.text.clear()
