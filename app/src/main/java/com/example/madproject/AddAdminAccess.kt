@@ -12,6 +12,7 @@ import com.example.madproject.models.UserData
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 
+//add admin access class
 class AddAdminAccess : AppCompatActivity() {
     lateinit var edtAccUserName:EditText
     lateinit var databaseRef: DatabaseReference
@@ -93,10 +94,11 @@ class AddAdminAccess : AppCompatActivity() {
 
                 var user1: Map<String, String>
 
+                // check whether account already added or not
                 if((acc1 == edtAccUserName.text.toString()) || (acc2 == edtAccUserName.text.toString()) || (acc3 == edtAccUserName.text.toString())) {
                     Toast.makeText(this, "account already have access", Toast.LENGTH_SHORT).show()
                 }
-                else
+                else//check whether access 1 free or not if free write access 1
                     if(acc1 == ""){
                         user1 = mapOf<String, String>("access1" to edtAccUserName.text.toString())
                         databaseRef.child(userName).updateChildren(user1).addOnSuccessListener {
@@ -107,7 +109,7 @@ class AddAdminAccess : AppCompatActivity() {
                             finish()
                         }
                     }
-                else
+                else//check whether access 2 free or not if free write access 2
                     if(acc2 == "") {
                         user1 = mapOf<String, String>("access2" to edtAccUserName.text.toString())
                         databaseRef.child(userName).updateChildren(user1).addOnSuccessListener {
@@ -119,7 +121,7 @@ class AddAdminAccess : AppCompatActivity() {
                             finish()
                         }
                     }
-                else
+                else//check whether access 3 free or not if free write access 3
                     if(acc3 == "") {
                         user1 = mapOf<String, String>("access3" to edtAccUserName.text.toString())
                         databaseRef.child(userName).updateChildren(user1).addOnSuccessListener {
@@ -130,13 +132,13 @@ class AddAdminAccess : AppCompatActivity() {
                             finish()
                         }
                     }
-                else {
+                else {//maximum number of access reached
                         Toast.makeText(this, "maximum number access reached", Toast.LENGTH_SHORT).show()
                     }
 
 
             }
-            else {
+            else { // for first time adding access
                 databaseRef = FirebaseDatabase.getInstance().getReference("UserAccess")
                 val user1 = mapOf<String, String>("access1" to edtAccUserName.text.toString(), "access2" to "", "access3" to "")
                 databaseRef.child(userName).setValue(user1).addOnSuccessListener {

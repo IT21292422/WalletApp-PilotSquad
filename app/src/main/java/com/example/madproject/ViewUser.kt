@@ -42,6 +42,7 @@ class ViewUser : AppCompatActivity() {
         }
     }
 
+    //onclick method for back to user
     fun backToUser(view: View) {
         val intent = Intent(this, User::class.java)
         intent.putExtra("userName", userName)

@@ -12,6 +12,7 @@ import androidx.appcompat.app.AlertDialog
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 
+// class for user
 class User : AppCompatActivity() {
     lateinit var databaseRef: DatabaseReference
     lateinit var txtViewUserName: TextView
@@ -28,6 +29,7 @@ class User : AppCompatActivity() {
         txtViewUserName.text = userName
     }
 
+    //onclick method for open add access
     fun openAddAccess(view: View) {
         val intent = Intent(this, AddAdminAccess::class.java)
         intent.putExtra("userName", userName)
@@ -35,6 +37,7 @@ class User : AppCompatActivity() {
         finish()
     }
 
+    //onclick method for open view user
     fun openViewUser(view: View) {
         val intent = Intent(this, ViewUser::class.java)
         intent.putExtra("userName", userName)
@@ -42,6 +45,7 @@ class User : AppCompatActivity() {
         finish()
     }
 
+    //onclick method for open update user
     fun openUpdateUser(view: View) {
         val intent = Intent(this, UpdateUser::class.java)
         intent.putExtra("userName", userName)
@@ -49,6 +53,7 @@ class User : AppCompatActivity() {
         finish()
     }
 
+    //onclick method for open manage access
     fun openManageAccess(view: View) {
         val intent = Intent(this, ManageAccess::class.java)
         intent.putExtra("userName", userName)
@@ -63,6 +68,7 @@ class User : AppCompatActivity() {
         finish()
     }
 
+    //onclick method for delete user
     fun deleteCurrentUser(view: View) {
         confirmationBox = AlertDialog.Builder(this)
         confirmationBox.setTitle("Delete").setMessage("Do you want to delete this account ? ")
@@ -75,6 +81,7 @@ class User : AppCompatActivity() {
         dialog.show()
     }
 
+
     fun deleteUser() {
         databaseRef = FirebaseDatabase.getInstance().getReference("Users")
         databaseRef.child(userName).removeValue().addOnSuccessListener {
@@ -85,6 +92,7 @@ class User : AppCompatActivity() {
         }
     }
 
+    //onclick method for logout
     fun logout(view: View) {
         val intent = Intent(this, Login::class.java)
         startActivity(intent)
@@ -93,6 +101,7 @@ class User : AppCompatActivity() {
     }
 
 
+    //onclick method for back to home
     fun backToHome(view: View) {
         val intent = Intent(this, MainHomePage::class.java)
         intent.putExtra("userName", userName)

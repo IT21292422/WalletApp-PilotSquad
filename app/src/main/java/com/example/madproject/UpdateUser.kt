@@ -51,6 +51,7 @@ class UpdateUser : AppCompatActivity() {
 
     }
 
+    //onclick method for update user
     fun UpdateUserAccount(view: View) {
         var count = 0
 
@@ -59,6 +60,7 @@ class UpdateUser : AppCompatActivity() {
         val passwordValidation = updateData.validatePassword()
         val rePasswordValidation = updateData.validateRePassword()
 
+        //check name validation
         when(nameValidation) {
             is ValidationResult.Valid -> {
                 count++
@@ -71,6 +73,7 @@ class UpdateUser : AppCompatActivity() {
             }
         }
 
+        //check password validation
         when(passwordValidation) {
             is ValidationResult.Valid -> {
                 count++
@@ -83,6 +86,7 @@ class UpdateUser : AppCompatActivity() {
             }
         }
 
+        //check password validation
         when(rePasswordValidation) {
             is ValidationResult.Valid -> {
                 count++
@@ -108,6 +112,7 @@ class UpdateUser : AppCompatActivity() {
         }
     }
 
+    //onclick method for back to user
     fun backToUser(view: View) {
         val intent = Intent(this, User::class.java)
         intent.putExtra("userName", userName)

@@ -12,6 +12,7 @@ import com.google.firebase.auth.FirebaseAuthException
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 
+//login class
 class Login : AppCompatActivity() {
     lateinit var edtUserName:EditText
     lateinit var edtPassword:EditText

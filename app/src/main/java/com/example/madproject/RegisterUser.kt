@@ -31,12 +31,14 @@ class RegisterUser : AppCompatActivity() {
         edtRegPassword2 = findViewById(R.id.edtRegPassword2)
     }
 
+    //onclick method for login page
     fun openLoginPage(view: View) {
         var intent = Intent(this, Login::class.java)
         startActivity(intent)
         finish()
     }
 
+    //onclick mehthod for register user
     fun RegisterUser(view: View) {
         var count = 0
 
@@ -46,6 +48,7 @@ class RegisterUser : AppCompatActivity() {
         val nameValidation = registerData.validateName()
         val rePasswordValidation = registerData.validateRePassword()
 
+        //check user name validation
         when(userNameValidation) {
             is ValidationResult.Valid -> {
                 count++
@@ -58,6 +61,7 @@ class RegisterUser : AppCompatActivity() {
             }
         }
 
+        //check password validation
         when(passwordValidation) {
             is ValidationResult.Valid -> {
                 count++
@@ -82,6 +86,7 @@ class RegisterUser : AppCompatActivity() {
             }
         }
 
+        //check password validation
         when(rePasswordValidation) {
             is ValidationResult.Valid -> {
                 count++

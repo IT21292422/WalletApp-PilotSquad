@@ -11,6 +11,7 @@ import androidx.appcompat.app.AlertDialog
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 
+//manage access class
 class ManageAccess : AppCompatActivity() {
     var userName = ""
     lateinit var databaseRef: DatabaseReference
@@ -33,6 +34,7 @@ class ManageAccess : AppCompatActivity() {
         btnDelAcc2 = findViewById(R.id.btnDelAcc2)
         btnDelAcc3 = findViewById(R.id.btnDelAcc3)
 
+        //get all access list
         databaseRef = FirebaseDatabase.getInstance().getReference("UserAccess")
         databaseRef.child(userName).get().addOnSuccessListener {
             if(it.exists()){
@@ -44,6 +46,7 @@ class ManageAccess : AppCompatActivity() {
                 txtAcc2.text = access2.toString()
                 txtAcc3.text = access3.toString()
 
+                //if access empty make delete button invisible
                 if(txtAcc1.text == "")
                     btnDelAcc1.visibility  = View.INVISIBLE
                 if(txtAcc2.text == "")
@@ -57,6 +60,7 @@ class ManageAccess : AppCompatActivity() {
         }
     }
 
+    //delete access 1
     fun deleteAcc1(view:View) {
         confirmationBox = AlertDialog.Builder(this)
         confirmationBox.setTitle("Delete").setMessage("Do you want to remove this access account ? ").setPositiveButton("Yes") {
@@ -82,6 +86,7 @@ class ManageAccess : AppCompatActivity() {
         }
     }
 
+    //delete access 2
     fun deleteAcc2(view:View) {
         confirmationBox = AlertDialog.Builder(this)
         confirmationBox.setTitle("Delete").setMessage("Do you want to remove this access account ? ").setPositiveButton("Yes") {
@@ -107,10 +112,11 @@ class ManageAccess : AppCompatActivity() {
         }
     }
 
+    //delete access 3
     fun deleteAcc3(view:View) {
         confirmationBox = AlertDialog.Builder(this)
         confirmationBox.setTitle("Delete").setMessage("Do you want to remove this access account ? ").setPositiveButton("Yes") {
-                dialogInterface, it -> deleteAccess2()
+                dialogInterface, it -> deleteAccess3()
         }.setNegativeButton("No") { dialogInterface, it ->
 
         }
@@ -132,6 +138,7 @@ class ManageAccess : AppCompatActivity() {
     }
 
 
+    //onclick method for back to user
     fun backToUser(view: View) {
         val intent = Intent(this, User::class.java)
         intent.putExtra("userName", userName)

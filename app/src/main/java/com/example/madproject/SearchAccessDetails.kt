@@ -24,12 +24,14 @@ class SearchAccessDetails : AppCompatActivity() {
         userName = intent.getStringExtra("userName").toString()
     }
 
+    //onclick method for search user
     fun SearchUser(view: View) {
         var count = 0;
 
         val searchData = UserData(edtSrhUserName.text.toString())
         val userNameValidation = searchData.validateUserName()
 
+        //check username validation
         when(userNameValidation) {
             is ValidationResult.Valid -> {
                 count++
@@ -68,6 +70,7 @@ class SearchAccessDetails : AppCompatActivity() {
         }
     }
 
+    //onclick method for back to home
     fun backToHome(view: View) {
         val intent = Intent(this, MainHomePage::class.java)
         intent.putExtra("userName", userName)
