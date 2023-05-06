@@ -46,7 +46,10 @@ class transaction_view : AppCompatActivity() {
         databaseReference.addValueEventListener(object : ValueEventListener{
             override fun onDataChange(snapshot: DataSnapshot) {
                 var balanceStr = snapshot.child("balance").value.toString()
-                bal = balanceStr.toInt()
+                if(balanceStr != null){
+                    bal = balanceStr.toInt()
+                }
+
             }
 
 
@@ -146,6 +149,7 @@ class transaction_view : AppCompatActivity() {
 
         binding.backBtnTrans.setOnClickListener{
             var intent = Intent(this, MainBank::class.java)
+            intent.putExtra("user", username)
             startActivity(intent)
             finish()
         }

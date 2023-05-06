@@ -46,6 +46,7 @@ class update_bank_account : AppCompatActivity() {
 
         binding.backBtnBnk.setOnClickListener{
             var intent = Intent(this, MainBank::class.java)
+            intent.putExtra("user", username)
             startActivity(intent)
             finish()
         }
@@ -69,6 +70,7 @@ class update_bank_account : AppCompatActivity() {
             binding.updateBankName.text.clear()
             Toast.makeText(this, "Updated", Toast.LENGTH_SHORT).show()
             var intent = Intent(this, MainBank::class.java)
+            intent.putExtra("user", username)
             startActivity(intent)
             finish()
         }.addOnFailureListener{

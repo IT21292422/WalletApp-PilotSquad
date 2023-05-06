@@ -27,6 +27,7 @@ class activity_add_bank_account : AppCompatActivity() {
 
         binding.backBtnBnk.setOnClickListener{
             var intent = Intent(this, MainBank::class.java)
+            intent.putExtra("user", username)
             startActivity(intent)
             finish()
         }
@@ -49,6 +50,7 @@ class activity_add_bank_account : AppCompatActivity() {
                 Toast.makeText(this, "Saved", Toast.LENGTH_SHORT).show()
 
                 var intent = Intent(this, MainBank::class.java)
+                intent.putExtra("user", username)
                 startActivity(intent)
                 finish()
             }.addOnFailureListener{

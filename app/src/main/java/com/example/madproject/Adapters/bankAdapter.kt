@@ -61,7 +61,7 @@ class bankAdapter(private val context: Context, private val dataList:List<bankDa
 
         holder.delete.setOnClickListener{
             lateinit var databaseReference: DatabaseReference
-            databaseReference = FirebaseDatabase.getInstance().getReference(myUser)
+            databaseReference = FirebaseDatabase.getInstance().getReference(myUser).child("Bank")
             databaseReference.child(dataList[position].name.toString()).removeValue().addOnSuccessListener {
                 Toast.makeText(context,"Successfully Deleted", Toast.LENGTH_SHORT).show()
             }.addOnFailureListener{
