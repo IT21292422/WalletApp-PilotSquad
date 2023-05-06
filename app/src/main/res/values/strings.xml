@@ -47,7 +47,6 @@
         <item>Income</item>
         <item>Expense</item>
     </string-array>
-    <string name="app_name">project_bank</string>
     <string name="transaction">Transaction</string>
     <string name="cash_in_bank">Cash in Bank</string>
     <string name="available_balance">Available Balance</string>
@@ -75,8 +74,6 @@
     <string name="id_1">T001</string>
     <string name="amount_1">+10,000/=</string>
     <string name="descript_1">Cash Deposit</string>
-    <string name="delete">Delete</string>
-    <string name="update">Update</string>
     <string name="id_2">T002</string>
     <string name="amount_2">+1000/=</string>
     <string name="descript_2">Cash Deposit</string>

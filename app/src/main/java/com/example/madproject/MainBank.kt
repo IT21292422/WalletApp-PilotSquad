@@ -19,7 +19,7 @@ class MainBank : AppCompatActivity() {
     private lateinit var databaseReference: DatabaseReference
     private lateinit var dataList: ArrayList<bankData>
     private lateinit var adapter: bankAdapter
-    var username: String = "Akmal"
+    var username: String = ""
     var eventListener: ValueEventListener?= null
 
 
