@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Toast
 import com.example.madproject.databinding.ActivityCreateBinding
+import com.example.madproject.databinding.ActivityTransactionViewBinding
 import com.example.madproject.models.CashTrans
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
@@ -11,11 +12,12 @@ import com.google.firebase.database.FirebaseDatabase
 
 class Create : AppCompatActivity() {
 
-
+    private lateinit var binding: ActivityCreateBinding
     private lateinit var databaseReference: DatabaseReference
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        binding = ActivityCreateBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         binding.Back.setOnClickListener{
