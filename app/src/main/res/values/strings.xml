@@ -47,4 +47,49 @@
         <item>Income</item>
         <item>Expense</item>
     </string-array>
+    <string name="app_name">project_bank</string>
+    <string name="transaction">Transaction</string>
+    <string name="cash_in_bank">Cash in Bank</string>
+    <string name="available_balance">Available Balance</string>
+    <string name="add_transaction">Add Transaction</string>
+    <string name="update_transaction">Update Transaction</string>
+    <string name="amount">Enter the Amount</string>
+    <string name="description">Enter the Description</string>
+    <string-array name="transaction_type">
+        <item>Credit</item>
+        <item>Debit</item>
+    </string-array>
+    <string name="bank_name">Enter Bank Name</string>
+    <string name="acc_no">Enter Account Number</string>
+    <string name="transact_id">ID</string>
+    <string name="transact_amount">Amount</string>
+    <string name="transact_descript">Description</string>
+    <string name="tot_credits">Total Credits: </string>
+    <string name="tot_debits">Total Debits: </string>
+    <string name="available_bal">Available Balance: </string>
+    <string name="add_bank_account">Add Bank Account</string>
+    <string name="commercial_bank">Commercial Bank</string>
+    <string name="bank_bal_1">200,000/=</string>
+    <string name="hsbc">HSBC</string>
+    <string name="bank_bal_2">150,000/=</string>
+    <string name="id_1">T001</string>
+    <string name="amount_1">+10,000/=</string>
+    <string name="descript_1">Cash Deposit</string>
+    <string name="delete">Delete</string>
+    <string name="update">Update</string>
+    <string name="id_2">T002</string>
+    <string name="amount_2">+1000/=</string>
+    <string name="descript_2">Cash Deposit</string>
+    <string name="id_3">T003</string>
+    <string name="amount_3">-1000/=</string>
+    <string name="descript_3">Withdrawal</string>
+    <string name="id_4">T004</string>
+    <string name="amount_4">-1000/=</string>
+    <string name="descript_4">Withdrawal</string>
+    <string name="credits_tot">11,000/=</string>
+    <string name="debits_2">2000/=</string>
+    <string name="bal_tot">9000/=</string>
+    <string name="enter_bank_name">Enter Bank Name</string>
+    <string name="enter_acc_no">Enter Account Number</string>
+    <string name="enter_available_bal">Enter Available Balance</string>
 </resources>

@@ -4,15 +4,26 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import com.example.madproject.databinding.ActivityMainHomePageBinding
+import com.example.madproject.databinding.ActivityTransactionViewBinding
 
 class MainHomePage : AppCompatActivity() {
+    private lateinit var binding: ActivityMainHomePageBinding
     var userName = ""
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main_home_page)
+        binding = ActivityMainHomePageBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
         userName = intent.getStringExtra("userName").toString()
+
+        binding.mainBank.setOnClickListener{
+            var intent = Intent(this, MainBank::class.java)
+            intent.putExtra("user", userName)
+            startActivity(intent)
+            finish()
+        }
     }
 
     fun redirectUser(view: View) {
@@ -42,4 +53,5 @@ class MainHomePage : AppCompatActivity() {
         finish()
 
     }
+
 }
