@@ -25,6 +25,7 @@ class Expense_List : AppCompatActivity() {
 
         binding.Back.setOnClickListener{
             val intent = Intent(this@Expense_List,MainHomePage::class.java)
+            intent.putExtra("userName", username)
             startActivity(intent)
             finish()
         }

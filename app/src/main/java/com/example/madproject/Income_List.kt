@@ -25,6 +25,7 @@ class Income_List : AppCompatActivity() {
 
         binding.Back.setOnClickListener{
             val intent = Intent(this@Income_List,MainHomePage::class.java)
+            intent.putExtra("userName", username)
             startActivity(intent)
             finish()
         }

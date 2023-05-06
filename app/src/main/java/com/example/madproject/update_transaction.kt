@@ -29,7 +29,7 @@ class update_transaction : AppCompatActivity() {
             binding.transID.text = bundle.getString("tid").toString()
         }
 
-        databaseReference = FirebaseDatabase.getInstance().getReference(username).child(bankName).child("Transactions").child(transactId)
+        databaseReference = FirebaseDatabase.getInstance().getReference(username).child("Bank").child(bankName).child("Transactions").child(transactId)
         databaseReference.addListenerForSingleValueEvent(object: ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
                 val bank = snapshot.getValue(bankTransactionData::class.java)
@@ -52,7 +52,7 @@ class update_transaction : AppCompatActivity() {
         }
 
         binding.deleteBtn.setOnClickListener{
-            databaseReference = FirebaseDatabase.getInstance().getReference(username).child(bankName).child("Transactions")
+            databaseReference = FirebaseDatabase.getInstance().getReference(username).child("Bank").child(bankName).child("Transactions")
             databaseReference.child(transactId).removeValue().addOnSuccessListener {
                 Toast.makeText(this,"Successfully Deleted", Toast.LENGTH_SHORT).show()
                 var intent = Intent(this, transaction_view::class.java)
@@ -75,7 +75,7 @@ class update_transaction : AppCompatActivity() {
     }
 
     private fun updateData(id: String, amount: Int, description: String, type: String){
-        databaseReference = FirebaseDatabase.getInstance().getReference(username).child(bankName).child("Transactions")
+        databaseReference = FirebaseDatabase.getInstance().getReference(username).child("Bank").child(bankName).child("Transactions")
         val bankTransaction = mapOf("id" to id, "amount" to amount, "description" to description, "type" to type)
         databaseReference.child(id).updateChildren(bankTransaction).addOnSuccessListener {
             binding.addAmount.text.clear()

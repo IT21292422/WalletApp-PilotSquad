@@ -28,7 +28,7 @@ class update_bank_account : AppCompatActivity() {
             //bal = bankBal.toInt()
         }
 
-        databaseReference = FirebaseDatabase.getInstance().getReference(username).child(bankName)
+        databaseReference = FirebaseDatabase.getInstance().getReference(username).child("Bank").child(bankName)
         databaseReference.addListenerForSingleValueEvent(object: ValueEventListener{
             override fun onDataChange(snapshot: DataSnapshot) {
                 val bank = snapshot.getValue(bankData::class.java)
@@ -61,7 +61,7 @@ class update_bank_account : AppCompatActivity() {
     }
 
     private fun updateData(accNo: String, balance: Int, name: String){
-        databaseReference = FirebaseDatabase.getInstance().getReference(username)
+        databaseReference = FirebaseDatabase.getInstance().getReference(username).child("Bank")
         val bankTransaction = mapOf("accNo" to accNo, "balance" to balance, "name" to name)
         databaseReference.child(bankName).updateChildren(bankTransaction).addOnSuccessListener {
             binding.updateAccNo.text.clear()

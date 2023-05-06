@@ -32,6 +32,7 @@ class MainBank : AppCompatActivity() {
 
         binding.backBankBtn.setOnClickListener {
             var intent = Intent(this,MainHomePage::class.java)
+            intent.putExtra("userName", username)
             startActivity(intent)
             finish()
         }
@@ -42,7 +43,7 @@ class MainBank : AppCompatActivity() {
         dataList = ArrayList()
         adapter = bankAdapter(this@MainBank,dataList,username)
         binding.recyclerViewBank.adapter = adapter
-        databaseReference = FirebaseDatabase.getInstance().getReference(username)
+        databaseReference = FirebaseDatabase.getInstance().getReference(username).child("Bank")
         eventListener = databaseReference!!.addValueEventListener(object: ValueEventListener{
             override fun onDataChange(snapshot: DataSnapshot) {
                 dataList.clear()

@@ -40,7 +40,7 @@ class activity_add_bank_account : AppCompatActivity() {
             val balance = bal.toInt()
 
 
-            databaseReference = FirebaseDatabase.getInstance().getReference(username)
+            databaseReference = FirebaseDatabase.getInstance().getReference(username).child("Bank")
             val bankTransaction = bankData(accNo, balance, name)
             databaseReference.child(name).setValue(bankTransaction).addOnSuccessListener {
                 binding.addBankName.text.clear()
