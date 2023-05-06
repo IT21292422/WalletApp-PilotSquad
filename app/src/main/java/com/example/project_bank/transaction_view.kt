@@ -154,10 +154,12 @@ class transaction_view : AppCompatActivity() {
 
     fun searchList(text: String){
         val searchList = ArrayList<bankTransactionData>()
-        for(dataClass in dataList){
-            if(dataClass.id?.lowercase()?.contains(text.lowercase())==true){
+        for(dataClass in dataList) {
+            if (dataClass.id?.lowercase()?.contains(text.lowercase()) == true) {
                 searchList.add(dataClass)
-            }else if(dataClass.description?.lowercase()?.contains(text.lowercase())==true){
+            } else if (dataClass.description?.lowercase()?.contains(text.lowercase()) == true) {
+                searchList.add(dataClass)
+            } else if (dataClass.type?.lowercase()?.contains(text.lowercase()) == true) {
                 searchList.add(dataClass)
             }
         }
