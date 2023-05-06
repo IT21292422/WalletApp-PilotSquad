@@ -11,10 +11,9 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.project_bank.R
 import com.example.project_bank.models.bankTransactionData
-import com.example.project_bank.transaction_view
 import com.example.project_bank.update_transaction
 
-class bkTransactAdapter(private val context: Context, private val dataList:List<bankTransactionData>):
+class bkTransactAdapter(private val context: Context, private var dataList:List<bankTransactionData>, private val myUser: String, private val bank: String):
     RecyclerView.Adapter<MyViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
         val view: View = LayoutInflater.from(parent.context).inflate(R.layout.transact_view,parent,false)
@@ -25,6 +24,11 @@ class bkTransactAdapter(private val context: Context, private val dataList:List<
         return dataList.size
     }
 
+    fun searchDataList(searchList: List<bankTransactionData>){
+        dataList = searchList
+        notifyDataSetChanged()
+    }
+
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
         holder.id.text = dataList[position].id
         holder.amount.text = dataList[position].amount.toString()
@@ -32,6 +36,8 @@ class bkTransactAdapter(private val context: Context, private val dataList:List<
         holder.type.text = dataList[position].type
         holder.id.setOnClickListener{
             val intent = Intent(context, update_transaction::class.java)
+            intent.putExtra("user", myUser)
+            intent.putExtra("bank", bank)
             intent.putExtra("tid", dataList[position].id)
             context.startActivity(intent)
         }

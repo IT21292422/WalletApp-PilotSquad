@@ -54,9 +54,10 @@
         android:id="@+id/updateBtn"
         android:layout_width="73dp"
         android:layout_height="67dp"
-        android:layout_marginBottom="308dp"
+        android:layout_marginBottom="312dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.677"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/plus" />
 
@@ -100,5 +101,20 @@
         app:layout_constraintTop_toBottomOf="@+id/textView3"
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/back" />
+
+    <ImageView
+        android:id="@+id/deleteBtn"
+        android:layout_width="73dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="312dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/updateBtn"
+        app:layout_constraintTop_toBottomOf="@+id/addDescription"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/baseline_delete_24" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

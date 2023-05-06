@@ -1,10 +1,9 @@
 package com.example.project_bank
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Spinner
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import com.example.project_bank.databinding.ActivityAddTransactionBinding
 import com.example.project_bank.models.bankTransactionData
 import com.google.firebase.database.DatabaseReference
@@ -19,8 +18,9 @@ class add_transaction : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityAddTransactionBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        val Type = intent.getStringExtra("Type").toString()
-        val bankName = intent.getStringExtra("bank").toString()
+
+        val bankName = intent.getStringExtra("name").toString()
+        val username = intent.getStringExtra("user").toString()
 
 //        var position: Int = 1
 //        if (Type=="Credit"){
@@ -31,6 +31,14 @@ class add_transaction : AppCompatActivity() {
 //        val addType: Spinner = findViewById(R.id.addType)
 //        addType.setSelection(position)
 
+        binding.backBtnAddTrans.setOnClickListener{
+            var intent = Intent(this, transaction_view::class.java)
+            intent.putExtra("name",bankName)
+            intent.putExtra("user", username)
+            startActivity(intent)
+            finish()
+        }
+
         binding.addBtn.setOnClickListener {
             val id = binding.addTransId.text.toString()
             val amountStr = binding.addAmount.text.toString()
@@ -38,7 +46,7 @@ class add_transaction : AppCompatActivity() {
             val description = binding.addDescription.text.toString()
             val type = binding.addType.getSelectedItem().toString()
 
-            databaseReference = FirebaseDatabase.getInstance().getReference("Akmal").child(bankName).child("Transactions")
+            databaseReference = FirebaseDatabase.getInstance().getReference(username).child(bankName).child("Transactions")
             val bankTransaction = bankTransactionData(id, amount, description,type)
             //databaseReference.child(id).setValue(bankTransaction).addOnSuccessListener
             databaseReference.child(id).setValue(bankTransaction).addOnSuccessListener {
@@ -49,6 +57,7 @@ class add_transaction : AppCompatActivity() {
 
                 var intent = Intent(this, transaction_view::class.java)
                 intent.putExtra("name",bankName)
+                intent.putExtra("user", username)
                 startActivity(intent)
                 finish()
             }.addOnFailureListener{

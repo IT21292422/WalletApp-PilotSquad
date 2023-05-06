@@ -35,6 +35,9 @@ public final class ActivityUpdateTransactionBinding implements ViewBinding {
   public final ImageView backBtnUpdt;
 
   @NonNull
+  public final ImageView deleteBtn;
+
+  @NonNull
   public final TextView textView3;
 
   @NonNull
@@ -45,13 +48,14 @@ public final class ActivityUpdateTransactionBinding implements ViewBinding {
 
   private ActivityUpdateTransactionBinding(@NonNull ConstraintLayout rootView,
       @NonNull EditText addAmount, @NonNull EditText addDescription, @NonNull Spinner addType,
-      @NonNull ImageView backBtnUpdt, @NonNull TextView textView3, @NonNull TextView transID,
-      @NonNull ImageView updateBtn) {
+      @NonNull ImageView backBtnUpdt, @NonNull ImageView deleteBtn, @NonNull TextView textView3,
+      @NonNull TextView transID, @NonNull ImageView updateBtn) {
     this.rootView = rootView;
     this.addAmount = addAmount;
     this.addDescription = addDescription;
     this.addType = addType;
     this.backBtnUpdt = backBtnUpdt;
+    this.deleteBtn = deleteBtn;
     this.textView3 = textView3;
     this.transID = transID;
     this.updateBtn = updateBtn;
@@ -108,6 +112,12 @@ public final class ActivityUpdateTransactionBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.deleteBtn;
+      ImageView deleteBtn = ViewBindings.findChildViewById(rootView, id);
+      if (deleteBtn == null) {
+        break missingId;
+      }
+
       id = R.id.textView3;
       TextView textView3 = ViewBindings.findChildViewById(rootView, id);
       if (textView3 == null) {
@@ -127,7 +137,7 @@ public final class ActivityUpdateTransactionBinding implements ViewBinding {
       }
 
       return new ActivityUpdateTransactionBinding((ConstraintLayout) rootView, addAmount,
-          addDescription, addType, backBtnUpdt, textView3, transID, updateBtn);
+          addDescription, addType, backBtnUpdt, deleteBtn, textView3, transID, updateBtn);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

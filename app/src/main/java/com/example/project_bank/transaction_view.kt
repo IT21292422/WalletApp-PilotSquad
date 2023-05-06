@@ -1,14 +1,16 @@
 package com.example.project_bank
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import androidx.appcompat.widget.SearchView
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.project_bank.Adapters.bkTransactAdapter
-import com.example.project_bank.models.bankTransactionData
 import com.example.project_bank.databinding.ActivityTransactionViewBinding
+import com.example.project_bank.models.bankData
+import com.example.project_bank.models.bankTransactionData
 import com.google.firebase.database.*
 
 class transaction_view : AppCompatActivity() {
@@ -21,8 +23,8 @@ class transaction_view : AppCompatActivity() {
     var bankBal: String = ""
     var bankName: String = ""
     var username:String = ""
-    val Debit: String ="Debit"
-    val Credit: String ="Credit"
+    var creditAmount:Int = 0
+    var debitAmount:Int = 0
     var bal:Int = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -34,13 +36,64 @@ class transaction_view : AppCompatActivity() {
         if(bundle != null){
             username = intent.getStringExtra("user").toString()
             binding.bankTransactName.text = bundle.getString("name")
-            binding.totBalance.text = bundle.getString("bal")
             bankName = bundle.getString("name").toString()
             bankBal = bundle.getString("bal").toString()
             //bal = bankBal.toInt()
         }
 
-        //userName = intent.getStringExtra("userName").toString()
+        //Getting the Opening balance
+        databaseReference = FirebaseDatabase.getInstance().getReference(username).child(bankName)
+        databaseReference.addValueEventListener(object : ValueEventListener{
+            override fun onDataChange(snapshot: DataSnapshot) {
+                for(itemSnapshot in snapshot.children){
+                    var balanceStr = itemSnapshot.child("balance").value.toString()
+                    bal = balanceStr.toInt()
+                    }
+                }
+            }
+
+        //Calculating the balance
+        databaseReference = FirebaseDatabase.getInstance().getReference(username).child(bankName).child("Transactions")
+        databaseReference.addValueEventListener(object : ValueEventListener{
+            override fun onDataChange(snapshot: DataSnapshot) {
+                for(itemSnapshot in snapshot.children){
+                        var transactType = itemSnapshot.child("type").value.toString()
+                        if(transactType=="Credit"){
+                            var creditAmountStr = itemSnapshot.child("amount").value.toString()
+                            var credit = creditAmountStr.toInt()
+                            creditAmount = creditAmount + credit
+                        }else if(transactType=="Debit"){
+                            var debitAmountStr = itemSnapshot.child("amount").value.toString()
+                            var debit = debitAmountStr.toInt()
+                            debitAmount = debitAmount + debit
+                        }
+                    }
+                }
+
+            override fun onCancelled(error: DatabaseError) {
+                TODO("Not yet implemented")
+            }
+        }
+
+                binding.totCredits.text = creditAmount
+                binding.totDebits.text = debitAmount
+                binding.totBalance.text = bal + (creditAmount-debitAmount)
+
+
+        var listener = object : SearchView.OnQueryTextListener {
+            override fun onQueryTextSubmit(query: String): Boolean {
+                // Perform action when user submits query
+                return false
+            }
+
+            override fun onQueryTextChange(newText: String): Boolean {
+                // Perform action when user changes text in SearchView
+                searchList(newText)
+                return true
+            }
+        }
+
+        binding.searchTransaction.setOnQueryTextListener(listener)
 
         try {
             databaseReference = FirebaseDatabase.getInstance().getReference(username).child(bankName).child("Transactions")
@@ -48,7 +101,7 @@ class transaction_view : AppCompatActivity() {
             binding.recyclerView.layoutManager = LinearLayoutManager
 
             dataList = ArrayList()
-            adapter = bkTransactAdapter(this@transaction_view,dataList)
+            adapter = bkTransactAdapter(this@transaction_view,dataList,username,bankName)
             binding.recyclerView.adapter = adapter
 
         }catch (e: Exception){
@@ -58,7 +111,7 @@ class transaction_view : AppCompatActivity() {
             override fun onDataChange(snapshot: DataSnapshot) {
                 //To get the name of user so to pass as intent
                 username= snapshot.ref.parent?.parent?.key.toString()
-                Toast.makeText(this@transaction_view,username,Toast.LENGTH_SHORT).show()
+                //Toast.makeText(this@transaction_view,username,Toast.LENGTH_SHORT).show()
                 dataList.clear()
                 for(itemSnapshot in snapshot.children){
                     val dataClass = itemSnapshot.getValue(bankTransactionData::class.java)
@@ -75,76 +128,36 @@ class transaction_view : AppCompatActivity() {
 
         })
 
-
         binding.addTransactBtn.setOnClickListener{
             val intent = Intent(this@transaction_view,add_transaction::class.java)
-            intent.putExtra("Type", Credit)
-            intent.putExtra("bank", bankName)
+            //intent.putExtra("Type", Credit)
+            intent.putExtra("name", bankName)
+            intent.putExtra("user", username)
             startActivity(intent)
             finish()
         }
 
-        binding.editBtn.setOnClickListener{
-            val searchID: String = binding.searchTransaction.query.toString()
-            if(searchID.isNotEmpty()) {
-                val intent = Intent(this@transaction_view, update_transaction::class.java)
-                intent.putExtra("tid", searchID)
-                startActivity(intent)
-                finish()
-            }else{
-                Toast.makeText(this,"Please enter the ID",Toast.LENGTH_SHORT).show()
-            }
+        binding.backBtnTrans.setOnClickListener{
+            var intent = Intent(this, MainBank::class.java)
+            startActivity(intent)
+            finish()
         }
-
-        binding.deleteBtn.setOnClickListener{
-            val searchID: String = binding.searchTransaction.query.toString()
-            if(searchID.isNotEmpty()){
-                deleteData(searchID)
-            }else{
-                Toast.makeText(this,"Please enter the ID",Toast.LENGTH_SHORT).show()
-            }
-        }
-
-        binding.searchBtn.setOnClickListener{
-            //val searchID: String = binding.searchTransaction.text.toString()
-            val searchID: String = binding.searchTransaction.query.toString()
-            if(searchID.isNotEmpty()){
-                readData(searchID)
-            }else{
-                Toast.makeText(this,"Please enter the ID",Toast.LENGTH_SHORT).show()
-            }
-        }
-
 
     }
 
-    private fun readData(id: String){
-        databaseReference = FirebaseDatabase.getInstance().getReference("Akmal")
-        databaseReference.child(bankName).child(id).get().addOnSuccessListener {
-            if (it.exists()) {
-                val amount = it.child("amount").value
-                val description = it.child("description").value
-                Toast.makeText(this, "Results Found", Toast.LENGTH_SHORT).show()
-//                binding.searchTransaction.text.clear()
-//                binding.tableId.text = id.toString()
-//                binding.tableAmount.text = amount.toString()
-//                binding.tableDescription.text = description.toString()
-            } else {
-                Toast.makeText(this, "Transaction does not exist", Toast.LENGTH_SHORT).show()
+    fun searchList(text: String){
+        val searchList = ArrayList<bankTransactionData>()
+        for(dataClass in dataList){
+            if(dataClass.id?.lowercase()?.contains(text.lowercase())==true){
+                searchList.add(dataClass)
+            }else if(dataClass.description?.lowercase()?.contains(text.lowercase())==true){
+                searchList.add(dataClass)
             }
-        }.addOnFailureListener {
-            Toast.makeText(this, "Something went wrong", Toast.LENGTH_SHORT).show()
         }
-        }
-
-    private fun deleteData(id: String){
-        databaseReference = FirebaseDatabase.getInstance().getReference("Akmal").child("Commercial Bank").child("Transactions")
-        databaseReference.child(id).removeValue().addOnSuccessListener {
-            Toast.makeText(this,"Successfully Deleted", Toast.LENGTH_SHORT).show()
-        }.addOnFailureListener{
-            Toast.makeText(this,"Unable To Delete", Toast.LENGTH_SHORT).show()
-        }
+        adapter.searchDataList(searchList)
     }
 
 }
+
+
 

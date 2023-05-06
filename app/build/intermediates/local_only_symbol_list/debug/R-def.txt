@@ -51,11 +51,9 @@ id cardview
 id deleteBankBtn
 id deleteBtn
 id editBankBtn
-id editBtn
 id editRow
 id recyclerView
 id recyclerViewBank
-id searchBtn
 id searchTransaction
 id tableAmount
 id tableDescription

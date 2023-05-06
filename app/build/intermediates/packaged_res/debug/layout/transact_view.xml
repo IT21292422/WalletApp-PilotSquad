@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
     <TableLayout
         android:id="@+id/tableLayout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent"
+        android:shrinkColumns="*">
 
         <TableRow
             android:id="@+id/tableRow"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="68dp"
             android:background="#DAE8FC"
             android:padding="5dp">
 
@@ -34,11 +34,13 @@
 
             <TextView
                 android:id="@+id/tableDescription"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:ellipsize="end"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="@string/descript_1" />
+                android:text="Cash Deposit to Akmal" />
 
             <TextView
                 android:id="@+id/tableType"
@@ -47,7 +49,7 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:text="Credit" />
+
         </TableRow>
     </TableLayout>
-
 </LinearLayout>

@@ -3056,7 +3056,6 @@ id easeInOut
 id easeOut
 id east
 id editBankBtn
-id editBtn
 id editRow
 id edit_query
 id elastic
@@ -3250,7 +3249,6 @@ id scrollIndicatorDown
 id scrollIndicatorUp
 id scrollView
 id scrollable
-id searchBtn
 id searchTransaction
 id search_badge
 id search_bar

@@ -1,10 +1,10 @@
 package com.example.project_bank
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.ImageView
+import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.project_bank.Adapters.bankAdapter
 import com.example.project_bank.databinding.ActivityMainBinding

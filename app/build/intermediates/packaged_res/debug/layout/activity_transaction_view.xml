@@ -21,26 +21,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <android.widget.SearchView
-        android:id="@+id/searchTransaction"
-        android:layout_width="285dp"
-        android:layout_height="46dp"
-        app:layout_constraintBottom_toTopOf="@+id/editBtn"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.126"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tableSummary" />
-
     <TableLayout
         android:id="@+id/tableLayout"
-        android:layout_width="393dp"
-        android:layout_height="243dp"
-        android:layout_marginBottom="348dp"
+        android:layout_width="392dp"
+        android:layout_height="250dp"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintVertical_bias="0.394"
         tools:context=".MainBank">
 
         <TableRow
@@ -85,8 +77,8 @@
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_width="372dp"
+            android:layout_height="208dp"></androidx.recyclerview.widget.RecyclerView>
 
     </TableLayout>
 
@@ -103,7 +95,7 @@
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tableLayout"
-        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintVertical_bias="0.444"
         tools:context=".MainBank">
 
         <TableRow
@@ -180,29 +172,18 @@
 
     <ImageView
         android:id="@+id/addTransactBtn"
-        android:layout_width="69dp"
-        android:layout_height="62dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginBottom="588dp"
         android:onClick="addTransact"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.166"
+        app:layout_constraintHorizontal_bias="0.972"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tableSummary"
-        app:layout_constraintVertical_bias="0.762"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/plus" />
-
-    <ImageView
-        android:id="@+id/deleteBtn"
-        android:layout_width="55dp"
-        android:layout_height="56dp"
-        android:layout_marginBottom="28dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.853"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tableSummary"
-        app:layout_constraintVertical_bias="0.929"
-        app:srcCompat="@drawable/minus" />
 
     <TextView
         android:id="@+id/bankTransactName"
@@ -213,33 +194,8 @@
         app:layout_constraintBottom_toTopOf="@+id/tableLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
-
-    <Button
-        android:id="@+id/searchBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="1dp"
-        android:layout_marginBottom="36dp"
-        android:backgroundTint="#00E676"
-        android:text="Search"
-        app:layout_constraintBottom_toTopOf="@+id/deleteBtn"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.437"
-        app:layout_constraintStart_toEndOf="@+id/searchTransaction"
-        app:layout_constraintTop_toBottomOf="@+id/tableSummary"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <ImageView
-        android:id="@+id/editBtn"
-        android:layout_width="69dp"
-        android:layout_height="62dp"
-        android:layout_marginBottom="36dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/deleteBtn"
-        app:layout_constraintHorizontal_bias="0.522"
-        app:layout_constraintStart_toEndOf="@+id/addTransactBtn"
-        app:srcCompat="@drawable/edit" />
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintVertical_bias="0.121" />
 
     <ImageView
         android:id="@+id/backBtnTrans"
@@ -251,9 +207,24 @@
         android:layout_marginBottom="22dp"
         app:layout_constraintBottom_toTopOf="@+id/tableLayout"
         app:layout_constraintEnd_toStartOf="@+id/bankTransactName"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintVertical_bias="0.08"
         app:srcCompat="@drawable/back" />
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/searchTransaction"
+        android:layout_width="313dp"
+        android:layout_height="51dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableSummary"
+        app:layout_constraintVertical_bias="0.927" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

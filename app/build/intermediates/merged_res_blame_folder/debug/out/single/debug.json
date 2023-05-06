@@ -8,12 +8,12 @@
         "source": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-main-39:\\mipmap-xxxhdpi\\edit_round.png"
     },
     {
-        "merged": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-merged_res-37:\\mipmap-xxhdpi_ic_launcher_foreground.png.flat",
-        "source": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-main-39:\\mipmap-xxhdpi\\ic_launcher_foreground.png"
-    },
-    {
         "merged": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-merged_res-37:\\layout_bank_view.xml.flat",
         "source": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-main-39:\\layout\\bank_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-merged_res-37:\\mipmap-xxhdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-main-39:\\mipmap-xxhdpi\\ic_launcher_foreground.png"
     },
     {
         "merged": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-merged_res-37:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
@@ -38,10 +38,6 @@
     {
         "merged": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-merged_res-37:\\mipmap-xhdpi_edit.png.flat",
         "source": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-main-39:\\mipmap-xhdpi\\edit.png"
-    },
-    {
-        "merged": "com.example.project_bank.app-merged_res-37:/layout_bank_view.xml.flat",
-        "source": "com.example.project_bank.app-main-39:/layout/bank_view.xml"
     },
     {
         "merged": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-merged_res-37:\\drawable_back.png.flat",
@@ -98,6 +94,10 @@
     {
         "merged": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-merged_res-37:\\drawable_minus.png.flat",
         "source": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-main-39:\\drawable\\minus.png"
+    },
+    {
+        "merged": "com.example.project_bank.app-merged_res-37:/layout_activity_transaction_view.xml.flat",
+        "source": "com.example.project_bank.app-main-39:/layout/activity_transaction_view.xml"
     },
     {
         "merged": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-merged_res-37:\\layout_activity_transaction_view.xml.flat",

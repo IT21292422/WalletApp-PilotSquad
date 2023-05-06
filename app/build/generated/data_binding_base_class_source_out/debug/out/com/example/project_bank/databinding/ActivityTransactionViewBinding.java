@@ -4,13 +4,12 @@ package com.example.project_bank.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.SearchView;
 import android.widget.TableLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.SearchView;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
@@ -34,16 +33,7 @@ public final class ActivityTransactionViewBinding implements ViewBinding {
   public final TextView bankTransactName;
 
   @NonNull
-  public final ImageView deleteBtn;
-
-  @NonNull
-  public final ImageView editBtn;
-
-  @NonNull
   public final RecyclerView recyclerView;
-
-  @NonNull
-  public final Button searchBtn;
 
   @NonNull
   public final SearchView searchTransaction;
@@ -68,8 +58,7 @@ public final class ActivityTransactionViewBinding implements ViewBinding {
 
   private ActivityTransactionViewBinding(@NonNull ConstraintLayout rootView,
       @NonNull ImageView addTransactBtn, @NonNull ImageView backBtnTrans,
-      @NonNull TextView bankTransactName, @NonNull ImageView deleteBtn, @NonNull ImageView editBtn,
-      @NonNull RecyclerView recyclerView, @NonNull Button searchBtn,
+      @NonNull TextView bankTransactName, @NonNull RecyclerView recyclerView,
       @NonNull SearchView searchTransaction, @NonNull TableLayout tableLayout,
       @NonNull TableLayout tableSummary, @NonNull TextView textView4, @NonNull TextView totBalance,
       @NonNull TextView totCredits, @NonNull TextView totDebits) {
@@ -77,10 +66,7 @@ public final class ActivityTransactionViewBinding implements ViewBinding {
     this.addTransactBtn = addTransactBtn;
     this.backBtnTrans = backBtnTrans;
     this.bankTransactName = bankTransactName;
-    this.deleteBtn = deleteBtn;
-    this.editBtn = editBtn;
     this.recyclerView = recyclerView;
-    this.searchBtn = searchBtn;
     this.searchTransaction = searchTransaction;
     this.tableLayout = tableLayout;
     this.tableSummary = tableSummary;
@@ -135,27 +121,9 @@ public final class ActivityTransactionViewBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.deleteBtn;
-      ImageView deleteBtn = ViewBindings.findChildViewById(rootView, id);
-      if (deleteBtn == null) {
-        break missingId;
-      }
-
-      id = R.id.editBtn;
-      ImageView editBtn = ViewBindings.findChildViewById(rootView, id);
-      if (editBtn == null) {
-        break missingId;
-      }
-
       id = R.id.recyclerView;
       RecyclerView recyclerView = ViewBindings.findChildViewById(rootView, id);
       if (recyclerView == null) {
-        break missingId;
-      }
-
-      id = R.id.searchBtn;
-      Button searchBtn = ViewBindings.findChildViewById(rootView, id);
-      if (searchBtn == null) {
         break missingId;
       }
 
@@ -202,9 +170,8 @@ public final class ActivityTransactionViewBinding implements ViewBinding {
       }
 
       return new ActivityTransactionViewBinding((ConstraintLayout) rootView, addTransactBtn,
-          backBtnTrans, bankTransactName, deleteBtn, editBtn, recyclerView, searchBtn,
-          searchTransaction, tableLayout, tableSummary, textView4, totBalance, totCredits,
-          totDebits);
+          backBtnTrans, bankTransactName, recyclerView, searchTransaction, tableLayout,
+          tableSummary, textView4, totBalance, totCredits, totDebits);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -1,9 +1,9 @@
 package com.example.project_bank
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import com.example.project_bank.databinding.ActivityUpdateBankAccountBinding
 import com.example.project_bank.models.bankData
 import com.google.firebase.database.*
@@ -68,8 +68,12 @@ class update_bank_account : AppCompatActivity() {
             binding.updateBankBal.text.clear()
             binding.updateBankName.text.clear()
             Toast.makeText(this, "Updated", Toast.LENGTH_SHORT).show()
+            var intent = Intent(this, MainBank::class.java)
+            startActivity(intent)
+            finish()
         }.addOnFailureListener{
             Toast.makeText(this, "Failed to Update", Toast.LENGTH_SHORT).show()
         }
     }
+
 }
