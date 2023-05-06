@@ -30,6 +30,12 @@ class MainBank : AppCompatActivity() {
 
         username = intent.getStringExtra("user").toString()
 
+        binding.backBankBtn.setOnClickListener {
+            var intent = Intent(this,MainHomePage::class.java)
+            startActivity(intent)
+            finish()
+        }
+
         val LinearLayoutManager = LinearLayoutManager(this@MainBank)
         binding.recyclerViewBank.layoutManager = LinearLayoutManager
 

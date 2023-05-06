@@ -14,14 +14,14 @@ import com.example.madproject.models.CashTrans
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 
-class cashTransactAdapter(private val context: Context, private val dataList:List<CashTrans>):
+class cashTransactAdapter(private val context: Context, private val dataList:List<CashTrans>, private val myUser: String):
     RecyclerView.Adapter<CashViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CashViewHolder {
         val view: View = LayoutInflater.from(parent.context).inflate(R.layout.cash_transact_view,parent,false)
         return CashViewHolder(view)
     }
 
-    override fun getItemCount(): Int {
+    override fun getItemCount(): Int {5
         return dataList.size
     }
 
@@ -32,13 +32,14 @@ class cashTransactAdapter(private val context: Context, private val dataList:Lis
         holder.delete.setOnClickListener{
             Toast.makeText(context,dataList[position].cid.toString(), Toast.LENGTH_SHORT).show()
             if(dataList[position].type=="Income"){
-                deleteIncome(dataList[position].cid.toString())
+                deleteIncome(dataList[position].cid.toString(),myUser)
             }else if(dataList[position].type=="Expense"){
-                deleteExpense(dataList[position].cid.toString())
+                deleteExpense(dataList[position].cid.toString(),myUser)
             }
         }
         holder.edit.setOnClickListener{
             val intent =Intent(context, Update::class.java)
+            intent.putExtra("user", myUser)
             intent.putExtra("id",dataList[position].cid)
             intent.putExtra("type",dataList[position].type)
             context.startActivity(intent)
@@ -65,9 +66,9 @@ class CashViewHolder(itemView: View): RecyclerView.ViewHolder(itemView){
 
 }
 
-fun deleteIncome(id: String){
+fun deleteIncome(id: String, user: String){
     var databaseReference: DatabaseReference =
-        FirebaseDatabase.getInstance().getReference("Mayuran").child("Cash Transaction").child("Income")
+        FirebaseDatabase.getInstance().getReference(user).child("Cash Transaction").child("Income")
     databaseReference.child(id).removeValue().addOnSuccessListener {
         //Toast.makeText("Successfully Deleted", Toast.LENGTH_SHORT).show()
     }.addOnFailureListener {
@@ -75,9 +76,9 @@ fun deleteIncome(id: String){
     }
 }
 
-fun deleteExpense(id: String){
+fun deleteExpense(id: String, user: String){
     var databaseReference: DatabaseReference =
-        FirebaseDatabase.getInstance().getReference("Mayuran").child("Cash Transaction").child("Expense")
+        FirebaseDatabase.getInstance().getReference(user).child("Cash Transaction").child("Expense")
     databaseReference.child(id).removeValue().addOnSuccessListener {
         //Toast.makeText("Successfully Deleted", Toast.LENGTH_SHORT).show()
     }.addOnFailureListener {

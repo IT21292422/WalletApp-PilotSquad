@@ -48,7 +48,7 @@ class MainHomePage : AppCompatActivity() {
     }
     fun cashpage(view: View) {
         val intent = Intent(this, Income_List::class.java)
-        intent.putExtra("userName", userName)
+        intent.putExtra("user", userName)
         startActivity(intent)
         finish()
 

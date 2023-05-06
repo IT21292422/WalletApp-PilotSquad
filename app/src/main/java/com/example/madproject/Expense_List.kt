@@ -21,14 +21,24 @@ class Expense_List : AppCompatActivity() {
         binding = ActivityIncomeListBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        val username = intent.getStringExtra("user").toString()
+
+        binding.Back.setOnClickListener{
+            val intent = Intent(this@Expense_List,MainHomePage::class.java)
+            startActivity(intent)
+            finish()
+        }
+
         binding.AddTranscation.setOnClickListener{
             val intent = Intent(this@Expense_List,Create::class.java)
+            intent.putExtra("user", username)
             startActivity(intent)
             finish()
         }
 
         binding.Income.setOnClickListener{
             val intent = Intent(this@Expense_List,Income_List::class.java)
+            intent.putExtra("user", username)
             startActivity(intent)
             finish()
         }
@@ -37,9 +47,9 @@ class Expense_List : AppCompatActivity() {
         binding.recyclerViewIncome.layoutManager = LinearLayoutManager
 
         dataList = ArrayList()
-        adapter = cashTransactAdapter(this@Expense_List,dataList)
+        adapter = cashTransactAdapter(this@Expense_List,dataList,username)
         binding.recyclerViewIncome.adapter = adapter
-        databaseReference = FirebaseDatabase.getInstance().getReference("Mayuran").child("Cash Transaction").child("Expense")
+        databaseReference = FirebaseDatabase.getInstance().getReference(username).child("Cash Transaction").child("Expense")
 
         eventListener = databaseReference!!.addValueEventListener(object: ValueEventListener{
             override fun onDataChange(snapshot: DataSnapshot) {

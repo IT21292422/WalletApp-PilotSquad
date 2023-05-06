@@ -21,8 +21,11 @@ class Update : AppCompatActivity() {
         binding = ActivityUpdateBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        var username = intent.getStringExtra("user").toString()
+
         binding.Back.setOnClickListener{
             val intent = Intent(this@Update,Income_List::class.java)
+            intent.putExtra("user", username)
             startActivity(intent)
             finish()
         }
@@ -34,7 +37,7 @@ class Update : AppCompatActivity() {
         }
 
 
-        databaseReference = FirebaseDatabase.getInstance().getReference("Mayuran").child("Cash Transaction").child(typeUpdt).child(transactID)
+        databaseReference = FirebaseDatabase.getInstance().getReference(username).child("Cash Transaction").child(typeUpdt).child(transactID)
 
         databaseReference.addListenerForSingleValueEvent(object: ValueEventListener {
             override  fun onDataChange(dataSnapshot: DataSnapshot) {
@@ -61,34 +64,42 @@ class Update : AppCompatActivity() {
             val description = binding.Description.text.toString()
             //val type = binding.Type.selectedItem.toString()
             if(typeUpdt=="Income"){
-                updateIncome(id, description, amount, date)
+                updateIncome(id, description, amount, date,username)
             }else if(typeUpdt=="Expense"){
-                updateExpense(id, description, amount, date)
+                updateExpense(id, description, amount, date,username)
             }
         }
     }
 
-    private fun updateIncome(id: String, description: String, amount: String, date: String,){
-        databaseReference = FirebaseDatabase.getInstance().getReference("Mayuran").child("Cash Transaction").child("Income")
+    private fun updateIncome(id: String, description: String, amount: String, date: String, user: String){
+        databaseReference = FirebaseDatabase.getInstance().getReference(user).child("Cash Transaction").child("Income")
         val cashTransaction = mapOf("id" to id, "description" to description, "amount" to amount, "date" to date)
         databaseReference.child(id).updateChildren(cashTransaction).addOnSuccessListener {
             binding.Amount.text.clear()
             binding.Description.text.clear()
             binding.Date.text.clear()
             Toast.makeText(this, "Updated", Toast.LENGTH_SHORT).show()
+            var intent = Intent(this, Income_List::class.java)
+            intent.putExtra("user", user)
+            startActivity(intent)
+            finish()
         }.addOnFailureListener{
             Toast.makeText(this, "Failed to Update", Toast.LENGTH_SHORT).show()
         }
     }
 
-    private fun updateExpense(id: String, description: String, amount: String, date: String,){
-        databaseReference = FirebaseDatabase.getInstance().getReference("Mayuran").child("Cash Transaction").child("Expense")
+    private fun updateExpense(id: String, description: String, amount: String, date: String, user: String){
+        databaseReference = FirebaseDatabase.getInstance().getReference(user).child("Cash Transaction").child("Expense")
         val cashTransaction = mapOf("id" to id, "description" to description, "amount" to amount, "date" to date)
         databaseReference.child(id).updateChildren(cashTransaction).addOnSuccessListener {
             binding.Amount.text.clear()
             binding.Description.text.clear()
             binding.Date.text.clear()
             Toast.makeText(this, "Updated", Toast.LENGTH_SHORT).show()
+            var intent = Intent(this, Expense_List::class.java)
+            intent.putExtra("user", user)
+            startActivity(intent)
+            finish()
         }.addOnFailureListener{
             Toast.makeText(this, "Failed to Update", Toast.LENGTH_SHORT).show()
         }

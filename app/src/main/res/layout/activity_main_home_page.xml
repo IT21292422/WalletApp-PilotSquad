@@ -44,7 +44,6 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="297dp"
         android:layout_marginBottom="16dp"
-        android:onClick="redirectUser"
         app:layout_constraintBottom_toTopOf="@+id/textView9"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView17"
