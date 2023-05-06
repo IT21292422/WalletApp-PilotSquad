@@ -21,15 +21,9 @@ class add_transaction : AppCompatActivity() {
 
         val bankName = intent.getStringExtra("name").toString()
         val username = intent.getStringExtra("user").toString()
+        val balanceStr = intent.getStringExtra("balance").toString()
+        var balance = balanceStr.toInt()
 
-//        var position: Int = 1
-//        if (Type=="Credit"){
-//            position = 1
-//        }else if (Type=="Debit"){
-//            position = 2
-//        }
-//        val addType: Spinner = findViewById(R.id.addType)
-//        addType.setSelection(position)
 
         binding.backBtnAddTrans.setOnClickListener{
             var intent = Intent(this, transaction_view::class.java)
@@ -46,23 +40,29 @@ class add_transaction : AppCompatActivity() {
             val description = binding.addDescription.text.toString()
             val type = binding.addType.getSelectedItem().toString()
 
-            databaseReference = FirebaseDatabase.getInstance().getReference(username).child(bankName).child("Transactions")
-            val bankTransaction = bankTransactionData(id, amount, description,type)
-            //databaseReference.child(id).setValue(bankTransaction).addOnSuccessListener
-            databaseReference.child(id).setValue(bankTransaction).addOnSuccessListener {
-                binding.addAmount.text.clear()
-                binding.addDescription.text.clear()
-                //binding.addType.selectedItem.clear()
-                Toast.makeText(this, "Saved", Toast.LENGTH_SHORT).show()
+            if(amount>balance){
+                Toast.makeText(this, "Insufficient balance", Toast.LENGTH_SHORT).show()
+            }else{
+                databaseReference = FirebaseDatabase.getInstance().getReference(username).child(bankName).child("Transactions")
+                val bankTransaction = bankTransactionData(id, amount, description,type)
+                //databaseReference.child(id).setValue(bankTransaction).addOnSuccessListener
+                databaseReference.child(id).setValue(bankTransaction).addOnSuccessListener {
+                    binding.addAmount.text.clear()
+                    binding.addDescription.text.clear()
+                    //binding.addType.selectedItem.clear()
+                    Toast.makeText(this, "Saved", Toast.LENGTH_SHORT).show()
 
-                var intent = Intent(this, transaction_view::class.java)
-                intent.putExtra("name",bankName)
-                intent.putExtra("user", username)
-                startActivity(intent)
-                finish()
-            }.addOnFailureListener{
-                Toast.makeText(this,"Failed", Toast.LENGTH_SHORT).show()
+                    var intent = Intent(this, transaction_view::class.java)
+                    intent.putExtra("name",bankName)
+                    intent.putExtra("user", username)
+                    startActivity(intent)
+                    finish()
+                }.addOnFailureListener{
+                    Toast.makeText(this,"Failed", Toast.LENGTH_SHORT).show()
+                }
             }
+
+
             }
 
         }

@@ -45,12 +45,15 @@ class transaction_view : AppCompatActivity() {
         databaseReference = FirebaseDatabase.getInstance().getReference(username).child(bankName)
         databaseReference.addValueEventListener(object : ValueEventListener{
             override fun onDataChange(snapshot: DataSnapshot) {
-                for(itemSnapshot in snapshot.children){
-                    var balanceStr = itemSnapshot.child("balance").value.toString()
+                    var balanceStr = snapshot.child("balance").value.toString()
                     bal = balanceStr.toInt()
                     }
-                }
+
+
+            override fun onCancelled(error: DatabaseError) {
+                TODO("Not yet implemented")
             }
+        })
 
         //Calculating the balance
         databaseReference = FirebaseDatabase.getInstance().getReference(username).child(bankName).child("Transactions")
@@ -68,16 +71,18 @@ class transaction_view : AppCompatActivity() {
                             debitAmount = debitAmount + debit
                         }
                     }
+                binding.totCredits.text = creditAmount.toString()
+                binding.totDebits.text = debitAmount.toString()
+                bal = bal + (creditAmount-debitAmount)
+                binding.totBalance.text = bal.toString()
                 }
 
             override fun onCancelled(error: DatabaseError) {
                 TODO("Not yet implemented")
             }
-        }
+        })
 
-                binding.totCredits.text = creditAmount
-                binding.totDebits.text = debitAmount
-                binding.totBalance.text = bal + (creditAmount-debitAmount)
+
 
 
         var listener = object : SearchView.OnQueryTextListener {
@@ -129,10 +134,12 @@ class transaction_view : AppCompatActivity() {
         })
 
         binding.addTransactBtn.setOnClickListener{
+            var balance = binding.totBalance.text.toString()
             val intent = Intent(this@transaction_view,add_transaction::class.java)
             //intent.putExtra("Type", Credit)
             intent.putExtra("name", bankName)
             intent.putExtra("user", username)
+            intent.putExtra("balance", balance)
             startActivity(intent)
             finish()
         }

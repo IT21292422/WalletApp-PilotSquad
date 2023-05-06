@@ -2,6 +2,7 @@ package com.example.project_bank.Adapters
 
 import android.content.Context
 import android.content.Intent
+import android.graphics.Color
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -30,6 +31,16 @@ class bkTransactAdapter(private val context: Context, private var dataList:List<
     }
 
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
+        val darkGreen = Color.parseColor("#43A047")
+        val transactType = dataList[position].type
+        if (transactType == "Debit") {
+            (holder.type as TextView).setTextColor(Color.RED)
+        } else if (transactType == "Credit") {
+            (holder.type as TextView).setTextColor(darkGreen)
+        } else {
+            // Set default text color for other cases
+            (holder.type as TextView).setTextColor(Color.BLACK)
+        }
         holder.id.text = dataList[position].id
         holder.amount.text = dataList[position].amount.toString()
         holder.description.text = dataList[position].description

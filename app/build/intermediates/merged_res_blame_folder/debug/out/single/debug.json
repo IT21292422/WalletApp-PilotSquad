@@ -1,103 +1,23 @@
 [
     {
-        "merged": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-merged_res-37:\\mipmap-xxxhdpi_edit.png.flat",
-        "source": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-main-39:\\mipmap-xxxhdpi\\edit.png"
-    },
-    {
-        "merged": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-merged_res-37:\\mipmap-xxxhdpi_edit_round.png.flat",
-        "source": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-main-39:\\mipmap-xxxhdpi\\edit_round.png"
+        "merged": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-merged_res-37:\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-main-39:\\mipmap-xxxhdpi\\ic_launcher_round.png"
     },
     {
         "merged": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-merged_res-37:\\layout_bank_view.xml.flat",
         "source": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-main-39:\\layout\\bank_view.xml"
     },
     {
-        "merged": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-merged_res-37:\\mipmap-xxhdpi_ic_launcher_foreground.png.flat",
-        "source": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-main-39:\\mipmap-xxhdpi\\ic_launcher_foreground.png"
-    },
-    {
-        "merged": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-merged_res-37:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-main-39:\\mipmap-anydpi-v26\\ic_launcher.xml"
-    },
-    {
-        "merged": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-merged_res-37:\\mipmap-xhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-main-39:\\mipmap-xhdpi\\ic_launcher.png"
-    },
-    {
-        "merged": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-merged_res-37:\\mipmap-xxxhdpi_edit_foreground.png.flat",
-        "source": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-main-39:\\mipmap-xxxhdpi\\edit_foreground.png"
-    },
-    {
-        "merged": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-merged_res-37:\\mipmap-mdpi_edit_foreground.png.flat",
-        "source": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-main-39:\\mipmap-mdpi\\edit_foreground.png"
-    },
-    {
-        "merged": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-merged_res-37:\\xml_backup_rules.xml.flat",
-        "source": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-main-39:\\xml\\backup_rules.xml"
-    },
-    {
-        "merged": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-merged_res-37:\\mipmap-xhdpi_edit.png.flat",
-        "source": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-main-39:\\mipmap-xhdpi\\edit.png"
-    },
-    {
-        "merged": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-merged_res-37:\\drawable_back.png.flat",
-        "source": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-main-39:\\drawable\\back.png"
-    },
-    {
-        "merged": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-merged_res-37:\\drawable_baseline_delete_24.xml.flat",
-        "source": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-main-39:\\drawable\\baseline_delete_24.xml"
-    },
-    {
-        "merged": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-merged_res-37:\\drawable_edit.png.flat",
-        "source": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-main-39:\\drawable\\edit.png"
-    },
-    {
-        "merged": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-merged_res-37:\\mipmap-mdpi_ic_launcher_foreground.png.flat",
-        "source": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-main-39:\\mipmap-mdpi\\ic_launcher_foreground.png"
-    },
-    {
-        "merged": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-merged_res-37:\\mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
-        "source": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-main-39:\\mipmap-xxxhdpi\\ic_launcher_foreground.png"
-    },
-    {
-        "merged": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-merged_res-37:\\mipmap-hdpi_edit.png.flat",
-        "source": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-main-39:\\mipmap-hdpi\\edit.png"
-    },
-    {
-        "merged": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-merged_res-37:\\layout_activity_add_transaction.xml.flat",
-        "source": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-main-39:\\layout\\activity_add_transaction.xml"
-    },
-    {
-        "merged": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-merged_res-37:\\mipmap-xxhdpi_edit_foreground.png.flat",
-        "source": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-main-39:\\mipmap-xxhdpi\\edit_foreground.png"
-    },
-    {
-        "merged": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-merged_res-37:\\mipmap-hdpi_edit_round.png.flat",
-        "source": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-main-39:\\mipmap-hdpi\\edit_round.png"
-    },
-    {
-        "merged": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-merged_res-37:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-main-39:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
-    },
-    {
-        "merged": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-merged_res-37:\\mipmap-mdpi_edit_round.png.flat",
-        "source": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-main-39:\\mipmap-mdpi\\edit_round.png"
-    },
-    {
-        "merged": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-merged_res-37:\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-main-39:\\mipmap-xxxhdpi\\ic_launcher_round.png"
-    },
-    {
         "merged": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-merged_res-37:\\mipmap-xxhdpi_ic_launcher.png.flat",
         "source": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-main-39:\\mipmap-xxhdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-merged_res-37:\\drawable_minus.png.flat",
-        "source": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-main-39:\\drawable\\minus.png"
+        "merged": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-merged_res-37:\\mipmap-xxhdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-main-39:\\mipmap-xxhdpi\\ic_launcher_foreground.png"
     },
     {
-        "merged": "com.example.project_bank.app-merged_res-37:/layout_activity_transaction_view.xml.flat",
-        "source": "com.example.project_bank.app-main-39:/layout/activity_transaction_view.xml"
+        "merged": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-merged_res-37:\\drawable_minus.png.flat",
+        "source": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-main-39:\\drawable\\minus.png"
     },
     {
         "merged": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-merged_res-37:\\layout_activity_transaction_view.xml.flat",
@@ -112,32 +32,44 @@
         "source": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-main-39:\\layout\\activity_update_transaction.xml"
     },
     {
+        "merged": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-merged_res-37:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-main-39:\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-merged_res-37:\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-main-39:\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
         "merged": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-merged_res-37:\\mipmap-hdpi_ic_launcher_foreground.png.flat",
         "source": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-main-39:\\mipmap-hdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-merged_res-37:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-main-39:\\xml\\backup_rules.xml"
     },
     {
         "merged": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-merged_res-37:\\drawable-v24_ic_launcher_foreground.xml.flat",
         "source": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-main-39:\\drawable-v24\\ic_launcher_foreground.xml"
     },
     {
-        "merged": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-merged_res-37:\\mipmap-hdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-main-39:\\mipmap-hdpi\\ic_launcher.png"
+        "merged": "com.example.project_bank.app-merged_res-37:/layout_transact_view.xml.flat",
+        "source": "com.example.project_bank.app-main-39:/layout/transact_view.xml"
     },
     {
-        "merged": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-merged_res-37:\\mipmap-xxhdpi_edit.png.flat",
-        "source": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-main-39:\\mipmap-xxhdpi\\edit.png"
+        "merged": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-merged_res-37:\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-main-39:\\mipmap-hdpi\\ic_launcher.png"
     },
     {
         "merged": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-merged_res-37:\\layout_transact_view.xml.flat",
         "source": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-main-39:\\layout\\transact_view.xml"
     },
     {
-        "merged": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-merged_res-37:\\mipmap-mdpi_edit.png.flat",
-        "source": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-main-39:\\mipmap-mdpi\\edit.png"
+        "merged": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-merged_res-37:\\drawable_back.png.flat",
+        "source": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-main-39:\\drawable\\back.png"
     },
     {
-        "merged": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-merged_res-37:\\mipmap-xhdpi_edit_foreground.png.flat",
-        "source": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-main-39:\\mipmap-xhdpi\\edit_foreground.png"
+        "merged": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-merged_res-37:\\drawable_baseline_delete_24.xml.flat",
+        "source": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-main-39:\\drawable\\baseline_delete_24.xml"
     },
     {
         "merged": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-merged_res-37:\\drawable_ic_launcher_background.xml.flat",
@@ -156,6 +88,10 @@
         "source": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-main-39:\\drawable\\plus.png"
     },
     {
+        "merged": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-merged_res-37:\\drawable_edit.png.flat",
+        "source": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-main-39:\\drawable\\edit.png"
+    },
+    {
         "merged": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-merged_res-37:\\layout_activity_add_bank_account.xml.flat",
         "source": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-main-39:\\layout\\activity_add_bank_account.xml"
     },
@@ -164,20 +100,16 @@
         "source": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-main-39:\\mipmap-mdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-merged_res-37:\\mipmap-hdpi_edit_foreground.png.flat",
-        "source": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-main-39:\\mipmap-hdpi\\edit_foreground.png"
-    },
-    {
-        "merged": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-merged_res-37:\\mipmap-anydpi-v26_edit_round.xml.flat",
-        "source": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-main-39:\\mipmap-anydpi-v26\\edit_round.xml"
-    },
-    {
         "merged": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-merged_res-37:\\mipmap-xxhdpi_ic_launcher_round.png.flat",
         "source": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-main-39:\\mipmap-xxhdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-merged_res-37:\\mipmap-xhdpi_edit_round.png.flat",
-        "source": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-main-39:\\mipmap-xhdpi\\edit_round.png"
+        "merged": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-merged_res-37:\\mipmap-mdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-main-39:\\mipmap-mdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-merged_res-37:\\mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-main-39:\\mipmap-xxxhdpi\\ic_launcher_foreground.png"
     },
     {
         "merged": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-merged_res-37:\\mipmap-xhdpi_ic_launcher_round.png.flat",
@@ -188,8 +120,12 @@
         "source": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-main-39:\\mipmap-xhdpi\\ic_launcher_foreground.png"
     },
     {
-        "merged": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-merged_res-37:\\mipmap-xxhdpi_edit_round.png.flat",
-        "source": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-main-39:\\mipmap-xxhdpi\\edit_round.png"
+        "merged": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-merged_res-37:\\layout_activity_add_transaction.xml.flat",
+        "source": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-main-39:\\layout\\activity_add_transaction.xml"
+    },
+    {
+        "merged": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-merged_res-37:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-main-39:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
         "merged": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-merged_res-37:\\xml_data_extraction_rules.xml.flat",
@@ -202,9 +138,5 @@
     {
         "merged": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-merged_res-37:\\layout_activity_update_bank_account.xml.flat",
         "source": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-main-39:\\layout\\activity_update_bank_account.xml"
-    },
-    {
-        "merged": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-merged_res-37:\\mipmap-anydpi-v26_edit.xml.flat",
-        "source": "C:\\Users\\makma\\.gradle\\daemon\\7.5\\com.example.project_bank.app-main-39:\\mipmap-anydpi-v26\\edit.xml"
     }
 ]
