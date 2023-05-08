@@ -7,39 +7,43 @@
     tools:context=".Income_List">
 
     <TextView
-        android:id="@+id/CashTransaction"
+        android:id="@+id/IncomeTxt"
         android:layout_width="268dp"
         android:layout_height="61dp"
         android:layout_marginTop="40dp"
-        android:text="Cash Details List"
+        android:gravity="center"
+        android:text="Income"
         android:textSize="30dp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.678"
+        app:layout_constraintHorizontal_bias="0.412"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/Expense"
+        android:id="@+id/ExpenseInc"
         android:layout_width="137dp"
         android:layout_height="59dp"
-        android:layout_marginBottom="560dp"
+        android:layout_marginBottom="14dp"
+        android:backgroundTint="#E53935"
         android:text="Expense"
         android:textColor="#000000"
         android:textSize="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/recyclerViewIncome"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.751"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/Income"
+        android:id="@+id/IncomeInc"
         android:layout_width="137dp"
         android:layout_height="59dp"
-        android:layout_marginBottom="560dp"
+        android:layout_marginBottom="14dp"
+        android:backgroundTint="#43A047"
         android:text="Income"
         android:textColor="#FFFFFF"
         android:textSize="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/recyclerViewIncome"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.215"
         app:layout_constraintStart_toStartOf="parent" />

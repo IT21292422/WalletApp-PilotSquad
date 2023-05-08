@@ -5,12 +5,13 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.madproject.Adapters.cashTransactAdapter
+import com.example.madproject.databinding.ActivityExpenseListBinding
 import com.example.madproject.databinding.ActivityIncomeListBinding
 import com.example.madproject.models.CashTrans
 import com.google.firebase.database.*
 
 class Expense_List : AppCompatActivity() {
-    private lateinit var binding: ActivityIncomeListBinding
+    private lateinit var binding: ActivityExpenseListBinding
     private lateinit var dataList: ArrayList<CashTrans>
     private lateinit var adapter: cashTransactAdapter
     private lateinit var databaseReference: DatabaseReference
@@ -18,7 +19,7 @@ class Expense_List : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityIncomeListBinding.inflate(layoutInflater)
+        binding = ActivityExpenseListBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         val username = intent.getStringExtra("user").toString()
@@ -37,7 +38,7 @@ class Expense_List : AppCompatActivity() {
             finish()
         }
 
-        binding.Income.setOnClickListener{
+        binding.IncomeExp.setOnClickListener{
             val intent = Intent(this@Expense_List,Income_List::class.java)
             intent.putExtra("user", username)
             startActivity(intent)

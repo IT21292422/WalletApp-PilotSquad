@@ -79,21 +79,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.677" />
 
-    <Button
-        android:id="@+id/updateBtn"
-        android:layout_width="143dp"
-        android:layout_height="69dp"
-        android:layout_marginStart="172dp"
-        android:layout_marginEnd="180dp"
-        android:layout_marginBottom="100dp"
-        android:backgroundTint="@color/purple_700"
-        android:text="Update"
-        android:textSize="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.438"
-        app:layout_constraintStart_toStartOf="parent" />
-
     <ImageButton
         android:id="@+id/Back"
         android:layout_width="79dp"
@@ -107,6 +92,19 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/baseline_arrow_back_24" />
 
+    <ImageView
+        android:id="@+id/updateBtn"
+        android:layout_width="75dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="168dp"
+        android:layout_marginTop="59dp"
+        android:layout_marginEnd="168dp"
+        android:layout_marginBottom="86dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Amount"
+        app:srcCompat="@drawable/plus" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

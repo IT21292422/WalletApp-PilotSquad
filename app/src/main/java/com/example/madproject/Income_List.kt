@@ -37,7 +37,7 @@ class Income_List : AppCompatActivity() {
             finish()
         }
 
-        binding.Expense.setOnClickListener{
+        binding.ExpenseInc.setOnClickListener{
             val intent = Intent(this@Income_List,Expense_List::class.java)
             intent.putExtra("user", username)
             startActivity(intent)

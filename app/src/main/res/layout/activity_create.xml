@@ -69,22 +69,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.499" />
 
-    <Button
-        android:id="@+id/updateBtn"
-        android:layout_width="127dp"
-        android:layout_height="52dp"
-        android:layout_marginStart="172dp"
-        android:layout_marginEnd="180dp"
-        android:layout_marginBottom="72dp"
-        android:backgroundTint="@color/purple_700"
-        android:onClick="addTranscation"
-        android:text="Create"
-        android:textSize="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.441"
-        app:layout_constraintStart_toStartOf="parent" />
-
     <ImageButton
         android:id="@+id/Back"
         android:layout_width="79dp"
@@ -121,6 +105,20 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.263" />
+
+    <ImageView
+        android:id="@+id/updateBtn"
+        android:layout_width="69dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="171dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="171dp"
+        android:layout_marginBottom="79dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Amount"
+        app:srcCompat="@drawable/plus" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

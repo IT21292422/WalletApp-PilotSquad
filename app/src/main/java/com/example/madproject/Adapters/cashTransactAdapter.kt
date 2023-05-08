@@ -52,8 +52,8 @@ class CashViewHolder(itemView: View): RecyclerView.ViewHolder(itemView){
     var name: TextView
     var amount: TextView
     var date: TextView
-    var delete: Button
-    var edit: Button
+    var delete: ImageView
+    var edit: ImageView
 
     init{
         amount = itemView.findViewById(R.id.viewAmount)
