@@ -52,7 +52,11 @@ class SearchAccessDetails : AppCompatActivity() {
                     val access3 = it.child("access3").value
 
                     if((access1.toString() == searchUserName) || (access2.toString() == searchUserName) || (access3.toString() == searchUserName)){
-                        Toast.makeText(this, "have access", Toast.LENGTH_SHORT).show()
+                        //Toast.makeText(this, "have access", Toast.LENGTH_SHORT).show()
+                        var intent = Intent(this, MainHomePage::class.java)
+                        intent.putExtra("userName", searchUserName)
+                        startActivity(intent)
+                        finish()
                     }
                     else {
                         Toast.makeText(this, "Do not have access to view", Toast.LENGTH_SHORT).show()
