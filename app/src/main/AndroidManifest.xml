@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/cash"
+        android:label="E-Wallet"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MADProject"
+        tools:targetApi="31">
+        <activity
+            android:name=".Update"
+            android:exported="false" />
+        <activity
+            android:name=".Expense_List"
+            android:exported="false" />
+        <activity
+            android:name=".Income_List"
+            android:exported="false" />
+        <activity
+            android:name=".Create"
+            android:exported="false" />
+        <activity
+            android:name=".update_transaction"
+            android:exported="false" />
+        <activity
+            android:name=".update_bank_account"
+            android:exported="false" />
+        <activity
+            android:name=".transaction_view"
+            android:exported="false" />
+        <activity
+            android:name=".add_transaction"
+            android:exported="false" />
+        <activity
+            android:name=".activity_add_bank_account"
+            android:exported="false" />
+        <activity
+            android:name=".MainBank"
+            android:exported="false" />
+        <activity
+            android:name=".MainHomePage"
+            android:exported="false" />
+        <activity
+            android:name=".SearchAccessDetails"
+            android:exported="false" />
+        <activity
+            android:name=".ManageAccess"
+            android:exported="false" />
+        <activity
+            android:name=".UpdateUser"
+            android:exported="false" />
+        <activity
+            android:name=".ViewUser"
+            android:exported="false" />
+        <activity
+            android:name=".User"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterUser"
+            android:exported="false" />
+        <activity
+            android:name=".AddInvestment"
+            android:exported="false" />
+        <activity
+            android:name=".InvestmentList"
+            android:exported="false" />
+        <activity
+            android:name=".UpdateInvestment"
+            android:exported="false" />
+        <activity
+            android:name=".AddAdminAccess"
+            android:exported="false" />
+        <activity
+            android:name=".Login"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

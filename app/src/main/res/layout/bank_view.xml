@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview"
+        android:layout_width="424dp"
+        android:layout_height="240dp"
+        android:layout_marginTop="20dp">
+
+        <TableLayout
+            android:id="@+id/bankLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="217dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:onClick="transact"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            tools:ignore="UselessParent">
+
+            <TableRow
+                android:id="@+id/bankRow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#26C6DA"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/bankName"
+                    android:layout_width="364dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/commercial_bank"
+                    android:textSize="34sp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/balRow"
+                android:layout_width="wrap_content"
+                android:layout_height="116dp"
+                android:background="#B3E5FC"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/accNo"
+                    android:layout_width="138dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="10"
+                    android:gravity="left"
+                    android:text="0100456789"
+                    android:textSize="16sp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:id="@+id/bankBal"
+                    android:layout_width="254dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:gravity="right"
+                    android:text="@string/bank_bal_1"
+                    android:textColor="#E53935"
+                    android:textSize="22sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/editRow"
+                android:layout_width="wrap_content"
+                android:layout_height="113dp"
+                android:background="#B3E5FC"
+                android:padding="5dp">
+
+                <ImageView
+                    android:id="@+id/editBankBtn"
+                    android:layout_width="24dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="10"
+                    android:gravity="start"
+                    app:srcCompat="@drawable/edit" />
+
+                <ImageView
+                    android:id="@+id/deleteBankBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="8"
+                    android:gravity="end"
+                    app:srcCompat="@drawable/baseline_delete_24" />
+
+            </TableRow>
+
+        </TableLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

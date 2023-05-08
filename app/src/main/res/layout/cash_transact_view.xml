@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/CardView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/viewDate"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="left"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="10dp"
+            android:text="27/04/2023"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/viewName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:gravity="left"
+            android:text="Business"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/viewAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="39dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:text="Rs 2000"
+            android:textSize="25sp" />
+
+        <ImageView
+            android:id="@+id/deleteBtn"
+            android:layout_width="60dp"
+            android:layout_height="58dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="60dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            app:srcCompat="@drawable/baseline_delete_24" />
+
+        <ImageView
+            android:id="@+id/EditBtn"
+            android:layout_width="93dp"
+            android:layout_height="56dp"
+            android:layout_marginLeft="240dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="10dp"
+            app:srcCompat="@drawable/edit" />
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

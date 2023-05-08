@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Create">
+
+
+    <TextView
+        android:id="@+id/CreateTransaction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create Cash Balance"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.346"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.163" />
+
+    <EditText
+        android:id="@+id/Date"
+        android:layout_width="342dp"
+        android:layout_height="52dp"
+        android:ems="10"
+        android:hint="Enter  Date"
+        android:inputType="textPersonName"
+        android:textColor="#0C0C0C"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.376"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.62" />
+
+    <EditText
+        android:id="@+id/Amount"
+        android:layout_width="342dp"
+        android:layout_height="52dp"
+        android:ems="10"
+        android:hint="Enter  Amount"
+        android:inputType="textPersonName"
+        android:textColor="#0C0C0C"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.42"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.748" />
+
+    <EditText
+        android:id="@+id/Description"
+        android:layout_width="342dp"
+        android:layout_height="52dp"
+        android:ems="10"
+        android:hint="Enter  Description"
+        android:inputType="textPersonName"
+        android:textColor="#0C0C0C"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.376"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499" />
+
+    <ImageButton
+        android:id="@+id/Back"
+        android:layout_width="79dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/white"
+        android:contentDescription="Go Back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.048"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baseline_arrow_back_24" />
+
+    <Spinner
+        android:id="@+id/Type"
+        android:layout_width="341dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="260dp"
+        android:entries="@array/income_expense"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.371"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/cid"
+        android:layout_width="350dp"
+        android:layout_height="56dp"
+        android:layout_marginEnd="40dp"
+        android:ems="10"
+        android:hint="Enter Transaction ID (Eg: C001)"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.263" />
+
+    <ImageView
+        android:id="@+id/updateBtn"
+        android:layout_width="69dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="171dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="171dp"
+        android:layout_marginBottom="79dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Amount"
+        app:srcCompat="@drawable/plus" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

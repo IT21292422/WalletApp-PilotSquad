@@ -1,0 +1,92 @@
+<resources>
+    <string name="app_name">LoginPage</string>
+    <string name="userName">User Name</string>
+    <string name="password">Password</string>
+    <string name="Login">Login</string>
+    <string name="signUp">Sign up here</string>
+    <string name="email">Number</string>
+    <string name="name">Name</string>
+    <string name="age">Age</string>
+    <string name="re_password">Re-type Password</string>
+    <string name="submit">Submit</string>
+    <string name="addAdmin">Add admin access for your account </string>
+    <string name="title_activity_main_dash_board">MainDashBoard</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="logout">Logout</string>
+    <string name="updateUser">Update User</string>
+    <string name="viewUser">View User</string>
+    <string name="deleteAccount">Delete User</string>
+    <string name="manageAccess">Manage Access</string>
+    <string name="addAccess">Add Access</string>
+    <string name="user">User</string>
+    <string name="btu">Back To User Menu</string>
+    <string name="update">Update</string>
+    <string name="register">Register</string>
+    <string name="delete">Delete</string>
+    <string name="search">Search</string>
+    <string name="ees">Enter username to search user</string>
+    <string name="bth">Back to home</string>
+    <string name="add_form">Add Investment Form</string>
+    <string name="stock_name">Stock Name</string>
+    <string name="value">Value</string>
+    <string name="currently_held">Currently Held</string>
+    <string name="buy">Buy</string>
+    <string name="sell">Sell</string>
+    <string name="quantity">Quantity</string>
+    <string name="total_value">Total Value</string>
+    <string name="clear_all">Clear All</string>
+    <string name="buyorsell">BUY/SELL</string>
+    <string name="investment">Go To Investment Page</string>
+    <string name="update_delete_form">update_investment_form</string>
+    <string name="editicon">editicon</string>
+    <string name="add">Add</string>
+    <string name="back_button_description">go_back</string>
+    <string-array name="income_expense">
+        <item>Income</item>
+        <item>Expense</item>
+    </string-array>
+    <string name="transaction">Transaction</string>
+    <string name="cash_in_bank">Cash in Bank</string>
+    <string name="available_balance">Available Balance</string>
+    <string name="add_transaction">Add Transaction</string>
+    <string name="update_transaction">Update Transaction</string>
+    <string name="amount">Enter the Amount</string>
+    <string name="description">Enter the Description</string>
+    <string-array name="transaction_type">
+        <item>Credit</item>
+        <item>Debit</item>
+    </string-array>
+    <string name="bank_name">Enter Bank Name</string>
+    <string name="acc_no">Enter Account Number</string>
+    <string name="transact_id">ID</string>
+    <string name="transact_amount">Amount</string>
+    <string name="transact_descript">Description</string>
+    <string name="tot_credits">Total Credits: </string>
+    <string name="tot_debits">Total Debits: </string>
+    <string name="available_bal">Available Balance: </string>
+    <string name="add_bank_account">Add Bank Account</string>
+    <string name="commercial_bank">Commercial Bank</string>
+    <string name="bank_bal_1">200,000/=</string>
+    <string name="hsbc">HSBC</string>
+    <string name="bank_bal_2">150,000/=</string>
+    <string name="id_1">T001</string>
+    <string name="amount_1">+10,000/=</string>
+    <string name="descript_1">Cash Deposit</string>
+    <string name="id_2">T002</string>
+    <string name="amount_2">+1000/=</string>
+    <string name="descript_2">Cash Deposit</string>
+    <string name="id_3">T003</string>
+    <string name="amount_3">-1000/=</string>
+    <string name="descript_3">Withdrawal</string>
+    <string name="id_4">T004</string>
+    <string name="amount_4">-1000/=</string>
+    <string name="descript_4">Withdrawal</string>
+    <string name="credits_tot">11,000/=</string>
+    <string name="debits_2">2000/=</string>
+    <string name="bal_tot">9000/=</string>
+    <string name="enter_bank_name">Enter Bank Name</string>
+    <string name="enter_acc_no">Enter Account Number</string>
+    <string name="enter_available_bal">Enter Available Balance</string>
+</resources>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".User">
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="@dimen/submenu_btn_width"
+        android:layout_height="@dimen/submenu_btn_height"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="53dp"
+        android:background="@color/blue"
+        android:text="@string/manageAccess"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:onClick="openManageAccess"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button4"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnLogin2"
+        android:layout_width="@dimen/submenu_btn_width"
+        android:layout_height="@dimen/submenu_btn_height"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="70dp"
+        android:background="@color/blue"
+        android:onClick="backToHome"
+        android:text="@string/bth"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button3"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="@dimen/submenu_btn_width"
+        android:layout_height="@dimen/submenu_btn_height"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="53dp"
+        android:background="@color/blue"
+        android:text="@string/addAccess"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:onClick="openAddAccess"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button5"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="@dimen/submenu_btn_width"
+        android:layout_height="@dimen/submenu_btn_height"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="53dp"
+        android:background="@color/blue"
+        android:text="@string/updateUser"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:onClick="openUpdateUser"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button7"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="@dimen/submenu_btn_width"
+        android:layout_height="@dimen/submenu_btn_height"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="53dp"
+        android:background="@color/blue"
+        android:text="@string/viewUser"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:onClick="openViewUser"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtViewUserName"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnAddAccess"
+        android:layout_width="@dimen/submenu_btn_width"
+        android:layout_height="@dimen/submenu_btn_height"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="53dp"
+        android:background="@color/red"
+        android:text="@string/deleteAccount"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:onClick="deleteCurrentUser"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnLogin"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="@dimen/submenu_btn_width"
+        android:layout_height="@dimen/submenu_btn_height"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="53dp"
+        android:background="@color/blue1"
+        android:onClick="logout"
+        android:text="@string/logout"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAddAccess"
+        tools:ignore="MissingConstraints" />
+
+
+
+    <TextView
+        android:id="@+id/txtViewUserName"
+        android:layout_width="376dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="19dp"
+        android:background="@color/blue1"
+        android:gravity="center"
+        android:text="example@gamil.com"
+        android:textColor="@color/white"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
