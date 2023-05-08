@@ -22,7 +22,9 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="@string/id_1" />
+                android:text="@string/id_1"
+                android:textColor="#3949AB"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/tableAmount"
