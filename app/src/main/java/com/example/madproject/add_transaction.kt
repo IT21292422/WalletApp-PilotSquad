@@ -43,7 +43,7 @@ class add_transaction : AppCompatActivity() {
             if(amount>balance){
                 Toast.makeText(this, "Insufficient balance", Toast.LENGTH_SHORT).show()
             }else{
-                databaseReference = FirebaseDatabase.getInstance().getReference(username).child("Bank").child(bankName).child("Transactions")
+                databaseReference = FirebaseDatabase.getInstance().getReference(username).child(bankName).child("Transactions")
                 val bankTransaction = bankTransactionData(id, amount, description,type)
                 //databaseReference.child(id).setValue(bankTransaction).addOnSuccessListener
                 databaseReference.child(id).setValue(bankTransaction).addOnSuccessListener {

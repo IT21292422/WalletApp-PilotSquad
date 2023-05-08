@@ -42,14 +42,11 @@ class transaction_view : AppCompatActivity() {
         }
 
         //Getting the Opening balance
-        databaseReference = FirebaseDatabase.getInstance().getReference(username).child("Bank").child(bankName)
+        databaseReference = FirebaseDatabase.getInstance().getReference(username).child(bankName)
         databaseReference.addValueEventListener(object : ValueEventListener{
             override fun onDataChange(snapshot: DataSnapshot) {
                 var balanceStr = snapshot.child("balance").value.toString()
-                if(balanceStr != null){
-                    bal = balanceStr.toInt()
-                }
-
+                bal = balanceStr.toInt()
             }
 
 
@@ -59,7 +56,7 @@ class transaction_view : AppCompatActivity() {
         })
 
         //Calculating the balance
-        databaseReference = FirebaseDatabase.getInstance().getReference(username).child("Bank").child(bankName).child("Transactions")
+        databaseReference = FirebaseDatabase.getInstance().getReference(username).child(bankName).child("Transactions")
         databaseReference.addValueEventListener(object : ValueEventListener{
             override fun onDataChange(snapshot: DataSnapshot) {
                 for(itemSnapshot in snapshot.children){
@@ -104,7 +101,7 @@ class transaction_view : AppCompatActivity() {
         binding.searchTransaction.setOnQueryTextListener(listener)
 
         try {
-            databaseReference = FirebaseDatabase.getInstance().getReference(username).child("Bank").child(bankName).child("Transactions")
+            databaseReference = FirebaseDatabase.getInstance().getReference(username).child(bankName).child("Transactions")
             val LinearLayoutManager = LinearLayoutManager(this@transaction_view)
             binding.recyclerView.layoutManager = LinearLayoutManager
 
@@ -149,7 +146,7 @@ class transaction_view : AppCompatActivity() {
 
         binding.backBtnTrans.setOnClickListener{
             var intent = Intent(this, MainBank::class.java)
-            intent.putExtra("user", username)
+            intent.putExtra("userName", username)
             startActivity(intent)
             finish()
         }

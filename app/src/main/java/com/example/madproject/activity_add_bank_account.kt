@@ -25,6 +25,15 @@ class activity_add_bank_account : AppCompatActivity() {
             username = bundle.getString("user").toString()
         }
 
+//        val Type = intent.getStringExtra("Type").toString()
+//        var position: Int = 1
+//       if (Type=="Credit"){
+//            position = 1
+//        }else if (Type=="Debit"){
+//            position = 2
+//        }
+//        val addType: Spinner = findViewById(R.id.addType)
+//        addType.setSelection(position)
         binding.backBtnBnk.setOnClickListener{
             var intent = Intent(this, MainBank::class.java)
             intent.putExtra("user", username)
@@ -39,18 +48,21 @@ class activity_add_bank_account : AppCompatActivity() {
             val accNo = binding.addAccNo.text.toString()
             val bal = binding.addBankBal.text.toString()
             val balance = bal.toInt()
+            //val type = binding.addType.getSelectedItem().toString()
 
-
-            databaseReference = FirebaseDatabase.getInstance().getReference(username).child("Bank")
+            databaseReference = FirebaseDatabase.getInstance().getReference(username)
             val bankTransaction = bankData(accNo, balance, name)
+            //databaseReference.child(id).setValue(bankTransaction).addOnSuccessListener
+            // databaseReference.child(name).child("Bank Data").setValue(bankTransaction)
             databaseReference.child(name).setValue(bankTransaction).addOnSuccessListener {
                 binding.addBankName.text.clear()
                 binding.addAccNo.text.clear()
                 binding.addBankBal.text.clear()
+                //binding.addType.selectedItem.clear()
                 Toast.makeText(this, "Saved", Toast.LENGTH_SHORT).show()
 
                 var intent = Intent(this, MainBank::class.java)
-                intent.putExtra("user", username)
+                intent.putExtra("userName", username)
                 startActivity(intent)
                 finish()
             }.addOnFailureListener{
@@ -61,3 +73,9 @@ class activity_add_bank_account : AppCompatActivity() {
     }
 }
 
+//class activity_add_bank_account : AppCompatActivity() {
+//    override fun onCreate(savedInstanceState: Bundle?) {
+//        super.onCreate(savedInstanceState)
+//        setContentView(R.layout.activity_add_bank_account)
+//    }
+//}

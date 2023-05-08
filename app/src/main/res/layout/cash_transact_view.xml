@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
@@ -39,29 +40,26 @@
             android:text="Rs 2000"
             android:textSize="25sp" />
 
-        <Button
+        <ImageView
             android:id="@+id/deleteBtn"
-            android:layout_width="wrap_content"
-            android:layout_height="55dp"
+            android:layout_width="60dp"
+            android:layout_height="58dp"
             android:layout_gravity="right"
             android:layout_marginTop="60dp"
             android:layout_marginRight="10dp"
             android:layout_marginBottom="10dp"
-            android:backgroundTint="@color/design_default_color_error"
-            android:text=" DELETE"
-            android:textSize="20dp" />
+            app:srcCompat="@drawable/baseline_delete_24" />
 
-        <Button
+        <ImageView
             android:id="@+id/EditBtn"
             android:layout_width="wrap_content"
             android:layout_height="55dp"
             android:layout_gravity="right"
             android:layout_marginTop="60dp"
-            android:layout_marginRight="140dp"
+            android:layout_marginLeft="140dp"
             android:layout_marginBottom="10dp"
-            android:backgroundTint="#FF3700B3"
-            android:text="Edit"
-            android:textSize="20dp" />
+            app:srcCompat="@drawable/edit" />
+
 
     </androidx.cardview.widget.CardView>
 
