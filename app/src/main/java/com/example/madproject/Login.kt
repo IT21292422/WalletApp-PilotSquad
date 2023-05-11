@@ -12,6 +12,7 @@ import com.google.firebase.auth.FirebaseAuthException
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 
+//login class
 class Login : AppCompatActivity() {
     lateinit var edtUserName:EditText
     lateinit var edtPassword:EditText
@@ -52,6 +53,7 @@ class Login : AppCompatActivity() {
             }
             is ValidationResult.Empty -> {
                 edtUserName.error = userNameValidation.errorMessage
+                edtUserName.hint = "User Name can not be empty"
             }
         }
 
@@ -65,6 +67,7 @@ class Login : AppCompatActivity() {
             }
             is ValidationResult.Empty -> {
                 edtPassword.error = passwordValidation.errorMessage
+                edtPassword.hint = "password can not be empty"
             }
         }
 
