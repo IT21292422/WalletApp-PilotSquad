@@ -46,7 +46,7 @@ class update_bank_account : AppCompatActivity() {
 
         binding.backBtnBnk.setOnClickListener{
             var intent = Intent(this, MainBank::class.java)
-            intent.putExtra("user", username)
+            intent.putExtra("userName", username)
             startActivity(intent)
             finish()
         }
