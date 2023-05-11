@@ -76,10 +76,18 @@ class Login : AppCompatActivity() {
             databaseRef = FirebaseDatabase.getInstance().getReference("Users")
             databaseRef.child(edtUserName.text.toString()).get().addOnSuccessListener {
                 if(it.exists()){
-                    val intent = Intent(this, MainHomePage::class.java)
-                    intent.putExtra("userName", edtUserName.text.toString())
-                    startActivity(intent)
-                    finish()
+
+                    val password = it.child("password").value
+
+                    if(password == edtPassword.text.toString()) {
+                        val intent = Intent(this, MainHomePage::class.java)
+                        intent.putExtra("userName", edtUserName.text.toString())
+                        startActivity(intent)
+                        finish()
+                    }
+                    else {
+                        Toast.makeText(this, "Invalid user name or password", Toast.LENGTH_SHORT).show()
+                    }
                 }
                 else {
                     Toast.makeText(this, "Invalid user name or password", Toast.LENGTH_SHORT).show()
