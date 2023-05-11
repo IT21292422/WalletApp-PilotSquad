@@ -3,6 +3,7 @@ package com.example.madproject
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.widget.SearchView
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.madproject.Adapters.cashTransactAdapter
 import com.example.madproject.databinding.ActivityExpenseListBinding
@@ -70,5 +71,28 @@ class Expense_List : AppCompatActivity() {
             }
 
         })
+        var listener = object : SearchView.OnQueryTextListener {
+            override fun onQueryTextSubmit(query: String): Boolean {
+                // Perform action when user submits query
+                return false
+            }
+
+            override fun onQueryTextChange(newText: String): Boolean {
+                // Perform action when user changes text in SearchView
+                searchList(newText)
+                return true
+            }
+        }
+
+        binding.searchExpense.setOnQueryTextListener(listener)
+    }
+    fun searchList(text: String) {
+        val searchList = ArrayList<CashTrans>()
+        for (dataClass in dataList) {
+            if (dataClass.description?.lowercase()?.contains(text.lowercase()) == true) {
+                searchList.add(dataClass)
+            }
+        }
+        adapter.searchDataList(searchList)
     }
 }

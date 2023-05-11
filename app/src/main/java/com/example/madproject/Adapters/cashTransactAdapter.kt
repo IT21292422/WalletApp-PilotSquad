@@ -11,10 +11,11 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.madproject.R
 import com.example.madproject.Update
 import com.example.madproject.models.CashTrans
+import com.example.madproject.models.bankTransactionData
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 
-class cashTransactAdapter(private val context: Context, private val dataList:List<CashTrans>, private val myUser: String):
+class cashTransactAdapter(private val context: Context, private var dataList:List<CashTrans>, private val myUser: String):
     RecyclerView.Adapter<CashViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CashViewHolder {
         val view: View = LayoutInflater.from(parent.context).inflate(R.layout.cash_transact_view,parent,false)
@@ -23,6 +24,11 @@ class cashTransactAdapter(private val context: Context, private val dataList:Lis
 
     override fun getItemCount(): Int {5
         return dataList.size
+    }
+
+    fun searchDataList(searchList: List<CashTrans>){
+        dataList = searchList
+        notifyDataSetChanged()
     }
 
     override fun onBindViewHolder(holder: CashViewHolder, position: Int) {
