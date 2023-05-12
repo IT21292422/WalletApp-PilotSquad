@@ -43,6 +43,7 @@ class UpdateInvestment :AppCompatActivity(){
         mRadioButtonSell = findViewById(R.id.radio_button_sell)
         mEditTextQuantity = findViewById(R.id.edit_text_quantity)
         mEditTextTotalValue = findViewById(R.id.edit_text_total_value)
+        mEditTextTotalValue.isEnabled = false
         userName = intent.getStringExtra("userName").toString()
         database = Firebase.database.reference
         val extras = intent.extras ?: return

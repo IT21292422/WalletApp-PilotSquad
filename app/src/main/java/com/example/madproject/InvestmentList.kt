@@ -71,14 +71,6 @@ class InvestmentList : AppCompatActivity(){
     }
 
     private fun addDataToList() {
-        mList.add(Stock("Java", 50,50,"BUY",50,50,0))
-        mList.add(Stock("Kotlin", 50,50,"SELL",50,50,1))
-        mList.add(Stock("C++", 50,50,"BUY",50,50,2))
-        mList.add(Stock("Python", 50,50,"SELL",50,50,3))
-        mList.add(Stock("HTML", 50,50,"BUY",50,50,4))
-        mList.add(Stock("Swift", 50,50,"SELL",50,50,5))
-        mList.add(Stock("C#", 50,50,"BUY",50,50,6))
-        mList.add(Stock("JavaScript", 50,50,"BUY",50,50,7))
 
         databaseRef.addValueEventListener(object: ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
