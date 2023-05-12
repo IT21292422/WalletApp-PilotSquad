@@ -36,13 +36,12 @@
 
             <TextView
                 android:id="@+id/tableDescription"
-                android:layout_width="100dp"
+                android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ellipsize="end"
                 android:gravity="center"
-                android:maxLines="1"
-                android:text="Cash Deposit to Akmal" />
+                android:text="Salary credited to Akmal on 11/5 by amana bank at 11:30 in morning" />
 
             <TextView
                 android:id="@+id/tableType"
