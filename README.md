@@ -1,7 +1,7 @@
 # Project Name - WalletApp-PilotSquad (Financial Planning Mobile App)
 ### Group Leader - IT21190698 - Arudchayan Pirabaharan
 ### Member 2 - IT21204302 - Sajeevan Sivapalan
-### Member 3 - IT21354724 - Mayuran 
+### Member 3 - IT21354724 - Mayuran Ganeshalingam
 ### Member 3 - IT21292422 - Akmal Alavi
 
 #### Brief Description of Project - 
